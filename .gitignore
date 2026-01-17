@@ -42,8 +42,8 @@ env/
 *~
 .DS_Store
 
-# Results and outputs (optional - uncomment to exclude)
-# results/
+# Results and outputs
+results/
 
 # Logs
 *.log
