@@ -1,0 +1,1005 @@
+{
+  "framework": "Orchestral AI (Enhanced)",
+  "success": true,
+  "error": null,
+  "console_output": [
+    "[Orchestral] ==================================================",
+    "[Orchestral] Enhanced Orchestral Agent Started",
+    "[Orchestral] Provider: BalancedLLM (balanced)",
+    "[Orchestral] ==================================================",
+    "[Orchestral] Extracting topic...",
+    "[Orchestral]   \u2192 Topic: Python basics",
+    "[Orchestral] Phase 1: Research (with cost tracking)",
+    "[Orchestral]   \u2192 Searching: academic",
+    "[Orchestral]     Cost so far: $0.0000",
+    "[Orchestral]   \u2192 Searching: tutorial",
+    "[Orchestral]     Cost so far: $0.0000",
+    "[Orchestral]   \u2192 Searching: documentation",
+    "[Orchestral]     Cost so far: $0.0000",
+    "[Orchestral]   \u2192 Synthesizing research...",
+    "[Orchestral]   \u2192 Research phase cost: $0.0003",
+    "[Orchestral] Phase 2: Syllabus + Quality Loop",
+    "[Orchestral]   Iteration 1/3",
+    "[Orchestral]     \u2192 Generating syllabus...",
+    "[Orchestral]     \u2192 Checking quality...",
+    "[Orchestral]     \u2192 Score: 0.88, Iteration cost: $0.0034",
+    "[Orchestral]     \u2192 Quality threshold met!",
+    "[Orchestral] Phase 3: Approval Checkpoint (hook system)",
+    "[Orchestral]   \u2192 Approved (auto-approved for demo)",
+    "[Orchestral] Phase 4: Lesson Generation",
+    "[Orchestral]   Lesson 1/10: The Python Ecosystem and Environment",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0015",
+    "[Orchestral]   Lesson 2/10: Variables, Data Types, and Memory",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0015",
+    "[Orchestral]   Lesson 3/10: Operators and Expressions",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0015",
+    "[Orchestral]   Lesson 4/10: Control Flow: Conditional Logic",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0015",
+    "[Orchestral]   Lesson 5/10: Iteration: Mastering Loops",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0016",
+    "[Orchestral]   Lesson 6/10: Data Structures: Lists and Tuples",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0017",
+    "[Orchestral]   Lesson 7/10: Data Structures: Dictionaries and Sets",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0017",
+    "[Orchestral]   Lesson 8/10: Functions and Modular Code",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0013",
+    "[Orchestral]   Lesson 9/10: Error Handling and Debugging",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0016",
+    "[Orchestral]   Lesson 10/10: File I/O and Synthesis Project",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0017",
+    "[Orchestral] Phase 5: Gap Assessment (subagent)",
+    "[Orchestral]   \u2192 Running student subagent...",
+    "[Orchestral]   \u2192 Found 4 gaps",
+    "[Orchestral]   \u2192 Subagent cost: $0.0002",
+    "[Orchestral] Phase 6: Refinement Hook Check",
+    "[Orchestral]   \u2192 Hook decision: Refinement triggered: 11 issues found",
+    "[Orchestral] ==================================================",
+    "[Orchestral] GAP-DRIVEN REFINEMENT (HOOK + SUBAGENT PATTERN)",
+    "[Orchestral] ==================================================",
+    "[Orchestral] \u2502  ORCHESTRAL DIFFERENTIATOR: Hook intercepts + Subagent executes",
+    "[Orchestral] \u2502  Refinement iteration: 1",
+    "[Orchestral] \u2502  Refining 10 lessons via subagent pattern...",
+    "[Orchestral] \u2502    Lesson 1: hook \u2192 subagent \u2192 refined",
+    "[Orchestral] \u2502    Lesson 2: hook \u2192 subagent \u2192 refined",
+    "[Orchestral] \u2502    Lesson 10: hook \u2192 subagent \u2192 refined",
+    "[Orchestral] \u2502  \u2192 All lessons refined via hook+subagent pattern",
+    "[Orchestral] \u2514\u2500 Refinement cost: $0.0235",
+    "[Orchestral] Re-assessing gaps after refinement...",
+    "[Orchestral] Phase 5: Gap Assessment (subagent)",
+    "[Orchestral]   \u2192 Running student subagent...",
+    "[Orchestral]   \u2192 Found 3 gaps",
+    "[Orchestral]   \u2192 Subagent cost: $0.0005",
+    "[Orchestral] Compiling enhanced course package...",
+    "[Orchestral] ==================================================",
+    "[Orchestral] Complete: 10 lessons in 193.9s",
+    "[Orchestral] Quality: 0.88, Gaps: 3",
+    "[Orchestral] Total cost: $0.0433",
+    "[Orchestral] Cost breakdown:",
+    "[Orchestral]   research: $0.0003",
+    "[Orchestral]   syllabus: $0.0030",
+    "[Orchestral]   quality_loop: $0.0004",
+    "[Orchestral]   lessons: $0.0156",
+    "[Orchestral]   gap_assessment: $0.0005",
+    "[Orchestral]   gap_refinement: $0.0235",
+    "[Orchestral] =================================================="
+  ],
+  "course": {
+    "syllabus": {
+      "course_title": "Python Foundations: From Logic to Application",
+      "course_objective": "To provide learners with a rigorous foundation in Python syntax, logical programming structures, and hands-on problem-solving skills through a structured, evidence-based pedagogy.",
+      "target_audience": "General learners",
+      "difficulty_level": "Intermediate",
+      "lessons": [
+        {
+          "lesson_number": 1,
+          "title": "Foundation and Environment: Getting Started with Python",
+          "objectives": [
+            "Identify prerequisites including basic computer literacy and fundamental arithmetic required for programming.",
+            "Successfully install the Python interpreter and verify environment variables (PATH).",
+            "Configure a professional Integrated Development Environment (IDE) for script management.",
+            "Execute basic Input/Output operations using the print() function and the standard REPL.",
+            "Define the Evidence-Based Pedagogy framework (Active Recall and Scaffolding) used throughout this course."
+          ],
+          "content_outline": [
+            "Course Prerequisites: Basic file management skills and middle-school level algebra (operators).",
+            "The Python Ecosystem: Understanding Python's role as a high-level, interpreted language.",
+            "Installation & Environment: Downloading Python 3.x, verifying versions, and an overview of the PATH variable.",
+            "Development Tools: Comparative analysis of VS Code and PyCharm; why we use scripts vs. the REPL.",
+            "Foundational I/O: Introduction to the print() function for user output.",
+            "Pedagogical Framework: Explanation of the 'Synthesis Project' (cumulative final) and how 'Memory' lessons relate to Variable assignment and RAM."
+          ],
+          "activities": [
+            "System Configuration: Guided installation of Python 3.x and VS Code.",
+            "REPL Interaction: Using the Read-Eval-Print Loop as a persistent calculator to test basic arithmetic (+, -, *, /).",
+            "The 'Hello World' Script: Creating, saving, and executing a .py file via the terminal.",
+            "Error Literacy: Introduction to SyntaxError by intentionally breaking code (missing quotes) to build debugging confidence.",
+            "Initial Diagnostic: A short quiz on mathematical operator precedence to ensure prerequisite alignment."
+          ],
+          "resources": [
+            "Python.org Installation Hub: https://www.python.org/downloads/",
+            "Visual Studio Code - Python Setup Guide: https://code.visualstudio.com/docs/python/python-tutorial",
+            "Real Python: 'Python 3 Installation & Setup Guide'"
+          ],
+          "citations": [
+            "Van Rossum, G., & Drake, F. L. (2009). Python 3 Reference Manual. CreateSpace.",
+            "Brown, P. C., Roediger, H. L., & McDaniel, M. A. (2014). Make It Stick: The Science of Successful Learning (Context for Pedagogy).",
+            "Matthes, E. (2023). Python Crash Course, 3rd Edition. No Starch Press."
+          ]
+        },
+        {
+          "lesson_number": 2,
+          "title": "Data Foundations: Variables, Types, and Basic I/O",
+          "objectives": [
+            "Differentiate between primitive data types: integers (int), floats (float), strings (str), and booleans (bool).",
+            "Analyze Python's memory model where variables act as labels referring to objects in computer RAM.",
+            "Perform basic user interactions using the input() and print() functions.",
+            "Apply PEP 8 naming conventions to ensure code readability and professional standards.",
+            "Utilize the type() and id() functions to inspect data types and memory addresses."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Verification of environment setup (Python/IDE) and basic computer literacy.",
+            "Mental Models of Memory: Moving from 'variables as boxes' to 'variables as name-tags' (references) in computer memory.",
+            "Introduction to Basic I/O: Capturing user text via input() and displaying results via print().",
+            "Numeric Types & Math Prep: Decimals (floats) vs. Whole numbers (ints) and their hardware representation.",
+            "String Fundamentals: Initial introduction to text data as a sequence of characters.",
+            "Dynamic Typing: Understanding how Python determines types at runtime without explicit declaration.",
+            "Variable Semantics: Legal syntax vs. PEP 8 stylistic best practices (snake_case)."
+          ],
+          "activities": [
+            "Interactive Shell Exercise: Using id() to reveal the 'address' of a variable in memory.",
+            "The 'Greeter' Script: Writing a program that asks for a user's name (str) and age (int), then prints a customized message.",
+            "Conversion Lab: Experimenting with type casting (e.g., int('5')) to resolve errors when input() returns a string.",
+            "Variable Naming Audit: A peer-review activity identifying 'bad' variable names (e.g., 1_var, MyVariable, x) and correcting them to PEP 8 standards."
+          ],
+          "resources": [
+            "Python 3 Documentation: Built-in Functions (input, print, type)",
+            "Thonny IDE: Visualizer tool (highly recommended for seeing variables in memory)",
+            "PEP 8 -- Style Guide for Python Code (Naming Conventions section)"
+          ],
+          "citations": [
+            "Van Rossum, G., & Drake, F. L. (2023). Python 3.12 Documentation. Python Software Foundation.",
+            "Ramalho, L. (2022). Fluent Python: Clear, Concise, and Effective Programming. O'Reilly Media.",
+            "Sweigart, A. (2019). Automate the Boring Stuff with Python. No Starch Press."
+          ]
+        },
+        {
+          "lesson_number": 3,
+          "title": "Operators and Expressions",
+          "objectives": [
+            "Perform mathematical calculations using arithmetic operators and understand the difference between floor and true division",
+            "Apply comparison operators to evaluate truth statements and control data flow",
+            "Utilize logical operators (and, or, not) to evaluate multi-condition boolean expressions",
+            "Apply the Order of Operations (PEMDAS) to resolve complex code expressions correctly",
+            "Manipulate text data using string concatenation and repetition operators",
+            "Implement basic user interaction using the input() and print() functions for dynamic expressions"
+          ],
+          "content_outline": [
+            "Prerequisite Review: Basic Algebra and Python Variable Assignment",
+            "Introduction to I/O: Capturing user input via input() and displaying results with print()",
+            "Arithmetic Operators: Basic math (+, -, *, /) vs. Floor Division (//), Modulo (%), and Exponentiation (**)",
+            "Comparison Operators: Evaluating equality (==, !=) and magnitude (>, <, >=, <=)",
+            "Logical Operators: Building complex truth statements with 'and', 'or', and 'not'",
+            "The Order of Operations: Applying PEMDAS/BODMAS in a programming context",
+            "Basic String Manipulation: Concatenation (+) and Repetition (*)",
+            "Augmented Assignment: Simplifying updates to variables (e.g., +=, -=)"
+          ],
+          "activities": [
+            "Interactive Input Drill: Create a program that asks for a user's name and birth year, then calculates and prints their approximate age",
+            "The 'Remainder' Challenge: Use the modulo operator to determine if dynamic user input is an even or odd number",
+            "Logical Gate Simulator: Predicting outcome values for nested logical expressions on paper before verifying in the IDE",
+            "Precedence Puzzle: Writing a single line of code that uses five different operators to reach a specific target number",
+            "Greeter Tool: Constructing a multi-line formatted string using string multiplication and concatenation"
+          ],
+          "resources": [
+            "Python 3.x IDLE, VS Code, or Jupyter Notebook environment",
+            "Python Tutor (pythontutor.com) for visualizing operator precedence and variable state",
+            "Digital Handout: 'Python Operator Cheat Sheet & PEMDAS Guide'",
+            "Exercise Set: 'Logical Operators and Truth Tables'"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). Expressions: Operator precedence. Python 3 Documentation.",
+            "Matthes, E. (2019). Python Crash Course: A Hands-On, Project-Based Introduction to Programming. No Starch Press.",
+            "Lutz, M. (2013). Learning Python: Powerful Object-Oriented Programming. O'Reilly Media."
+          ]
+        },
+        {
+          "lesson_number": 4,
+          "title": "Control Flow: Conditional Logic and User Input",
+          "objectives": [
+            "Utilize the input() function to capture and cast user data for use in logic",
+            "Implement branching logic in programs using if, elif, and else statements",
+            "Evaluate complex boolean expressions using comparison and logical operators",
+            "Identify and apply the concept of truthiness and falsiness in Python objects",
+            "Construct nested conditional structures while maintaining readable code"
+          ],
+          "content_outline": [
+            "Prerequisite Review: Basic computer literacy and Python environment setup",
+            "Basic I/O: Capturing user input with input() and printing results with print()",
+            "Data Type Casting: Converting string input to integers/floats for logical comparison",
+            "Comparison Operators (==, !=, <, >, <=, >=) and Boolean types",
+            "The 'if' statement: Syntax, colon usage, and the significance of indentation (PEP 8)",
+            "Alternative paths: Using 'else' and 'elif' for mutually exclusive conditions",
+            "Logical Operators: Combining conditions with 'and', 'or', and 'not'",
+            "Pythonic Truthiness: Understanding Falsy values (0, '', None, []) vs Truthy values",
+            "Nested Conditionals and the 'Guard Clause' pattern to avoid deep nesting"
+          ],
+          "activities": [
+            "Code-along: Creating an interactive 'Admission Fee' calculator that asks for user age",
+            "Predictive Quiz: Determining the outcome of Truthy/Falsy evaluations in complex expressions",
+            "Debugging: Restructuring a 'deeply nested' block into a clean, flat conditional structure",
+            "Mini-Project: Text-based Decision Engine (Interpreting user text commands to navigate a scenario)"
+          ],
+          "resources": [
+            "Python 3.x Interpreter (following the installation guide from Lesson 1)",
+            "Visual execution tool: PythonTutor.com for tracing indentation-based logic",
+            "Official Python Documentation: 'More Control Flow Tools' and 'Built-in Functions (input)'",
+            "Logic Table Cheat Sheet: AND/OR/NOT operations summarized"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). 'More Control Flow Tools.' Python 3.12 Documentation.",
+            "Sweigart, A. (2019). 'Automate the Boring Stuff with Python.' No Starch Press.",
+            "Matthes, E. (2019). 'Python Crash Course.' No Starch Press.",
+            "Ambrose, S. A., et al. (2010). 'How Learning Works: Seven Research-Based Principles for Smart Teaching' (Evidence-based pedagogy reference for scaffolding logical concepts)."
+          ]
+        },
+        {
+          "lesson_number": 5,
+          "title": "Iteration: Mastering Loops and Sequential Logic",
+          "objectives": [
+            "Identify scenarios where automation through loops is more efficient than manual coding",
+            "Implement 'for' loops to iterate over text strings and list structures",
+            "Define and control 'while' loops using conditional logic to prevent infinite execution",
+            "Apply 'break' and 'continue' statements to modify loop flow dynamically based on runtime input",
+            "Utilize the 'range()' function to generate specific sequences of numbers for arithmetic iteration"
+          ],
+          "content_outline": [
+            "The Concept of Iteration: Automating repetitive tasks in computer memory",
+            "Prerequisite Review: Quick recap of Booleans and strings as sequential data",
+            "The 'for' loop: Syntax, indentation rules, and iterating through text/strings",
+            "Numeric ranges: Master the range(start, stop, step) function and its 'exclusive stop' behavior",
+            "The 'while' loop: Logic-driven repetition and the importance of updating control variables",
+            "Loop Control Flow: Using 'break' to exit and 'continue' to skip (The 'Early Exit' pattern)",
+            "Nested Loops: Introduction to hierarchical iteration (e.g., rows and columns)",
+            "Common Pitfalls: Preventing infinite loops and solving off-by-one errors"
+          ],
+          "activities": [
+            "Instructional Trace: Using 'Python Tutor' to visualize how variables change in memory during each loop cycle",
+            "Code Along: Printing the squares of numbers 1-10 using range() and formatted print statements",
+            "Debugging Challenge: Diagnosing and fixing a 'while' loop that lacks a decrement/increment, causing an infinite loop",
+            "Text Processor: Iterate through a user-provided string to count vowels, skipping consonants using 'continue'",
+            "Mini-Project: 'Secure Login' \u2013 Create a program that requests user input and grants 3 attempts before locking the system",
+            "Predictive Quiz: Analyzing code snippets with break/continue to determine the final value of trackers"
+          ],
+          "resources": [
+            "Python 3.x Interpreter (established in Lesson 1: Getting Started)",
+            "Python Tutor Visualizer (Online tool for tracing execution logic)",
+            "Official Python Documentation: Control Flow Tools (Section 4.2-4.4)",
+            "Guided Worksheet: 'The Logic of Range and Off-by-One Errors'"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). More Control Flow Tools. Python 3.12 Documentation.",
+            "Matthes, E. (2019). Python Crash Course: A Hands-On, Project-Based Introduction to Programming. No Starch Press.",
+            "Sweigart, A. (2019). Automate the Boring Stuff with Python. No Starch Press.",
+            "Ambrosio, M. (2021). Evidence-Based Pedagogy: The Role of Retrieval Practice in Programming Education."
+          ]
+        },
+        {
+          "lesson_number": 6,
+          "title": "Data Structures: Lists and Tuples",
+          "objectives": [
+            "Identify the syntax and use cases for lists versus tuples",
+            "Explain the technical and practical differences between mutability and immutability relative to computer memory",
+            "Perform data manipulation using indexing, slicing, and built-in sequence methods",
+            "Apply basic text-processing techniques by converting strings to lists and vice versa",
+            "Implement tuple unpacking and list iteration to process structured datasets"
+          ],
+          "content_outline": [
+            "Introduction to Sequences: Defining square-bracket lists [] and parenthetical tuples ()",
+            "Memory and Mutability: How Python stores lists (dynamic) vs. tuples (fixed) in memory",
+            "Accessing Data: Deep dive into zero-based indexing and slicing [start:stop:step] mechanics",
+            "List Dynamics: Growing and shrinking collections with .append(), .insert(), .extend(), .pop(), and .remove()",
+            "Interfacing with Text: String manipulation using .split() and .join() to transition between text and lists",
+            "Tuple Mechanics: Performance benefits, data integrity, and the 'immutability' constraint",
+            "Advanced Assignment: Tuple unpacking and using the * (starred) expression for flexible data extraction",
+            "Traversal: Iterating through collections using 'for' loops (Logical progression from Lesson 5 Control Flow)"
+          ],
+          "activities": [
+            "Memory Visualization Lab: Use a Python visualizer to watch how 'mutating' a list changes a reference while 'changing' a tuple creates a new object",
+            "Text Processing Challenge: Take a multi-line string of user input, split it into a list of words, sort them, and join them back into a formatted paragraph",
+            "The 'Stack' Simulation: Implement a simple Undo/Redo mechanism using list .append() and .pop() methods",
+            "Structural Debugging: Practice identifying and fixing the 'TypeError: 'tuple' object does not support item assignment'",
+            "Inventory Report: Write a script that iterates through a list of tuples (representing item names and quantities) and prints a formatted status report"
+          ],
+          "resources": [
+            "Python Documentation: Section 3.1.3 (Lists) and 5.3 (Tuples and Sequences)",
+            "Jupyter Notebook: 'Lesson_6_Sequences_and_Text_Manipulation.ipynb'",
+            "Python Tutor (Online Visualizer): Tool for viewing memory allocation of mutable vs. immutable objects",
+            "Concept Map: When to use Lists vs. Tuples vs. Strings"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). Data Structures. Python 3.12 Documentation.",
+            "Matthes, E. (2019). Python Crash Course: A Hands-On, Project-Based Introduction to Programming. No Starch Press.",
+            "Ramalho, L. (2022). Fluent Python: Clear, Concise, and Effective Programming. O'Reilly Media."
+          ]
+        },
+        {
+          "lesson_number": 7,
+          "title": "Data Structures: Dictionaries and Sets",
+          "objectives": [
+            "Map keys to values for efficient retrieval and understand the role of computer memory in storage",
+            "Manage unique item sets and utilize hash-based membership testing for performance",
+            "Differentiate between mutable and immutable types to identify requirements for hashability",
+            "Apply common dictionary and set methods to solve complex data organization problems",
+            "Integrate user input/output and string formatting within data structure manipulation"
+          ],
+          "content_outline": [
+            "Contextualizing Memory: How dictionaries and sets use hashing to achieve near-instant lookups compared to sequential lists.",
+            "Dictionary Fundamentals: Syntax, key-value pairs, and the importance of using descriptive string keys (Review of String literal usage).",
+            "Safe Data Retrieval: Accessing values, handling KeyErrors, and the utility of the .get() method for default values.",
+            "Dynamic Dictionary Management: Adding, updating, and removing entries using user input() data.",
+            "The Concept of Hashability: Deep dive into why keys must be immutable (Strings, Numbers, Tuples) and why mutable lists cannot be keys.",
+            "Set Fundamentals: Unordered collections, uniqueness constraints, and removing duplicates from noisy text data.",
+            "Mathematical Set Logic: Performing union (|), intersection (&), and difference (-) operations to analyze overlapping datasets.",
+            "Iteration and Formatting: Using .items() to generate formatted string reports from stored data structures."
+          ],
+          "activities": [
+            "Interactive Terminal App: Build a 'Contact Manager' that takes user input to add names (keys) and phone numbers (values) to a dictionary.",
+            "Data Cleaning Lab: Take a list of strings containing duplicate names and use a Set to generate a unique list of participants.",
+            "Set Logic Challenge: Use intersection and difference operations to compare two lists of 'Registered Users' and 'Logged In Users'.",
+            "Debugging Workshop: Predict and fix the 'TypeError: unhashable type' when attempting to use a list as a dictionary key."
+          ],
+          "resources": [
+            "Python Documentation: Mapping Types \u2014 dict",
+            "Python Documentation: Set Types \u2014 set, frozenset",
+            "PythonTutor.com: Visualizing references, memory addresses, and hash tables",
+            "VS Code or Replit for local/cloud development environment execution"
+          ],
+          "citations": [
+            "Van Rossum, G., & Drake, F. L. (2023). Python 3.12 documentation. Python Software Foundation.",
+            "Lutz, M. (2013). Learning Python: Powerful Object-Oriented Programming. O'Reilly Media.",
+            "Ramalho, L. (2022). Fluent Python: Clear, Concise, and Effective Programming. O'Reilly Media.",
+            "Ambrose, S. A., et al. (2010). How Learning Works: Seven Research-Based Principles for Smart Teaching. Jossey-Bass. (Basis for Evidence-Based Scaffolding)."
+          ]
+        },
+        {
+          "lesson_number": 8,
+          "title": "Functions and Modular Code",
+          "objectives": [
+            "Identify the syntax for defining and calling functions in Python.",
+            "Differentiate between parameters and arguments for data passing.",
+            "Implement return statements to output data from functions compared to printing.",
+            "Explain the difference between local and global variable scope using the LEGB rule.",
+            "Apply modular programming principles to refactor redundant code into reusable blocks."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Recap of basic input/output (input() and print()) and variable assignment",
+            "Introduction to DRY (Don't Repeat Yourself) principles and why we use functions",
+            "Defining functions: The 'def' keyword, naming conventions (snake_case), and mandatory indentation",
+            "Data Passing: Understanding parameters (placeholders) versus arguments (actual values)",
+            "Flow of Execution: How 'return' sends data back to the caller versus how 'print' displays data to the console",
+            "Variable Scope and Memory: Understanding the LEGB rule (Local, Enclosing, Global, Built-in)",
+            "Documentation: Writing docstrings for clarity and maintainability",
+            "Toward the Synthesis Project: How modular functions build the foundation for the final capstone project"
+          ],
+          "activities": [
+            "Live Coding: Create a 'Greeter' function that takes a name and returns a formatted string.",
+            "The Return vs. Print Lab: Modify an existing function to 'return' a value for use in a secondary calculation, demonstrating memory persistence.",
+            "Function Refactoring: Take a script with repeated math operations (from Lesson 3) and rewrite it using cohesive, single-responsibility functions.",
+            "Scope Challenge: Debug a script where local variables are incorrectly accessed globally, illustrating 'NameError' exceptions.",
+            "Building a Modular Calculator: Create a program where arithmetic operations are isolated functions, preparing for the Lesson 10 Synthesis Project."
+          ],
+          "resources": [
+            "Python 3.x Documentation: Defining Functions",
+            "Python Tutor Visualizer: Stepping through code to see local vs. global scope in memory",
+            "VS Code or Replit Environment (setup covered in Lesson 1)",
+            "Guided Worksheet: Identifying DRY violations in legacy code"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). The Python Tutorial: Defining Functions. Python.org.",
+            "Lutz, M. (2013). Learning Python: Powerful Object-Oriented Programming. O'Reilly Media.",
+            "Sweigart, A. (2019). Automate the Boring Stuff with Python. No Starch Press.",
+            "Ambrose, S. A., et al. (2010). How Learning Works: Seven Research-Based Principles for Smart Teaching (Evidence-based Pedagogy Reference)."
+          ]
+        },
+        {
+          "lesson_number": 9,
+          "title": "Error Handling and Debugging",
+          "objectives": [
+            "Distinguish between syntax, logic, and runtime errors to apply the correct fix strategy",
+            "Interpret and navigate Python traceback messages to identify root causes of failures",
+            "Implement the try-except-else-finally architecture to manage runtime exceptions",
+            "Prevent program crashes by validating user input using proactive error handling",
+            "Apply basic debugging techniques using print statements and tracing logic"
+          ],
+          "content_outline": [
+            "The Three Tiers of Errors: Syntax (structure), Logic (incorrect results), and Runtime (exceptions)",
+            "Anatomy of a Traceback: Reading Python error logs from the bottom up to identify line numbers and exception types",
+            "Defensive Programming: Using input() validation to prevent errors before they occur",
+            "The Exception Handling Pattern: Syntax and execution flow of 'try' and 'except'",
+            "Precision Handling: Catching specific exceptions (ValueError, TypeError, ZeroDivisionError) to avoid silencing unrelated bugs",
+            "Advanced Flow Control: Using 'else' for code that runs only on success, and 'finally' for mandatory cleanup (e.g., closing files)",
+            "Debugging Strategies: Rubber ducking, manual tracing, and using print() effectively to inspect variable states"
+          ],
+          "activities": [
+            "The Crash Test: Students write a script that intentionally crashes (e.g., dividing by zero or converting 'abc' to an int) and then wrap it in a try/except block.",
+            "Traceback Scavenger Hunt: Students analyze three real-world error logs to pinpoint the exact line and cause of failure.",
+            "The Robust Interface: Refactor an input-based script from a previous lesson to handle non-numeric text input without crashing, using a 'while True' loop and try/except.",
+            "Logic Error Detective: Students are given a 'broken' script that runs without crashing but produces the wrong output; they must use print() statements to find the mathematical flaw."
+          ],
+          "resources": [
+            "Integrated Development Environment (IDE) with a built-in terminal (VS Code, PyCharm, or Thonny)",
+            "Python Tutorial: Errors and Exceptions (Official Documentation)",
+            "Visual Python Tutor (online tool for stepping through code execution)",
+            "Worksheet: 'Common Python Exceptions and What They Mean'"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). Errors and Exceptions. Python 3.12 Documentation.",
+            "Matthes, E. (2023). Python Crash Course, 3rd Edition: A Hands-On, Project-Based Introduction to Programming. No Starch Press.",
+            "Fowler, M. (2018). Refactoring: Improving the Design of Existing Code. Addison-Wesley Professional."
+          ]
+        },
+        {
+          "lesson_number": 10,
+          "title": "Persistent Data: File I/O and the Synthesis Project",
+          "objectives": [
+            "Implement safe file handling using the 'with' statement and context managers to prevent memory leaks",
+            "Perform read and write operations on external text files using various access modes",
+            "Navigate file systems and resolve paths using the pathlib module for cross-platform stability",
+            "Synthesize all previously learned concepts (loops, logic, strings, and I/O) into a cohesive CLI application"
+          ],
+          "content_outline": [
+            "Prerequisite Review: Basic Input/Output (input() and print()) and String manipulation techniques",
+            "Introduction to Context Managers: How 'with' manages computer memory and ensures OS file closure",
+            "File Access Modes: Deep dive into 'r' (read), 'w' (write), 'a' (append), and '+ ' (updating)",
+            "Reading vs. Writing: Practical usage of .read(), .readlines(), .write(), and .writelines()",
+            "Modern Path Management: Using pathlib.Path to avoid errors across Windows and Unix-like systems",
+            "Exception Handling: Using try/except blocks for FileNotFoundError and PermissionError",
+            "Defining the Synthesis Project: Explanation of a 'Synthesis Project' as a cumulative assessment combining variables, logic, strings, and persistence"
+          ],
+          "activities": [
+            "Warm-up: Create a persistent 'Activity Log' that appends timestamps to a text file using 'a' mode",
+            "Data Parsing Practice: Open a text file and use string methods (.split, .strip) to clean and extract specific values",
+            "Guided Coding: Implement a robust file-check utility that validates file existence before attempting a read",
+            "Synthesis Project (The Data Summarizer): Develop a CLI tool that reads a source file (e.g., sales.txt), performs mathematical calculations on the data, and writes a formatted 'Summary_Report.txt'"
+          ],
+          "resources": [
+            "Official Python Documentation: Reading and Writing Files",
+            "Tutorial: String Methods and Text Processing in Python",
+            "Project Starter Kit: raw_sales_data.txt and template_script.py",
+            "Python 3.x Standard Library: pathlib documentation"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). Input and Output. Python 3.12 Documentation.",
+            "Sweigart, A. (2019). Automate the Boring Stuff with Python: Practical Programming for Total Beginners. No Starch Press (Chapter 9: Reading and Writing Files).",
+            "Ambrose, S. A., et al. (2010). How Learning Works: Seven Research-Based Principles for Smart Teaching. Jossey-Bass (Defining Synthesis in Pedagogical Frameworks)."
+          ]
+        }
+      ]
+    },
+    "research_sources": [
+      "Research: Python basics"
+    ],
+    "generation_metadata": {
+      "framework": "Orchestral AI (Enhanced)",
+      "patterns_demonstrated": [
+        "Provider-agnostic design",
+        "CheapLLM (auto cost optimization)",
+        "Subagent pattern (gap assessment)",
+        "HOOK+SUBAGENT (gap-driven refinement)",
+        "Context cost tracking",
+        "Synchronous execution"
+      ],
+      "providers_used": {
+        "cheap": "CheapLLM (DeepSeek V3.2)",
+        "balanced": "BalancedLLM (Gemini 3 Flash)"
+      },
+      "iteration_costs": [
+        {
+          "iteration": 1,
+          "cost": 0.00338552
+        }
+      ],
+      "refinement_iterations": 1
+    }
+  },
+  "enhanced_course": {
+    "syllabus": {
+      "course_title": "Python Foundations: From Logic to Application",
+      "course_objective": "To provide learners with a rigorous foundation in Python syntax, logical programming structures, and hands-on problem-solving skills through a structured, evidence-based pedagogy.",
+      "target_audience": "General learners",
+      "difficulty_level": "Intermediate",
+      "lessons": [
+        {
+          "lesson_number": 1,
+          "title": "Foundation and Environment: Getting Started with Python",
+          "objectives": [
+            "Identify prerequisites including basic computer literacy and fundamental arithmetic required for programming.",
+            "Successfully install the Python interpreter and verify environment variables (PATH).",
+            "Configure a professional Integrated Development Environment (IDE) for script management.",
+            "Execute basic Input/Output operations using the print() function and the standard REPL.",
+            "Define the Evidence-Based Pedagogy framework (Active Recall and Scaffolding) used throughout this course."
+          ],
+          "content_outline": [
+            "Course Prerequisites: Basic file management skills and middle-school level algebra (operators).",
+            "The Python Ecosystem: Understanding Python's role as a high-level, interpreted language.",
+            "Installation & Environment: Downloading Python 3.x, verifying versions, and an overview of the PATH variable.",
+            "Development Tools: Comparative analysis of VS Code and PyCharm; why we use scripts vs. the REPL.",
+            "Foundational I/O: Introduction to the print() function for user output.",
+            "Pedagogical Framework: Explanation of the 'Synthesis Project' (cumulative final) and how 'Memory' lessons relate to Variable assignment and RAM."
+          ],
+          "activities": [
+            "System Configuration: Guided installation of Python 3.x and VS Code.",
+            "REPL Interaction: Using the Read-Eval-Print Loop as a persistent calculator to test basic arithmetic (+, -, *, /).",
+            "The 'Hello World' Script: Creating, saving, and executing a .py file via the terminal.",
+            "Error Literacy: Introduction to SyntaxError by intentionally breaking code (missing quotes) to build debugging confidence.",
+            "Initial Diagnostic: A short quiz on mathematical operator precedence to ensure prerequisite alignment."
+          ],
+          "resources": [
+            "Python.org Installation Hub: https://www.python.org/downloads/",
+            "Visual Studio Code - Python Setup Guide: https://code.visualstudio.com/docs/python/python-tutorial",
+            "Real Python: 'Python 3 Installation & Setup Guide'"
+          ],
+          "citations": [
+            "Van Rossum, G., & Drake, F. L. (2009). Python 3 Reference Manual. CreateSpace.",
+            "Brown, P. C., Roediger, H. L., & McDaniel, M. A. (2014). Make It Stick: The Science of Successful Learning (Context for Pedagogy).",
+            "Matthes, E. (2023). Python Crash Course, 3rd Edition. No Starch Press."
+          ]
+        },
+        {
+          "lesson_number": 2,
+          "title": "Data Foundations: Variables, Types, and Basic I/O",
+          "objectives": [
+            "Differentiate between primitive data types: integers (int), floats (float), strings (str), and booleans (bool).",
+            "Analyze Python's memory model where variables act as labels referring to objects in computer RAM.",
+            "Perform basic user interactions using the input() and print() functions.",
+            "Apply PEP 8 naming conventions to ensure code readability and professional standards.",
+            "Utilize the type() and id() functions to inspect data types and memory addresses."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Verification of environment setup (Python/IDE) and basic computer literacy.",
+            "Mental Models of Memory: Moving from 'variables as boxes' to 'variables as name-tags' (references) in computer memory.",
+            "Introduction to Basic I/O: Capturing user text via input() and displaying results via print().",
+            "Numeric Types & Math Prep: Decimals (floats) vs. Whole numbers (ints) and their hardware representation.",
+            "String Fundamentals: Initial introduction to text data as a sequence of characters.",
+            "Dynamic Typing: Understanding how Python determines types at runtime without explicit declaration.",
+            "Variable Semantics: Legal syntax vs. PEP 8 stylistic best practices (snake_case)."
+          ],
+          "activities": [
+            "Interactive Shell Exercise: Using id() to reveal the 'address' of a variable in memory.",
+            "The 'Greeter' Script: Writing a program that asks for a user's name (str) and age (int), then prints a customized message.",
+            "Conversion Lab: Experimenting with type casting (e.g., int('5')) to resolve errors when input() returns a string.",
+            "Variable Naming Audit: A peer-review activity identifying 'bad' variable names (e.g., 1_var, MyVariable, x) and correcting them to PEP 8 standards."
+          ],
+          "resources": [
+            "Python 3 Documentation: Built-in Functions (input, print, type)",
+            "Thonny IDE: Visualizer tool (highly recommended for seeing variables in memory)",
+            "PEP 8 -- Style Guide for Python Code (Naming Conventions section)"
+          ],
+          "citations": [
+            "Van Rossum, G., & Drake, F. L. (2023). Python 3.12 Documentation. Python Software Foundation.",
+            "Ramalho, L. (2022). Fluent Python: Clear, Concise, and Effective Programming. O'Reilly Media.",
+            "Sweigart, A. (2019). Automate the Boring Stuff with Python. No Starch Press."
+          ]
+        },
+        {
+          "lesson_number": 3,
+          "title": "Operators and Expressions",
+          "objectives": [
+            "Perform mathematical calculations using arithmetic operators and understand the difference between floor and true division",
+            "Apply comparison operators to evaluate truth statements and control data flow",
+            "Utilize logical operators (and, or, not) to evaluate multi-condition boolean expressions",
+            "Apply the Order of Operations (PEMDAS) to resolve complex code expressions correctly",
+            "Manipulate text data using string concatenation and repetition operators",
+            "Implement basic user interaction using the input() and print() functions for dynamic expressions"
+          ],
+          "content_outline": [
+            "Prerequisite Review: Basic Algebra and Python Variable Assignment",
+            "Introduction to I/O: Capturing user input via input() and displaying results with print()",
+            "Arithmetic Operators: Basic math (+, -, *, /) vs. Floor Division (//), Modulo (%), and Exponentiation (**)",
+            "Comparison Operators: Evaluating equality (==, !=) and magnitude (>, <, >=, <=)",
+            "Logical Operators: Building complex truth statements with 'and', 'or', and 'not'",
+            "The Order of Operations: Applying PEMDAS/BODMAS in a programming context",
+            "Basic String Manipulation: Concatenation (+) and Repetition (*)",
+            "Augmented Assignment: Simplifying updates to variables (e.g., +=, -=)"
+          ],
+          "activities": [
+            "Interactive Input Drill: Create a program that asks for a user's name and birth year, then calculates and prints their approximate age",
+            "The 'Remainder' Challenge: Use the modulo operator to determine if dynamic user input is an even or odd number",
+            "Logical Gate Simulator: Predicting outcome values for nested logical expressions on paper before verifying in the IDE",
+            "Precedence Puzzle: Writing a single line of code that uses five different operators to reach a specific target number",
+            "Greeter Tool: Constructing a multi-line formatted string using string multiplication and concatenation"
+          ],
+          "resources": [
+            "Python 3.x IDLE, VS Code, or Jupyter Notebook environment",
+            "Python Tutor (pythontutor.com) for visualizing operator precedence and variable state",
+            "Digital Handout: 'Python Operator Cheat Sheet & PEMDAS Guide'",
+            "Exercise Set: 'Logical Operators and Truth Tables'"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). Expressions: Operator precedence. Python 3 Documentation.",
+            "Matthes, E. (2019). Python Crash Course: A Hands-On, Project-Based Introduction to Programming. No Starch Press.",
+            "Lutz, M. (2013). Learning Python: Powerful Object-Oriented Programming. O'Reilly Media."
+          ]
+        },
+        {
+          "lesson_number": 4,
+          "title": "Control Flow: Conditional Logic and User Input",
+          "objectives": [
+            "Utilize the input() function to capture and cast user data for use in logic",
+            "Implement branching logic in programs using if, elif, and else statements",
+            "Evaluate complex boolean expressions using comparison and logical operators",
+            "Identify and apply the concept of truthiness and falsiness in Python objects",
+            "Construct nested conditional structures while maintaining readable code"
+          ],
+          "content_outline": [
+            "Prerequisite Review: Basic computer literacy and Python environment setup",
+            "Basic I/O: Capturing user input with input() and printing results with print()",
+            "Data Type Casting: Converting string input to integers/floats for logical comparison",
+            "Comparison Operators (==, !=, <, >, <=, >=) and Boolean types",
+            "The 'if' statement: Syntax, colon usage, and the significance of indentation (PEP 8)",
+            "Alternative paths: Using 'else' and 'elif' for mutually exclusive conditions",
+            "Logical Operators: Combining conditions with 'and', 'or', and 'not'",
+            "Pythonic Truthiness: Understanding Falsy values (0, '', None, []) vs Truthy values",
+            "Nested Conditionals and the 'Guard Clause' pattern to avoid deep nesting"
+          ],
+          "activities": [
+            "Code-along: Creating an interactive 'Admission Fee' calculator that asks for user age",
+            "Predictive Quiz: Determining the outcome of Truthy/Falsy evaluations in complex expressions",
+            "Debugging: Restructuring a 'deeply nested' block into a clean, flat conditional structure",
+            "Mini-Project: Text-based Decision Engine (Interpreting user text commands to navigate a scenario)"
+          ],
+          "resources": [
+            "Python 3.x Interpreter (following the installation guide from Lesson 1)",
+            "Visual execution tool: PythonTutor.com for tracing indentation-based logic",
+            "Official Python Documentation: 'More Control Flow Tools' and 'Built-in Functions (input)'",
+            "Logic Table Cheat Sheet: AND/OR/NOT operations summarized"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). 'More Control Flow Tools.' Python 3.12 Documentation.",
+            "Sweigart, A. (2019). 'Automate the Boring Stuff with Python.' No Starch Press.",
+            "Matthes, E. (2019). 'Python Crash Course.' No Starch Press.",
+            "Ambrose, S. A., et al. (2010). 'How Learning Works: Seven Research-Based Principles for Smart Teaching' (Evidence-based pedagogy reference for scaffolding logical concepts)."
+          ]
+        },
+        {
+          "lesson_number": 5,
+          "title": "Iteration: Mastering Loops and Sequential Logic",
+          "objectives": [
+            "Identify scenarios where automation through loops is more efficient than manual coding",
+            "Implement 'for' loops to iterate over text strings and list structures",
+            "Define and control 'while' loops using conditional logic to prevent infinite execution",
+            "Apply 'break' and 'continue' statements to modify loop flow dynamically based on runtime input",
+            "Utilize the 'range()' function to generate specific sequences of numbers for arithmetic iteration"
+          ],
+          "content_outline": [
+            "The Concept of Iteration: Automating repetitive tasks in computer memory",
+            "Prerequisite Review: Quick recap of Booleans and strings as sequential data",
+            "The 'for' loop: Syntax, indentation rules, and iterating through text/strings",
+            "Numeric ranges: Master the range(start, stop, step) function and its 'exclusive stop' behavior",
+            "The 'while' loop: Logic-driven repetition and the importance of updating control variables",
+            "Loop Control Flow: Using 'break' to exit and 'continue' to skip (The 'Early Exit' pattern)",
+            "Nested Loops: Introduction to hierarchical iteration (e.g., rows and columns)",
+            "Common Pitfalls: Preventing infinite loops and solving off-by-one errors"
+          ],
+          "activities": [
+            "Instructional Trace: Using 'Python Tutor' to visualize how variables change in memory during each loop cycle",
+            "Code Along: Printing the squares of numbers 1-10 using range() and formatted print statements",
+            "Debugging Challenge: Diagnosing and fixing a 'while' loop that lacks a decrement/increment, causing an infinite loop",
+            "Text Processor: Iterate through a user-provided string to count vowels, skipping consonants using 'continue'",
+            "Mini-Project: 'Secure Login' \u2013 Create a program that requests user input and grants 3 attempts before locking the system",
+            "Predictive Quiz: Analyzing code snippets with break/continue to determine the final value of trackers"
+          ],
+          "resources": [
+            "Python 3.x Interpreter (established in Lesson 1: Getting Started)",
+            "Python Tutor Visualizer (Online tool for tracing execution logic)",
+            "Official Python Documentation: Control Flow Tools (Section 4.2-4.4)",
+            "Guided Worksheet: 'The Logic of Range and Off-by-One Errors'"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). More Control Flow Tools. Python 3.12 Documentation.",
+            "Matthes, E. (2019). Python Crash Course: A Hands-On, Project-Based Introduction to Programming. No Starch Press.",
+            "Sweigart, A. (2019). Automate the Boring Stuff with Python. No Starch Press.",
+            "Ambrosio, M. (2021). Evidence-Based Pedagogy: The Role of Retrieval Practice in Programming Education."
+          ]
+        },
+        {
+          "lesson_number": 6,
+          "title": "Data Structures: Lists and Tuples",
+          "objectives": [
+            "Identify the syntax and use cases for lists versus tuples",
+            "Explain the technical and practical differences between mutability and immutability relative to computer memory",
+            "Perform data manipulation using indexing, slicing, and built-in sequence methods",
+            "Apply basic text-processing techniques by converting strings to lists and vice versa",
+            "Implement tuple unpacking and list iteration to process structured datasets"
+          ],
+          "content_outline": [
+            "Introduction to Sequences: Defining square-bracket lists [] and parenthetical tuples ()",
+            "Memory and Mutability: How Python stores lists (dynamic) vs. tuples (fixed) in memory",
+            "Accessing Data: Deep dive into zero-based indexing and slicing [start:stop:step] mechanics",
+            "List Dynamics: Growing and shrinking collections with .append(), .insert(), .extend(), .pop(), and .remove()",
+            "Interfacing with Text: String manipulation using .split() and .join() to transition between text and lists",
+            "Tuple Mechanics: Performance benefits, data integrity, and the 'immutability' constraint",
+            "Advanced Assignment: Tuple unpacking and using the * (starred) expression for flexible data extraction",
+            "Traversal: Iterating through collections using 'for' loops (Logical progression from Lesson 5 Control Flow)"
+          ],
+          "activities": [
+            "Memory Visualization Lab: Use a Python visualizer to watch how 'mutating' a list changes a reference while 'changing' a tuple creates a new object",
+            "Text Processing Challenge: Take a multi-line string of user input, split it into a list of words, sort them, and join them back into a formatted paragraph",
+            "The 'Stack' Simulation: Implement a simple Undo/Redo mechanism using list .append() and .pop() methods",
+            "Structural Debugging: Practice identifying and fixing the 'TypeError: 'tuple' object does not support item assignment'",
+            "Inventory Report: Write a script that iterates through a list of tuples (representing item names and quantities) and prints a formatted status report"
+          ],
+          "resources": [
+            "Python Documentation: Section 3.1.3 (Lists) and 5.3 (Tuples and Sequences)",
+            "Jupyter Notebook: 'Lesson_6_Sequences_and_Text_Manipulation.ipynb'",
+            "Python Tutor (Online Visualizer): Tool for viewing memory allocation of mutable vs. immutable objects",
+            "Concept Map: When to use Lists vs. Tuples vs. Strings"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). Data Structures. Python 3.12 Documentation.",
+            "Matthes, E. (2019). Python Crash Course: A Hands-On, Project-Based Introduction to Programming. No Starch Press.",
+            "Ramalho, L. (2022). Fluent Python: Clear, Concise, and Effective Programming. O'Reilly Media."
+          ]
+        },
+        {
+          "lesson_number": 7,
+          "title": "Data Structures: Dictionaries and Sets",
+          "objectives": [
+            "Map keys to values for efficient retrieval and understand the role of computer memory in storage",
+            "Manage unique item sets and utilize hash-based membership testing for performance",
+            "Differentiate between mutable and immutable types to identify requirements for hashability",
+            "Apply common dictionary and set methods to solve complex data organization problems",
+            "Integrate user input/output and string formatting within data structure manipulation"
+          ],
+          "content_outline": [
+            "Contextualizing Memory: How dictionaries and sets use hashing to achieve near-instant lookups compared to sequential lists.",
+            "Dictionary Fundamentals: Syntax, key-value pairs, and the importance of using descriptive string keys (Review of String literal usage).",
+            "Safe Data Retrieval: Accessing values, handling KeyErrors, and the utility of the .get() method for default values.",
+            "Dynamic Dictionary Management: Adding, updating, and removing entries using user input() data.",
+            "The Concept of Hashability: Deep dive into why keys must be immutable (Strings, Numbers, Tuples) and why mutable lists cannot be keys.",
+            "Set Fundamentals: Unordered collections, uniqueness constraints, and removing duplicates from noisy text data.",
+            "Mathematical Set Logic: Performing union (|), intersection (&), and difference (-) operations to analyze overlapping datasets.",
+            "Iteration and Formatting: Using .items() to generate formatted string reports from stored data structures."
+          ],
+          "activities": [
+            "Interactive Terminal App: Build a 'Contact Manager' that takes user input to add names (keys) and phone numbers (values) to a dictionary.",
+            "Data Cleaning Lab: Take a list of strings containing duplicate names and use a Set to generate a unique list of participants.",
+            "Set Logic Challenge: Use intersection and difference operations to compare two lists of 'Registered Users' and 'Logged In Users'.",
+            "Debugging Workshop: Predict and fix the 'TypeError: unhashable type' when attempting to use a list as a dictionary key."
+          ],
+          "resources": [
+            "Python Documentation: Mapping Types \u2014 dict",
+            "Python Documentation: Set Types \u2014 set, frozenset",
+            "PythonTutor.com: Visualizing references, memory addresses, and hash tables",
+            "VS Code or Replit for local/cloud development environment execution"
+          ],
+          "citations": [
+            "Van Rossum, G., & Drake, F. L. (2023). Python 3.12 documentation. Python Software Foundation.",
+            "Lutz, M. (2013). Learning Python: Powerful Object-Oriented Programming. O'Reilly Media.",
+            "Ramalho, L. (2022). Fluent Python: Clear, Concise, and Effective Programming. O'Reilly Media.",
+            "Ambrose, S. A., et al. (2010). How Learning Works: Seven Research-Based Principles for Smart Teaching. Jossey-Bass. (Basis for Evidence-Based Scaffolding)."
+          ]
+        },
+        {
+          "lesson_number": 8,
+          "title": "Functions and Modular Code",
+          "objectives": [
+            "Identify the syntax for defining and calling functions in Python.",
+            "Differentiate between parameters and arguments for data passing.",
+            "Implement return statements to output data from functions compared to printing.",
+            "Explain the difference between local and global variable scope using the LEGB rule.",
+            "Apply modular programming principles to refactor redundant code into reusable blocks."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Recap of basic input/output (input() and print()) and variable assignment",
+            "Introduction to DRY (Don't Repeat Yourself) principles and why we use functions",
+            "Defining functions: The 'def' keyword, naming conventions (snake_case), and mandatory indentation",
+            "Data Passing: Understanding parameters (placeholders) versus arguments (actual values)",
+            "Flow of Execution: How 'return' sends data back to the caller versus how 'print' displays data to the console",
+            "Variable Scope and Memory: Understanding the LEGB rule (Local, Enclosing, Global, Built-in)",
+            "Documentation: Writing docstrings for clarity and maintainability",
+            "Toward the Synthesis Project: How modular functions build the foundation for the final capstone project"
+          ],
+          "activities": [
+            "Live Coding: Create a 'Greeter' function that takes a name and returns a formatted string.",
+            "The Return vs. Print Lab: Modify an existing function to 'return' a value for use in a secondary calculation, demonstrating memory persistence.",
+            "Function Refactoring: Take a script with repeated math operations (from Lesson 3) and rewrite it using cohesive, single-responsibility functions.",
+            "Scope Challenge: Debug a script where local variables are incorrectly accessed globally, illustrating 'NameError' exceptions.",
+            "Building a Modular Calculator: Create a program where arithmetic operations are isolated functions, preparing for the Lesson 10 Synthesis Project."
+          ],
+          "resources": [
+            "Python 3.x Documentation: Defining Functions",
+            "Python Tutor Visualizer: Stepping through code to see local vs. global scope in memory",
+            "VS Code or Replit Environment (setup covered in Lesson 1)",
+            "Guided Worksheet: Identifying DRY violations in legacy code"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). The Python Tutorial: Defining Functions. Python.org.",
+            "Lutz, M. (2013). Learning Python: Powerful Object-Oriented Programming. O'Reilly Media.",
+            "Sweigart, A. (2019). Automate the Boring Stuff with Python. No Starch Press.",
+            "Ambrose, S. A., et al. (2010). How Learning Works: Seven Research-Based Principles for Smart Teaching (Evidence-based Pedagogy Reference)."
+          ]
+        },
+        {
+          "lesson_number": 9,
+          "title": "Error Handling and Debugging",
+          "objectives": [
+            "Distinguish between syntax, logic, and runtime errors to apply the correct fix strategy",
+            "Interpret and navigate Python traceback messages to identify root causes of failures",
+            "Implement the try-except-else-finally architecture to manage runtime exceptions",
+            "Prevent program crashes by validating user input using proactive error handling",
+            "Apply basic debugging techniques using print statements and tracing logic"
+          ],
+          "content_outline": [
+            "The Three Tiers of Errors: Syntax (structure), Logic (incorrect results), and Runtime (exceptions)",
+            "Anatomy of a Traceback: Reading Python error logs from the bottom up to identify line numbers and exception types",
+            "Defensive Programming: Using input() validation to prevent errors before they occur",
+            "The Exception Handling Pattern: Syntax and execution flow of 'try' and 'except'",
+            "Precision Handling: Catching specific exceptions (ValueError, TypeError, ZeroDivisionError) to avoid silencing unrelated bugs",
+            "Advanced Flow Control: Using 'else' for code that runs only on success, and 'finally' for mandatory cleanup (e.g., closing files)",
+            "Debugging Strategies: Rubber ducking, manual tracing, and using print() effectively to inspect variable states"
+          ],
+          "activities": [
+            "The Crash Test: Students write a script that intentionally crashes (e.g., dividing by zero or converting 'abc' to an int) and then wrap it in a try/except block.",
+            "Traceback Scavenger Hunt: Students analyze three real-world error logs to pinpoint the exact line and cause of failure.",
+            "The Robust Interface: Refactor an input-based script from a previous lesson to handle non-numeric text input without crashing, using a 'while True' loop and try/except.",
+            "Logic Error Detective: Students are given a 'broken' script that runs without crashing but produces the wrong output; they must use print() statements to find the mathematical flaw."
+          ],
+          "resources": [
+            "Integrated Development Environment (IDE) with a built-in terminal (VS Code, PyCharm, or Thonny)",
+            "Python Tutorial: Errors and Exceptions (Official Documentation)",
+            "Visual Python Tutor (online tool for stepping through code execution)",
+            "Worksheet: 'Common Python Exceptions and What They Mean'"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). Errors and Exceptions. Python 3.12 Documentation.",
+            "Matthes, E. (2023). Python Crash Course, 3rd Edition: A Hands-On, Project-Based Introduction to Programming. No Starch Press.",
+            "Fowler, M. (2018). Refactoring: Improving the Design of Existing Code. Addison-Wesley Professional."
+          ]
+        },
+        {
+          "lesson_number": 10,
+          "title": "Persistent Data: File I/O and the Synthesis Project",
+          "objectives": [
+            "Implement safe file handling using the 'with' statement and context managers to prevent memory leaks",
+            "Perform read and write operations on external text files using various access modes",
+            "Navigate file systems and resolve paths using the pathlib module for cross-platform stability",
+            "Synthesize all previously learned concepts (loops, logic, strings, and I/O) into a cohesive CLI application"
+          ],
+          "content_outline": [
+            "Prerequisite Review: Basic Input/Output (input() and print()) and String manipulation techniques",
+            "Introduction to Context Managers: How 'with' manages computer memory and ensures OS file closure",
+            "File Access Modes: Deep dive into 'r' (read), 'w' (write), 'a' (append), and '+ ' (updating)",
+            "Reading vs. Writing: Practical usage of .read(), .readlines(), .write(), and .writelines()",
+            "Modern Path Management: Using pathlib.Path to avoid errors across Windows and Unix-like systems",
+            "Exception Handling: Using try/except blocks for FileNotFoundError and PermissionError",
+            "Defining the Synthesis Project: Explanation of a 'Synthesis Project' as a cumulative assessment combining variables, logic, strings, and persistence"
+          ],
+          "activities": [
+            "Warm-up: Create a persistent 'Activity Log' that appends timestamps to a text file using 'a' mode",
+            "Data Parsing Practice: Open a text file and use string methods (.split, .strip) to clean and extract specific values",
+            "Guided Coding: Implement a robust file-check utility that validates file existence before attempting a read",
+            "Synthesis Project (The Data Summarizer): Develop a CLI tool that reads a source file (e.g., sales.txt), performs mathematical calculations on the data, and writes a formatted 'Summary_Report.txt'"
+          ],
+          "resources": [
+            "Official Python Documentation: Reading and Writing Files",
+            "Tutorial: String Methods and Text Processing in Python",
+            "Project Starter Kit: raw_sales_data.txt and template_script.py",
+            "Python 3.x Standard Library: pathlib documentation"
+          ],
+          "citations": [
+            "Python Software Foundation. (2023). Input and Output. Python 3.12 Documentation.",
+            "Sweigart, A. (2019). Automate the Boring Stuff with Python: Practical Programming for Total Beginners. No Starch Press (Chapter 9: Reading and Writing Files).",
+            "Ambrose, S. A., et al. (2010). How Learning Works: Seven Research-Based Principles for Smart Teaching. Jossey-Bass (Defining Synthesis in Pedagogical Frameworks)."
+          ]
+        }
+      ]
+    },
+    "quality_score": {
+      "score": 0.88,
+      "feedback": "This is a well-structured, comprehensive syllabus for a Python fundamentals course. The progression from basic syntax to more complex concepts is logical and pedagogically sound. The lesson titles are clear, objectives are specific and measurable, and topics are appropriately scoped for each lesson. The course builds toward a practical synthesis project, which provides good application of learned concepts.",
+      "issues": [
+        "Lesson 1 objectives could be more challenging - 'Execute basic print statements' is very minimal; consider adding something about understanding program execution flow.",
+        "Lesson 9 appears before file I/O (Lesson 10), but error handling is often more meaningful when applied to file operations; consider reorganizing or integrating error handling with file I/O.",
+        "No explicit mention of string formatting or f-strings, which are fundamental Python features.",
+        "The syllabus doesn't mention code style (PEP 8) or documentation/comments, which are important for beginners.",
+        "While the course objective mentions 'evidence-based pedagogy,' the syllabus structure doesn't explicitly show how this pedagogy is implemented in lesson design or assessments."
+      ],
+      "iteration": 1
+    },
+    "gap_assessment": {
+      "gaps_found": [
+        "Lesson 3 (Operators and Expressions) appears before Lesson 4 (Control Flow: Conditional Logic and User Input), but operators are typically introduced alongside or immediately before conditional logic to enable practical application. The separation might create a gap where learners understand operators but can't yet use them meaningfully in programs.",
+        "Lesson 9 (Error Handling and Debugging) comes after Lesson 8 (Functions and Modular Code), but basic debugging concepts (like print statements) should be introduced much earlier when learners start writing code that might fail.",
+        "The transition from Lesson 5 (Iteration) to Lesson 6 (Data Structures) is logical, but there's no explicit mention of how loops will be applied to data structures - this connection should be emphasized."
+      ],
+      "missing_prerequisites": [
+        "No explicit lesson on basic programming concepts before diving into Python syntax (e.g., what is a program, algorithms, computational thinking).",
+        "No early introduction to basic debugging techniques or reading error messages - essential for beginners when they inevitably make syntax errors.",
+        "No mention of code comments or documentation practices, which should be introduced early to encourage good habits."
+      ],
+      "unclear_concepts": [
+        "The relationship between 'Logic' in the course title and the actual content isn't clear from the lesson titles alone.",
+        "What 'evidence-based pedagogy' means in practice isn't explained for the beginner.",
+        "The 'Synthesis Project' in Lesson 10 sounds advanced but has no context - what skills will it synthesize?",
+        "The distinction between 'Data Foundations' (Lesson 2) and 'Operators and Expressions' (Lesson 3) might be confusing - are they separate concepts or deeply intertwined?"
+      ],
+      "recommendations": [
+        "Add a preliminary lesson on computational thinking and what programming actually is before diving into Python.",
+        "Introduce basic debugging techniques earlier (perhaps in Lesson 2 or 3) when learners first encounter errors.",
+        "Consider combining Lessons 3 and 4 to show operators in the context of conditional logic.",
+        "Add a lesson between 5 and 6 that bridges loops and data structures explicitly.",
+        "Include code documentation/comments as an early lesson or integrate throughout.",
+        "Clarify what 'synthesis' means in the final project - list specific skills from previous lessons that will be combined."
+      ],
+      "ready_for_publication": false
+    },
+    "cost_breakdown": {
+      "research_cost": 0.00034710000000000003,
+      "syllabus_cost": 0.002976,
+      "quality_loop_cost": 0.00040951999999999997,
+      "lesson_generation_cost": 0.015573,
+      "gap_assessment_cost": 0.00049996,
+      "gap_refinement_cost": 0.023451500000000004,
+      "total_cost": 0.04325708,
+      "total_tokens": 26907
+    },
+    "research_sources": [
+      "Research: Python basics"
+    ],
+    "generation_metadata": {
+      "framework": "Orchestral AI (Enhanced)",
+      "patterns_demonstrated": [
+        "Provider-agnostic design",
+        "CheapLLM (auto cost optimization)",
+        "Subagent pattern (gap assessment)",
+        "HOOK+SUBAGENT (gap-driven refinement)",
+        "Context cost tracking",
+        "Synchronous execution"
+      ],
+      "providers_used": {
+        "cheap": "CheapLLM (DeepSeek V3.2)",
+        "balanced": "BalancedLLM (Gemini 3 Flash)"
+      },
+      "iteration_costs": [
+        {
+          "iteration": 1,
+          "cost": 0.00338552
+        }
+      ],
+      "refinement_iterations": 1
+    }
+  },
+  "metrics": {
+    "framework": "Orchestral AI (Enhanced)",
+    "start_time": "2026-01-16T11:09:15.196688",
+    "end_time": "2026-01-16T11:12:29.068840",
+    "total_tokens": 26907,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "api_calls": 26,
+    "jina_calls": 13,
+    "errors": [],
+    "duration_seconds": 193.872152
+  }
+}

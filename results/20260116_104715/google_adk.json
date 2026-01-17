@@ -1,0 +1,917 @@
+{
+  "framework": "Google ADK",
+  "success": true,
+  "error": null,
+  "console_output": [
+    "[Google ADK] \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+    "[Google ADK] GOOGLE ADK ENHANCED WORKFLOW",
+    "[Google ADK] Demonstrating: ParallelAgent, LoopAgent, AgentTool patterns",
+    "[Google ADK] \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+    "[Google ADK] \n\u250c\u2500 PHASE 1: Topic Extraction",
+    "[Google ADK] \u2502  LlmAgent: TopicExtractor (Haiku - cheap)",
+    "[Google ADK] \u2502  \u2192 output_key='topic': Introduction to Machine Learning",
+    "[Google ADK] \u2514\u2500 Cost so far: $0.0000",
+    "[Google ADK] \n\u250c\u2500 PHASE 2: Parallel Research (ParallelAgent)",
+    "[Google ADK] \u2502  ADK PATTERN: Native parallel agent execution",
+    "[Google ADK] \u2502  FunctionTool: jina_search (parallel queries)",
+    "[Google ADK] \u2502  \u2192 Executing 3 research agents in parallel...",
+    "[Google ADK] \u2502  \u2192 Parallel research complete (3 agents)",
+    "[Google ADK] \u2514\u2500 Cost so far: $0.0004",
+    "[Google ADK] \n\u250c\u2500 PHASE 3: Syllabus Creation",
+    "[Google ADK] \u2502  LlmAgent: SyllabusCreator (Sonnet - balanced)",
+    "[Google ADK] \u2502  \u2192 output_key='syllabus_json': 10 lessons",
+    "[Google ADK] \u2514\u2500 Cost so far: $0.0045",
+    "[Google ADK] \n\u250c\u2500 PHASE 4: Quality Refinement (LoopAgent)",
+    "[Google ADK] \u2502  ADK PATTERN: LoopAgent with escalation signal",
+    "[Google ADK] \u2502  max_iterations=3, escalation when quality >= 0.8",
+    "[Google ADK] \u2502  LoopIteration 1:",
+    "[Google ADK] \u2502    \u2192 Quality score: 0.88",
+    "[Google ADK] \u2502    \u2192 Feedback: This is a well-structured syllabus that provides a...",
+    "[Google ADK] \u2502    \u2192 ESCALATION: Quality threshold met!",
+    "[Google ADK] \u2502  \u2192 Quality loop complete after 1 iterations",
+    "[Google ADK] \u2514\u2500 Cost so far: $0.0049",
+    "[Google ADK] \n\u250c\u2500 PHASE 5: Human Approval Checkpoint",
+    "[Google ADK] \u2502  ADK PATTERN: Callback hook for human-in-the-loop",
+    "[Google ADK] \u2502  Syllabus ready for review:",
+    "[Google ADK] \u2502    - Title: Introduction to Machine Learning: From Foundations to Deployment",
+    "[Google ADK] \u2502    - Lessons: 10",
+    "[Google ADK] \u2502    - Quality: 0.88",
+    "[Google ADK] \u2502  [AUTO-APPROVED for demo]",
+    "[Google ADK] \u2514\u2500 Proceeding to lesson generation...",
+    "[Google ADK] \n\u250c\u2500 PHASE 6: Lesson Generation (LoopAgent)",
+    "[Google ADK] \u2502  ADK PATTERN: LoopAgent with FunctionTool + LlmAgent",
+    "[Google ADK] \u2502  LoopIteration 1: Introduction to the Machine Learning Ecosystem",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('Introduction to the Machine Learning Ecosystem')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  LoopIteration 2: Data Preprocessing and Exploratory Data Analysis (EDA)",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('Data Preprocessing and Exploratory Data Analysis (EDA)')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  LoopIteration 3: Linear Regression: Predicting Continuous Values",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('Linear Regression: Predicting Continuous Values')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  LoopIteration 4: Classification I: Logistic Regression and KNN",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('Classification I: Logistic Regression and KNN')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  LoopIteration 5: Model Evaluation and Hyperparameter Tuning",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('Model Evaluation and Hyperparameter Tuning')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  LoopIteration 6: Decision Trees and Random Forests",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('Decision Trees and Random Forests')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  LoopIteration 7: Support Vector Machines (SVM) and Kernel Methods",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('Support Vector Machines (SVM) and Kernel Methods')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  LoopIteration 8: Unsupervised Learning: Clustering and PCA",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('Unsupervised Learning: Clustering and PCA')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  LoopIteration 9: Introduction to Neural Networks and Deep Learning",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('Introduction to Neural Networks and Deep Learning')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  LoopIteration 10: ML Ethics, Best Practices, and Deployment",
+    "[Google ADK] \u2502    \u2192 FunctionTool: jina_search('ML Ethics, Best Practices, and Deployment')",
+    "[Google ADK] \u2502    \u2192 output_key='current_lesson': Complete",
+    "[Google ADK] \u2502  \u2192 Generated 10 lessons",
+    "[Google ADK] \u2514\u2500 Cost so far: $0.0217",
+    "[Google ADK] \n\u250c\u2500 PHASE 7: Gap Assessment (AgentTool)",
+    "[Google ADK] \u2502  ADK PATTERN: Agent wrapped as tool (AgentTool)",
+    "[Google ADK] \u2502  Student simulation reviews course for gaps",
+    "[Google ADK] \u2502  \u2192 Invoking AgentTool: GapAssessor",
+    "[Google ADK] \u2502  \u2192 Gaps found: 3",
+    "[Google ADK] \u2502  \u2192 Ready for publication: False",
+    "[Google ADK] \u2514\u2500 Cost so far: $0.0220",
+    "[Google ADK] \n\u250c\u2500 FINAL: Compiling Course Package",
+    "[Google ADK] \u2502",
+    "[Google ADK] \u2502  \u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557",
+    "[Google ADK] \u2502  \u2551  GOOGLE ADK WORKFLOW COMPLETE              \u2551",
+    "[Google ADK] \u2502  \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563",
+    "[Google ADK] \u2502  \u2551  Lessons:     10                         \u2551",
+    "[Google ADK] \u2502  \u2551  Duration:    89.6s                        \u2551",
+    "[Google ADK] \u2502  \u2551  Total Cost:  $0.0220                     \u2551",
+    "[Google ADK] \u2502  \u2551  Quality:     0.88                       \u2551",
+    "[Google ADK] \u2502  \u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d",
+    "[Google ADK] \u2514\u2500"
+  ],
+  "course": {
+    "syllabus": {
+      "course_title": "Introduction to Machine Learning: From Foundations to Deployment",
+      "course_objective": "To provide a comprehensive understanding of machine learning algorithms, data processing pipelines, and model evaluation techniques, enabling students to build, validate, and deploy predictive models using industry-standard tools.",
+      "target_audience": "Aspiring data scientists, software engineers, and analysts with basic Python knowledge and a foundation in introductory mathematics.",
+      "difficulty_level": "Beginner to Intermediate",
+      "lessons": [
+        {
+          "lesson_number": 1,
+          "title": "Introduction to the Machine Learning Ecosystem",
+          "objectives": [
+            "Define Machine Learning and distinguish between its three primary paradigms",
+            "Identify the stages of the end-to-end Machine Learning pipeline",
+            "Successfully configure a local Python development environment for data science"
+          ],
+          "content_outline": [
+            "Definition of Machine Learning: Algorithms that learn patterns from data rather than following explicit rules.",
+            "The Three Pillars of ML: Supervised (labeled data), Unsupervised (pattern discovery), and Reinforcement Learning (reward-based).",
+            "The ML Lifecycle: Problem definition, data collection, data cleaning, feature engineering, model training, evaluation, and deployment.",
+            "The Modern Stack: Role of NumPy (computation), Pandas (data manipulation), Scikit-Learn (modeling), and Jupyter (interactivity)."
+          ],
+          "activities": [
+            "Card Sorting Exercise: Categorize real-world scenarios (e.g., spam detection, customer segmentation) into the three ML types.",
+            "Initial Environment Setup: Guide students through installing the Anaconda distribution or setting up a virtual environment via terminal.",
+            "The 'Hello World' Notebook: Create a Jupyter Notebook, import essential libraries, and verify versions using Python commands."
+          ],
+          "resources": [
+            "Python 3.8+ Distribution (Anaconda recommended)",
+            "Jupyter Notebook/Lab Documentation",
+            "Scikit-Learn User Guide (Introduction section)",
+            "Sample Dataset: Iris or Housing Prices for initial inspection"
+          ],
+          "citations": [
+            "G\u00e9ron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research.",
+            "McKinney, W. (2010). Data Structures for Statistical Computing in Python. Proceedings of the 9th Python in Science Conference."
+          ]
+        },
+        {
+          "lesson_number": 2,
+          "title": "Data Preprocessing and Exploratory Data Analysis (EDA)",
+          "objectives": [
+            "Clean and prepare raw data for modeling",
+            "Identify patterns using statistical visualization",
+            "Select and implement appropriate feature scaling and encoding techniques"
+          ],
+          "content_outline": [
+            "I. Introduction to Data Quality: Garbage In, Garbage Out (GIGO) principle.",
+            "II. Handling Missing Values: Deletion vs. Imputation (Mean, Median, Mode, and K-Nearest Neighbors).",
+            "III. Outlier Detection and Treatment: Z-score method, IQR (Interquartile Range) method, and Winsorization.",
+            "IV. Feature Scaling: When to use Normalization (Min-Max) vs. Standardization (Z-score Scaling).",
+            "V. Categorical Encoding: Transforming text to numbers using One-Hot Encoding (for nominal data) and Label Encoding (for ordinal data).",
+            "VI. Exploratory Data Analysis (EDA): Univariate (Histograms, Boxplots) and Bivariate analysis (Scatter plots, Heatmaps)."
+          ],
+          "activities": [
+            "Data Cleaning Lab: Use a 'messy' dataset (e.g., Titanic or Housing data) to find issues and apply imputation techniques in Python/Pandas.",
+            "Scaling Comparison: A small experiment comparing the performance of a distance-based algorithm (like KNN) before and after feature scaling.",
+            "Visualizing Correlations: Generate a Pearson Correlation heatmap to identify features with high multicollinearity."
+          ],
+          "resources": [
+            "Python Libraries: Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib.",
+            "Dataset: Kaggle Titanic Dataset or UCI Machine Learning Repository.",
+            "Documentation: Scikit-learn Guide on Preprocessing (StandardScaler, OneHotEncoder)."
+          ],
+          "citations": [
+            "G\u00e9ron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow. O'Reilly Media.",
+            "McKinney, W. (2017). Python for Data Analysis. O'Reilly Media.",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research."
+          ]
+        },
+        {
+          "lesson_number": 3,
+          "title": "Linear Regression: Predicting Continuous Values",
+          "objectives": [
+            "Understand the math behind simple and multiple linear regression",
+            "Implement a regression model to solve a real-world problem",
+            "Evaluate model performance using professional metrics"
+          ],
+          "content_outline": [
+            "Introduction to Linear Regression: The relationship between independent (X) and dependent (Y) variables.",
+            "The Math of the Best Fit Line: Understanding the equation y = mx + b and its multi-variable expansion.",
+            "Cost Functions: Deep dive into Mean Squared Error (MSE) and how it penalizes outliers.",
+            "Optimization: How Gradient Descent iteratively minimizes the cost function by adjusting weights and biases.",
+            "Evaluation Metrics: Interpreting R-squared (Coefficient of Determination) and Adjusted R-squared for model accuracy.",
+            "Feature Importance: Reading coefficients to determine which variables drive the prediction."
+          ],
+          "activities": [
+            "Mathematical Derivation: A whiteboard exercise calculating the MSE for a small dataset of three points.",
+            "Python Implementation: Using Scikit-Learn to build a housing price prediction model based on square footage and location.",
+            "Hyperparameter Tuning: Visualizing how different learning rates in Gradient Descent affect the 'loss curve' during training.",
+            "Residual Analysis Workshop: Plotting residuals to check for homoscedasticity and model assumptions."
+          ],
+          "resources": [
+            "Jupyter Notebook: 'Linear_Regression_Housing_Lab.ipynb'",
+            "Dataset: Ames Housing Dataset or UCI Machine Learning Repository (Automobile Data)",
+            "Cheat Sheet: 'Optimization Algorithms and Loss Functions'",
+            "Visualization Library: Seaborn and Matplotlib for regression plots"
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning.",
+            "G\u00e9ron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (2nd ed.).",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research."
+          ]
+        },
+        {
+          "lesson_number": 4,
+          "title": "Classification I: Logistic Regression and KNN",
+          "objectives": [
+            "Distinguish between regression and classification tasks in machine learning.",
+            "Understand the mathematical foundation of the Sigmoid function and its role in Logistic Regression.",
+            "Define decision boundaries and how they separate classes in feature space.",
+            "Implement the K-Nearest Neighbors (KNN) algorithm and compare Euclidean vs. Manhattan distance metrics.",
+            "Explain the 'Curse of Dimensionality' and its impact on distance-based algorithms."
+          ],
+          "content_outline": [
+            "Introduction to Classification: Categorical vs. Continuous outputs.",
+            "Logistic Regression: The Sigmoid (Logistic) Function, mapping outputs to probabilities, and the Logit link function.",
+            "Decision Boundaries: Linear separation and the thresholding concept (e.g., p > 0.5).",
+            "Non-Parametric Methods: Introduction to K-Nearest Neighbors (KNN).",
+            "Measuring Proximity: Mathematical formulas for Euclidean and Manhattan distances.",
+            "Hyperparameter Tuning: Choosing 'K' and the trade-off between bias and variance.",
+            "The Curse of Dimensionality: Why high-dimensional spaces make data points appear equidistant and sparse."
+          ],
+          "activities": [
+            "Visualizing the Sigmoid: A hands-on graphing exercise to see how changing weights affects the steepness of the S-curve.",
+            "Manual KNN Calculation: Small group exercise calculating Euclidean distance between 3 data points to predict a class.",
+            "Coding Lab: implementing Logistic Regression and KNN using scikit-learn on the 'Iris' or 'Breast Cancer' dataset.",
+            "Dimensionality Demo: A simulation showing how the volume of a hypersphere shrinks relative to a hypercube as dimensions increase."
+          ],
+          "resources": [
+            "Jupyter Notebook with scikit-learn, pandas, and matplotlib.",
+            "StatQuest Videos on Logistic Regression and KNN.",
+            "Python documentation for sklearn.linear_model.LogisticRegression and sklearn.neighbors.KNeighborsClassifier."
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An Introduction to Statistical Learning.",
+            "Bishop, C. M. (2006). Pattern Recognition and Machine Learning.",
+            "Bellman, R. E. (1961). Adaptive Control Processes: A Guided Tour (Source for 'Curse of Dimensionality')."
+          ]
+        },
+        {
+          "lesson_number": 5,
+          "title": "Model Evaluation and Hyperparameter Tuning",
+          "objectives": [
+            "Evaluate model performance using appropriate metrics beyond simple accuracy.",
+            "Identify and diagnose model performance issues using the Bias-Variance Tradeoff.",
+            "Optimize machine learning models using automated search techniques like Grid Search and Random Search CV.",
+            "Implement k-fold cross-validation to ensure model generalizability."
+          ],
+          "content_outline": [
+            "I. Classification Metrics: Moving Beyond Accuracy (Confusion Matrix, Precision, Recall, F1-Score).",
+            "II. Error Analysis: Understanding the Bias-Variance Tradeoff and Overfitting vs. Underfitting.",
+            "III. Validation Strategies: The importance of K-Fold Cross-Validation.",
+            "IV. Hyperparameter Optimization: Theoretical differences between Grid Search and Random Search.",
+            "V. Implementation: Using Scikit-Learn's GridSearchCV and RandomizedSearchCV."
+          ],
+          "activities": [
+            "Metric Calculation Workshop: Manually calculate Precision and Recall from a sample confusion matrix printout.",
+            "Visualizing the Tradeoff: Plotting training vs. validation error curves to identify the 'sweet spot' of model complexity.",
+            "Hyperparameter Race: A coding competition comparing the time-to-accuracy ratio of Grid Search versus Random Search on a standard dataset (e.g., Breast Cancer or Wine dataset).",
+            "Lab: Building a pipeline that includes scaling, PCA, and a tuned Classifier."
+          ],
+          "resources": [
+            "Scikit-Learn Documentation: 'Evaluation metrics and scoring'",
+            "Jupyter Notebook Template: 'Hyperparameter_Tuning_Lab.ipynb'",
+            "Visual Guide: 'The Bias-Variance Tradeoff Illustrated'",
+            "Dataset: UCI Machine Learning Repository (Standard Classification sets)"
+          ],
+          "citations": [
+            "Pedregosa, F. et al. (2011). 'Scikit-learn: Machine Learning in Python'. Journal of Machine Learning Research.",
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). 'An Introduction to Statistical Learning'. Springer.",
+            "Bergstra, J., & Bengio, Y. (2012). 'Random Search for Hyper-Parameter Optimization'. Journal of Machine Learning Research."
+          ]
+        },
+        {
+          "lesson_number": 6,
+          "title": "Decision Trees and Random Forests",
+          "objectives": [
+            "Understand tree-based logic and the mathematical foundations of splitting criteria",
+            "Reduce overfitting in complex models through pruning techniques",
+            "Implement ensemble methods to improve model stability and accuracy",
+            "Apply Bootstrap Aggregating (Bagging) to transition from single trees to Random Forests"
+          ],
+          "content_outline": [
+            "I. Foundational Tree Logic: Root nodes, internal nodes, and leaves",
+            "II. Splitting Metrics: Calculating Entropy and Information Gain (ID3 algorithm context)",
+            "III. The Overfitting Problem: Why deep trees fail on unseen data",
+            "IV. Pruning Techniques: Pre-pruning (max depth, min samples) vs. Post-pruning (cost complexity)",
+            "V. Introduction to Ensemble Learning: Wisdom of the crowd and variance reduction",
+            "VI. Bootstrap Aggregating (Bagging): Random sampling with replacement and feature bagging",
+            "VII. Random Forest Architecture: Combining decorrelated trees for robust predictions"
+          ],
+          "activities": [
+            "Manual Calculation Workshop: Students calculate the Entropy and Information Gain for a small categorical dataset (e.g., 'Will it rain?')",
+            "Hyperparameter Tuning Lab: Using Scikit-Learn to visualize how 'max_depth' affects decision boundaries and overfitting",
+            "Bagging Simulation: A group activity where students act as individual 'trees' on different data subsets to see how an aggregated vote improves accuracy",
+            "Coding Exercise: Building and comparing a single Decision Tree vs. a Random Forest on the Iris or Titanic dataset"
+          ],
+          "resources": [
+            "Python Libraries: Scikit-Learn, Pandas, Matplotlib/Seaborn",
+            "Visualization Tool: Graphviz for exporting and viewing tree structures",
+            "Dataset: UCI Machine Learning Repository (e.g., Heart Disease or Wine dataset)",
+            "Reading: 'An Introduction to Statistical Learning' (Chapter 8: Tree-Based Methods)"
+          ],
+          "citations": [
+            "Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.",
+            "Quinlan, J. R. (1986). Induction of Decision Trees. Machine Learning, 1(1), 81-106.",
+            "Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction."
+          ]
+        },
+        {
+          "lesson_number": 7,
+          "title": "Support Vector Machines (SVM) and Kernel Methods",
+          "objectives": [
+            "Identify and define hyperplanes, support vectors, and margins in a classification context.",
+            "Contrast Hard Margin and Soft Margin classification strategies and their impact on overfitting.",
+            "Explain how the Kernel Trick allows for the classification of non-linear data by mapping to higher dimensions.",
+            "Select appropriate kernels (RBF, Polynomial) based on data distribution patterns."
+          ],
+          "content_outline": [
+            "Introduction to Hyperplanes: Mathematical representation of decision boundaries in N-dimensional space.",
+            "Maximal Margin Classifiers: The geometry of the margin and identifying Support Vectors as the critical data points.",
+            "Hard vs. Soft Margin: Introduction of the Slack Variable and the C-parameter trade-off between margin width and classification error.",
+            "The Kernel Trick: Concept of feature mapping to higher dimensions without explicit computation.",
+            "Common Kernel Functions: Linear, Polynomial (degree-d), and Radial Basis Function (RBF/Gaussian).",
+            "Hyperparameter Tuning: Understanding Gamma and C in the context of model bias and variance."
+          ],
+          "activities": [
+            "Geometric Visualization: Using a 2D coordinate plane to manually draw the optimal hyperplane between two separable clusters.",
+            "Slack Parameter Simulation: A hands-on exercise using a software tool (like Scikit-Learn's SVM GUI) to observe how changing 'C' affects the decision boundary in the presence of outliers.",
+            "Kernel Transformation Lab: Transforming a non-linearly separable circle dataset into 3D space to demonstrate linear separability."
+          ],
+          "resources": [
+            "Scikit-Learn Documentation: SVC (Support Vector Classification) guide.",
+            "Interactive SVM Visualization Tool (e.g., Streamlit SVM explorer).",
+            "Jupyter Notebook: 'Non-linear Classification with RBF Kernels'."
+          ],
+          "citations": [
+            "Cortes, C., & Vapnik, V. (1995). Support-vector networks. Machine Learning, 20(3), 273-297.",
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An Introduction to Statistical Learning.",
+            "Boser, B. E., Guyon, I. M., & Vapnik, V. N. (1992). A training algorithm for optimal margin classifiers."
+          ]
+        },
+        {
+          "lesson_number": 8,
+          "title": "Unsupervised Learning: Clustering and PCA",
+          "objectives": [
+            "Identify and extract hidden patterns and structures in unlabeled datasets.",
+            "Implement K-Means and Hierarchical clustering algorithms to group similar data points.",
+            "Apply Principal Component Analysis (PCA) to reduce feature dimensionality while preserving variance.",
+            "Evaluate clustering performance using the Elbow Method and Dendrograms."
+          ],
+          "content_outline": [
+            "Introduction to Unsupervised Learning: Definition, use cases, and differences from Supervised Learning.",
+            "K-Means Clustering: Centroid initialization, the iterative optimization process, and convergence.",
+            "The Elbow Method: Using Within-Cluster Sum of Squares (WCSS) to determine the optimal number of clusters.",
+            "Hierarchical Clustering: Agglomerative vs. Divisive approaches and interpreting Dendrograms.",
+            "Dimensionality Reduction: The 'Curse of Dimensionality' and the mathematical intuition behind PCA.",
+            "PCA for Data Compression: Eigenvectors, Eigenvalues, and selecting Principal Components to maximize explained variance."
+          ],
+          "activities": [
+            "Hands-on Lab: Using Scikit-Learn to perform K-Means clustering on a customer segmentation dataset.",
+            "Visualization Exercise: Plotting an Elbow Curve to find the 'k' value for an unknown dataset.",
+            "Hierarchical Mapping: Generating a Dendrogram to visualize taxonomic relationships in biological data.",
+            "Feature Reduction Project: Applying PCA to the Iris or MNIST dataset to reduce dimensions to 2D for visual inspection."
+          ],
+          "resources": [
+            "Scikit-Learn Documentation: Unsupervised Learning modules.",
+            "Python Libraries: NumPy, Pandas, Matplotlib, Seaborn.",
+            "Jupyter Notebook templates for Clustering and PCA visualization.",
+            "Dataset: UCI Machine Learning Repository (Wholesale customers or Mall Customer Segmentation)."
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning.",
+            "Pedregosa, F. et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research.",
+            "Jolliffe, I. T., & Cadima, J. (2016). Principal component analysis: a review and recent developments. Philosophical Transactions of the Royal Society A."
+          ]
+        },
+        {
+          "lesson_number": 9,
+          "title": "Introduction to Neural Networks and Deep Learning",
+          "objectives": [
+            "Understand the architecture and biological inspiration of a Perceptron",
+            "Grasp the architecture and information flow of Multi-Layer Perceptrons (MLP)",
+            "Explain the role of activation functions in introducing non-linearity",
+            "Conceptualize the backpropagation algorithm and the gradient descent weight update process",
+            "Implement a basic Artificial Neural Network (ANN) using Keras/TensorFlow"
+          ],
+          "content_outline": [
+            "The Perceptron: Inputs, weights, bias, and the step function.",
+            "Transitioning to Multi-Layer Perceptrons (MLP): Input, hidden, and output layers.",
+            "Activation Functions: Deep dive into ReLU (Rectified Linear Unit) for hidden layers and Softmax for multi-class classification.",
+            "The Learning Process: Forward propagation (generating predictions) vs. Backward propagation (calculating error).",
+            "Optimization: Basic mechanics of Gradient Descent and how weight updates minimize the loss function.",
+            "Keras/TensorFlow Ecosystem: Defining a Sequential model, adding Dense layers, and the compile-fit-evaluate workflow."
+          ],
+          "activities": [
+            "Manual Calculation Workshop: Manually compute the output of a single neuron given a set of inputs and weights.",
+            "Activation Function Visualization: Plotting ReLU and Softmax in a notebook to compare their ranges and derivatives.",
+            "Step-by-Step Backpropagation Walkthrough: A whiteboard session tracing an error signal back through a simple 2-layer network.",
+            "Code-Along: Building a digit classifier (MNIST) or a simple regression model using Keras `Sequential` API."
+          ],
+          "resources": [
+            "TensorFlow Documentation (Keras Guide: The Sequential model)",
+            "Interactive Neural Network Playground (playground.tensorflow.org)",
+            "Jupyter Notebook/Google Colab environment",
+            "Visualization slides on Gradient Descent 'valleys' and 'peaks'"
+          ],
+          "citations": [
+            "Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.",
+            "Chollet, F. (2021). Deep Learning with Python (2nd Edition). Manning Publications.",
+            "Rosenblatt, F. (1958). The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain."
+          ]
+        },
+        {
+          "lesson_number": 10,
+          "title": "ML Ethics, Best Practices, and Deployment",
+          "objectives": [
+            "Identify and mitigate bias in datasets and machine learning models",
+            "Apply model persistence techniques to save and load trained models",
+            "Understand the architectural transition from experimental notebooks to production environments",
+            "Develop a functional REST API to serve model predictions in real-time"
+          ],
+          "content_outline": [
+            "I. Algorithmic Fairness and Data Privacy: Defining bias (historical, representation, and measurement), the 'Black Box' problem, and privacy-preserving techniques like Differential Privacy.",
+            "II. Model Persistence: Moving beyond memory; using Pickle and Joblib to serialize Python objects for storage and re-use.",
+            "III. From Notebook to Production: The limitations of Jupyter; software engineering best practices including versioning, modularity, and environment management.",
+            "IV. Building a Basic API for Inference: Introduction to FastAPI/Flask; defining endpoints, handling JSON requests, and returning model predictions.",
+            "V. Deployment Strategies: Overview of containerization (Docker) and cloud-based inference services."
+          ],
+          "activities": [
+            "Bias Audit Workshop: Analyzing a sample dataset (e.g., UCI Adult Dataset) to identify disparate impact across demographic groups.",
+            "Serialization Lab: Coding a script to train a simple Logistic Regression model and save it using Joblib.",
+            "API Development: Building a 'Hello World' machine learning API using FastAPI that accepts numerical input and returns a classification label.",
+            "Postman Inference Test: Using a tool like Postman or cURL to send POST requests to the locally hosted model API."
+          ],
+          "resources": [
+            "Scikit-learn documentation on Model Persistence (Joblib)",
+            "FastAPI Official Documentation (Tutorial - First Steps)",
+            "Google AI 'Fairness Indicators' case studies",
+            "The 'Ethics of Algorithms' reading list (Center for Internet and Society)"
+          ],
+          "citations": [
+            "Pedregosa, F., et al. (2011). 'Scikit-learn: Machine Learning in Python'. Journal of Machine Learning Research.",
+            "Barocas, S., Hardt, M., & Narayanan, A. (2019). 'Fairness and Machine Learning'. fairmlbook.org.",
+            "Tiago, R. (2020). 'FastAPI: Modern Python Web Development'."
+          ]
+        }
+      ]
+    },
+    "research_sources": [
+      "Tutorial research: Introduction to Machine Learning",
+      "Best practices: Introduction to Machine Learning",
+      "Hands-on projects: Introduction to Machine Learning",
+      "Lesson 1: Introduction to the Machine Learning Ecosystem",
+      "Lesson 2: Data Preprocessing and Exploratory Data Analysis (EDA)",
+      "Lesson 3: Linear Regression: Predicting Continuous Values",
+      "Lesson 4: Classification I: Logistic Regression and KNN",
+      "Lesson 5: Model Evaluation and Hyperparameter Tuning",
+      "Lesson 6: Decision Trees and Random Forests",
+      "Lesson 7: Support Vector Machines (SVM) and Kernel Methods",
+      "Lesson 8: Unsupervised Learning: Clustering and PCA",
+      "Lesson 9: Introduction to Neural Networks and Deep Learning",
+      "Lesson 10: ML Ethics, Best Practices, and Deployment"
+    ],
+    "generation_metadata": {
+      "framework": "Google ADK",
+      "patterns_demonstrated": [
+        "ParallelAgent (parallel research)",
+        "LoopAgent (quality refinement)",
+        "AgentTool (gap assessment)",
+        "output_key (state sharing)",
+        "{{template}} substitution"
+      ],
+      "total_cost": 0.02195904,
+      "total_tokens": 12732,
+      "api_calls": 17,
+      "jina_calls": 13,
+      "quality_iterations": 1
+    }
+  },
+  "enhanced_course": {
+    "syllabus": {
+      "course_title": "Introduction to Machine Learning: From Foundations to Deployment",
+      "course_objective": "To provide a comprehensive understanding of machine learning algorithms, data processing pipelines, and model evaluation techniques, enabling students to build, validate, and deploy predictive models using industry-standard tools.",
+      "target_audience": "Aspiring data scientists, software engineers, and analysts with basic Python knowledge and a foundation in introductory mathematics.",
+      "difficulty_level": "Beginner to Intermediate",
+      "lessons": [
+        {
+          "lesson_number": 1,
+          "title": "Introduction to the Machine Learning Ecosystem",
+          "objectives": [
+            "Define Machine Learning and distinguish between its three primary paradigms",
+            "Identify the stages of the end-to-end Machine Learning pipeline",
+            "Successfully configure a local Python development environment for data science"
+          ],
+          "content_outline": [
+            "Definition of Machine Learning: Algorithms that learn patterns from data rather than following explicit rules.",
+            "The Three Pillars of ML: Supervised (labeled data), Unsupervised (pattern discovery), and Reinforcement Learning (reward-based).",
+            "The ML Lifecycle: Problem definition, data collection, data cleaning, feature engineering, model training, evaluation, and deployment.",
+            "The Modern Stack: Role of NumPy (computation), Pandas (data manipulation), Scikit-Learn (modeling), and Jupyter (interactivity)."
+          ],
+          "activities": [
+            "Card Sorting Exercise: Categorize real-world scenarios (e.g., spam detection, customer segmentation) into the three ML types.",
+            "Initial Environment Setup: Guide students through installing the Anaconda distribution or setting up a virtual environment via terminal.",
+            "The 'Hello World' Notebook: Create a Jupyter Notebook, import essential libraries, and verify versions using Python commands."
+          ],
+          "resources": [
+            "Python 3.8+ Distribution (Anaconda recommended)",
+            "Jupyter Notebook/Lab Documentation",
+            "Scikit-Learn User Guide (Introduction section)",
+            "Sample Dataset: Iris or Housing Prices for initial inspection"
+          ],
+          "citations": [
+            "G\u00e9ron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research.",
+            "McKinney, W. (2010). Data Structures for Statistical Computing in Python. Proceedings of the 9th Python in Science Conference."
+          ]
+        },
+        {
+          "lesson_number": 2,
+          "title": "Data Preprocessing and Exploratory Data Analysis (EDA)",
+          "objectives": [
+            "Clean and prepare raw data for modeling",
+            "Identify patterns using statistical visualization",
+            "Select and implement appropriate feature scaling and encoding techniques"
+          ],
+          "content_outline": [
+            "I. Introduction to Data Quality: Garbage In, Garbage Out (GIGO) principle.",
+            "II. Handling Missing Values: Deletion vs. Imputation (Mean, Median, Mode, and K-Nearest Neighbors).",
+            "III. Outlier Detection and Treatment: Z-score method, IQR (Interquartile Range) method, and Winsorization.",
+            "IV. Feature Scaling: When to use Normalization (Min-Max) vs. Standardization (Z-score Scaling).",
+            "V. Categorical Encoding: Transforming text to numbers using One-Hot Encoding (for nominal data) and Label Encoding (for ordinal data).",
+            "VI. Exploratory Data Analysis (EDA): Univariate (Histograms, Boxplots) and Bivariate analysis (Scatter plots, Heatmaps)."
+          ],
+          "activities": [
+            "Data Cleaning Lab: Use a 'messy' dataset (e.g., Titanic or Housing data) to find issues and apply imputation techniques in Python/Pandas.",
+            "Scaling Comparison: A small experiment comparing the performance of a distance-based algorithm (like KNN) before and after feature scaling.",
+            "Visualizing Correlations: Generate a Pearson Correlation heatmap to identify features with high multicollinearity."
+          ],
+          "resources": [
+            "Python Libraries: Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib.",
+            "Dataset: Kaggle Titanic Dataset or UCI Machine Learning Repository.",
+            "Documentation: Scikit-learn Guide on Preprocessing (StandardScaler, OneHotEncoder)."
+          ],
+          "citations": [
+            "G\u00e9ron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow. O'Reilly Media.",
+            "McKinney, W. (2017). Python for Data Analysis. O'Reilly Media.",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research."
+          ]
+        },
+        {
+          "lesson_number": 3,
+          "title": "Linear Regression: Predicting Continuous Values",
+          "objectives": [
+            "Understand the math behind simple and multiple linear regression",
+            "Implement a regression model to solve a real-world problem",
+            "Evaluate model performance using professional metrics"
+          ],
+          "content_outline": [
+            "Introduction to Linear Regression: The relationship between independent (X) and dependent (Y) variables.",
+            "The Math of the Best Fit Line: Understanding the equation y = mx + b and its multi-variable expansion.",
+            "Cost Functions: Deep dive into Mean Squared Error (MSE) and how it penalizes outliers.",
+            "Optimization: How Gradient Descent iteratively minimizes the cost function by adjusting weights and biases.",
+            "Evaluation Metrics: Interpreting R-squared (Coefficient of Determination) and Adjusted R-squared for model accuracy.",
+            "Feature Importance: Reading coefficients to determine which variables drive the prediction."
+          ],
+          "activities": [
+            "Mathematical Derivation: A whiteboard exercise calculating the MSE for a small dataset of three points.",
+            "Python Implementation: Using Scikit-Learn to build a housing price prediction model based on square footage and location.",
+            "Hyperparameter Tuning: Visualizing how different learning rates in Gradient Descent affect the 'loss curve' during training.",
+            "Residual Analysis Workshop: Plotting residuals to check for homoscedasticity and model assumptions."
+          ],
+          "resources": [
+            "Jupyter Notebook: 'Linear_Regression_Housing_Lab.ipynb'",
+            "Dataset: Ames Housing Dataset or UCI Machine Learning Repository (Automobile Data)",
+            "Cheat Sheet: 'Optimization Algorithms and Loss Functions'",
+            "Visualization Library: Seaborn and Matplotlib for regression plots"
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning.",
+            "G\u00e9ron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (2nd ed.).",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research."
+          ]
+        },
+        {
+          "lesson_number": 4,
+          "title": "Classification I: Logistic Regression and KNN",
+          "objectives": [
+            "Distinguish between regression and classification tasks in machine learning.",
+            "Understand the mathematical foundation of the Sigmoid function and its role in Logistic Regression.",
+            "Define decision boundaries and how they separate classes in feature space.",
+            "Implement the K-Nearest Neighbors (KNN) algorithm and compare Euclidean vs. Manhattan distance metrics.",
+            "Explain the 'Curse of Dimensionality' and its impact on distance-based algorithms."
+          ],
+          "content_outline": [
+            "Introduction to Classification: Categorical vs. Continuous outputs.",
+            "Logistic Regression: The Sigmoid (Logistic) Function, mapping outputs to probabilities, and the Logit link function.",
+            "Decision Boundaries: Linear separation and the thresholding concept (e.g., p > 0.5).",
+            "Non-Parametric Methods: Introduction to K-Nearest Neighbors (KNN).",
+            "Measuring Proximity: Mathematical formulas for Euclidean and Manhattan distances.",
+            "Hyperparameter Tuning: Choosing 'K' and the trade-off between bias and variance.",
+            "The Curse of Dimensionality: Why high-dimensional spaces make data points appear equidistant and sparse."
+          ],
+          "activities": [
+            "Visualizing the Sigmoid: A hands-on graphing exercise to see how changing weights affects the steepness of the S-curve.",
+            "Manual KNN Calculation: Small group exercise calculating Euclidean distance between 3 data points to predict a class.",
+            "Coding Lab: implementing Logistic Regression and KNN using scikit-learn on the 'Iris' or 'Breast Cancer' dataset.",
+            "Dimensionality Demo: A simulation showing how the volume of a hypersphere shrinks relative to a hypercube as dimensions increase."
+          ],
+          "resources": [
+            "Jupyter Notebook with scikit-learn, pandas, and matplotlib.",
+            "StatQuest Videos on Logistic Regression and KNN.",
+            "Python documentation for sklearn.linear_model.LogisticRegression and sklearn.neighbors.KNeighborsClassifier."
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An Introduction to Statistical Learning.",
+            "Bishop, C. M. (2006). Pattern Recognition and Machine Learning.",
+            "Bellman, R. E. (1961). Adaptive Control Processes: A Guided Tour (Source for 'Curse of Dimensionality')."
+          ]
+        },
+        {
+          "lesson_number": 5,
+          "title": "Model Evaluation and Hyperparameter Tuning",
+          "objectives": [
+            "Evaluate model performance using appropriate metrics beyond simple accuracy.",
+            "Identify and diagnose model performance issues using the Bias-Variance Tradeoff.",
+            "Optimize machine learning models using automated search techniques like Grid Search and Random Search CV.",
+            "Implement k-fold cross-validation to ensure model generalizability."
+          ],
+          "content_outline": [
+            "I. Classification Metrics: Moving Beyond Accuracy (Confusion Matrix, Precision, Recall, F1-Score).",
+            "II. Error Analysis: Understanding the Bias-Variance Tradeoff and Overfitting vs. Underfitting.",
+            "III. Validation Strategies: The importance of K-Fold Cross-Validation.",
+            "IV. Hyperparameter Optimization: Theoretical differences between Grid Search and Random Search.",
+            "V. Implementation: Using Scikit-Learn's GridSearchCV and RandomizedSearchCV."
+          ],
+          "activities": [
+            "Metric Calculation Workshop: Manually calculate Precision and Recall from a sample confusion matrix printout.",
+            "Visualizing the Tradeoff: Plotting training vs. validation error curves to identify the 'sweet spot' of model complexity.",
+            "Hyperparameter Race: A coding competition comparing the time-to-accuracy ratio of Grid Search versus Random Search on a standard dataset (e.g., Breast Cancer or Wine dataset).",
+            "Lab: Building a pipeline that includes scaling, PCA, and a tuned Classifier."
+          ],
+          "resources": [
+            "Scikit-Learn Documentation: 'Evaluation metrics and scoring'",
+            "Jupyter Notebook Template: 'Hyperparameter_Tuning_Lab.ipynb'",
+            "Visual Guide: 'The Bias-Variance Tradeoff Illustrated'",
+            "Dataset: UCI Machine Learning Repository (Standard Classification sets)"
+          ],
+          "citations": [
+            "Pedregosa, F. et al. (2011). 'Scikit-learn: Machine Learning in Python'. Journal of Machine Learning Research.",
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). 'An Introduction to Statistical Learning'. Springer.",
+            "Bergstra, J., & Bengio, Y. (2012). 'Random Search for Hyper-Parameter Optimization'. Journal of Machine Learning Research."
+          ]
+        },
+        {
+          "lesson_number": 6,
+          "title": "Decision Trees and Random Forests",
+          "objectives": [
+            "Understand tree-based logic and the mathematical foundations of splitting criteria",
+            "Reduce overfitting in complex models through pruning techniques",
+            "Implement ensemble methods to improve model stability and accuracy",
+            "Apply Bootstrap Aggregating (Bagging) to transition from single trees to Random Forests"
+          ],
+          "content_outline": [
+            "I. Foundational Tree Logic: Root nodes, internal nodes, and leaves",
+            "II. Splitting Metrics: Calculating Entropy and Information Gain (ID3 algorithm context)",
+            "III. The Overfitting Problem: Why deep trees fail on unseen data",
+            "IV. Pruning Techniques: Pre-pruning (max depth, min samples) vs. Post-pruning (cost complexity)",
+            "V. Introduction to Ensemble Learning: Wisdom of the crowd and variance reduction",
+            "VI. Bootstrap Aggregating (Bagging): Random sampling with replacement and feature bagging",
+            "VII. Random Forest Architecture: Combining decorrelated trees for robust predictions"
+          ],
+          "activities": [
+            "Manual Calculation Workshop: Students calculate the Entropy and Information Gain for a small categorical dataset (e.g., 'Will it rain?')",
+            "Hyperparameter Tuning Lab: Using Scikit-Learn to visualize how 'max_depth' affects decision boundaries and overfitting",
+            "Bagging Simulation: A group activity where students act as individual 'trees' on different data subsets to see how an aggregated vote improves accuracy",
+            "Coding Exercise: Building and comparing a single Decision Tree vs. a Random Forest on the Iris or Titanic dataset"
+          ],
+          "resources": [
+            "Python Libraries: Scikit-Learn, Pandas, Matplotlib/Seaborn",
+            "Visualization Tool: Graphviz for exporting and viewing tree structures",
+            "Dataset: UCI Machine Learning Repository (e.g., Heart Disease or Wine dataset)",
+            "Reading: 'An Introduction to Statistical Learning' (Chapter 8: Tree-Based Methods)"
+          ],
+          "citations": [
+            "Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.",
+            "Quinlan, J. R. (1986). Induction of Decision Trees. Machine Learning, 1(1), 81-106.",
+            "Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction."
+          ]
+        },
+        {
+          "lesson_number": 7,
+          "title": "Support Vector Machines (SVM) and Kernel Methods",
+          "objectives": [
+            "Identify and define hyperplanes, support vectors, and margins in a classification context.",
+            "Contrast Hard Margin and Soft Margin classification strategies and their impact on overfitting.",
+            "Explain how the Kernel Trick allows for the classification of non-linear data by mapping to higher dimensions.",
+            "Select appropriate kernels (RBF, Polynomial) based on data distribution patterns."
+          ],
+          "content_outline": [
+            "Introduction to Hyperplanes: Mathematical representation of decision boundaries in N-dimensional space.",
+            "Maximal Margin Classifiers: The geometry of the margin and identifying Support Vectors as the critical data points.",
+            "Hard vs. Soft Margin: Introduction of the Slack Variable and the C-parameter trade-off between margin width and classification error.",
+            "The Kernel Trick: Concept of feature mapping to higher dimensions without explicit computation.",
+            "Common Kernel Functions: Linear, Polynomial (degree-d), and Radial Basis Function (RBF/Gaussian).",
+            "Hyperparameter Tuning: Understanding Gamma and C in the context of model bias and variance."
+          ],
+          "activities": [
+            "Geometric Visualization: Using a 2D coordinate plane to manually draw the optimal hyperplane between two separable clusters.",
+            "Slack Parameter Simulation: A hands-on exercise using a software tool (like Scikit-Learn's SVM GUI) to observe how changing 'C' affects the decision boundary in the presence of outliers.",
+            "Kernel Transformation Lab: Transforming a non-linearly separable circle dataset into 3D space to demonstrate linear separability."
+          ],
+          "resources": [
+            "Scikit-Learn Documentation: SVC (Support Vector Classification) guide.",
+            "Interactive SVM Visualization Tool (e.g., Streamlit SVM explorer).",
+            "Jupyter Notebook: 'Non-linear Classification with RBF Kernels'."
+          ],
+          "citations": [
+            "Cortes, C., & Vapnik, V. (1995). Support-vector networks. Machine Learning, 20(3), 273-297.",
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An Introduction to Statistical Learning.",
+            "Boser, B. E., Guyon, I. M., & Vapnik, V. N. (1992). A training algorithm for optimal margin classifiers."
+          ]
+        },
+        {
+          "lesson_number": 8,
+          "title": "Unsupervised Learning: Clustering and PCA",
+          "objectives": [
+            "Identify and extract hidden patterns and structures in unlabeled datasets.",
+            "Implement K-Means and Hierarchical clustering algorithms to group similar data points.",
+            "Apply Principal Component Analysis (PCA) to reduce feature dimensionality while preserving variance.",
+            "Evaluate clustering performance using the Elbow Method and Dendrograms."
+          ],
+          "content_outline": [
+            "Introduction to Unsupervised Learning: Definition, use cases, and differences from Supervised Learning.",
+            "K-Means Clustering: Centroid initialization, the iterative optimization process, and convergence.",
+            "The Elbow Method: Using Within-Cluster Sum of Squares (WCSS) to determine the optimal number of clusters.",
+            "Hierarchical Clustering: Agglomerative vs. Divisive approaches and interpreting Dendrograms.",
+            "Dimensionality Reduction: The 'Curse of Dimensionality' and the mathematical intuition behind PCA.",
+            "PCA for Data Compression: Eigenvectors, Eigenvalues, and selecting Principal Components to maximize explained variance."
+          ],
+          "activities": [
+            "Hands-on Lab: Using Scikit-Learn to perform K-Means clustering on a customer segmentation dataset.",
+            "Visualization Exercise: Plotting an Elbow Curve to find the 'k' value for an unknown dataset.",
+            "Hierarchical Mapping: Generating a Dendrogram to visualize taxonomic relationships in biological data.",
+            "Feature Reduction Project: Applying PCA to the Iris or MNIST dataset to reduce dimensions to 2D for visual inspection."
+          ],
+          "resources": [
+            "Scikit-Learn Documentation: Unsupervised Learning modules.",
+            "Python Libraries: NumPy, Pandas, Matplotlib, Seaborn.",
+            "Jupyter Notebook templates for Clustering and PCA visualization.",
+            "Dataset: UCI Machine Learning Repository (Wholesale customers or Mall Customer Segmentation)."
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning.",
+            "Pedregosa, F. et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research.",
+            "Jolliffe, I. T., & Cadima, J. (2016). Principal component analysis: a review and recent developments. Philosophical Transactions of the Royal Society A."
+          ]
+        },
+        {
+          "lesson_number": 9,
+          "title": "Introduction to Neural Networks and Deep Learning",
+          "objectives": [
+            "Understand the architecture and biological inspiration of a Perceptron",
+            "Grasp the architecture and information flow of Multi-Layer Perceptrons (MLP)",
+            "Explain the role of activation functions in introducing non-linearity",
+            "Conceptualize the backpropagation algorithm and the gradient descent weight update process",
+            "Implement a basic Artificial Neural Network (ANN) using Keras/TensorFlow"
+          ],
+          "content_outline": [
+            "The Perceptron: Inputs, weights, bias, and the step function.",
+            "Transitioning to Multi-Layer Perceptrons (MLP): Input, hidden, and output layers.",
+            "Activation Functions: Deep dive into ReLU (Rectified Linear Unit) for hidden layers and Softmax for multi-class classification.",
+            "The Learning Process: Forward propagation (generating predictions) vs. Backward propagation (calculating error).",
+            "Optimization: Basic mechanics of Gradient Descent and how weight updates minimize the loss function.",
+            "Keras/TensorFlow Ecosystem: Defining a Sequential model, adding Dense layers, and the compile-fit-evaluate workflow."
+          ],
+          "activities": [
+            "Manual Calculation Workshop: Manually compute the output of a single neuron given a set of inputs and weights.",
+            "Activation Function Visualization: Plotting ReLU and Softmax in a notebook to compare their ranges and derivatives.",
+            "Step-by-Step Backpropagation Walkthrough: A whiteboard session tracing an error signal back through a simple 2-layer network.",
+            "Code-Along: Building a digit classifier (MNIST) or a simple regression model using Keras `Sequential` API."
+          ],
+          "resources": [
+            "TensorFlow Documentation (Keras Guide: The Sequential model)",
+            "Interactive Neural Network Playground (playground.tensorflow.org)",
+            "Jupyter Notebook/Google Colab environment",
+            "Visualization slides on Gradient Descent 'valleys' and 'peaks'"
+          ],
+          "citations": [
+            "Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.",
+            "Chollet, F. (2021). Deep Learning with Python (2nd Edition). Manning Publications.",
+            "Rosenblatt, F. (1958). The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain."
+          ]
+        },
+        {
+          "lesson_number": 10,
+          "title": "ML Ethics, Best Practices, and Deployment",
+          "objectives": [
+            "Identify and mitigate bias in datasets and machine learning models",
+            "Apply model persistence techniques to save and load trained models",
+            "Understand the architectural transition from experimental notebooks to production environments",
+            "Develop a functional REST API to serve model predictions in real-time"
+          ],
+          "content_outline": [
+            "I. Algorithmic Fairness and Data Privacy: Defining bias (historical, representation, and measurement), the 'Black Box' problem, and privacy-preserving techniques like Differential Privacy.",
+            "II. Model Persistence: Moving beyond memory; using Pickle and Joblib to serialize Python objects for storage and re-use.",
+            "III. From Notebook to Production: The limitations of Jupyter; software engineering best practices including versioning, modularity, and environment management.",
+            "IV. Building a Basic API for Inference: Introduction to FastAPI/Flask; defining endpoints, handling JSON requests, and returning model predictions.",
+            "V. Deployment Strategies: Overview of containerization (Docker) and cloud-based inference services."
+          ],
+          "activities": [
+            "Bias Audit Workshop: Analyzing a sample dataset (e.g., UCI Adult Dataset) to identify disparate impact across demographic groups.",
+            "Serialization Lab: Coding a script to train a simple Logistic Regression model and save it using Joblib.",
+            "API Development: Building a 'Hello World' machine learning API using FastAPI that accepts numerical input and returns a classification label.",
+            "Postman Inference Test: Using a tool like Postman or cURL to send POST requests to the locally hosted model API."
+          ],
+          "resources": [
+            "Scikit-learn documentation on Model Persistence (Joblib)",
+            "FastAPI Official Documentation (Tutorial - First Steps)",
+            "Google AI 'Fairness Indicators' case studies",
+            "The 'Ethics of Algorithms' reading list (Center for Internet and Society)"
+          ],
+          "citations": [
+            "Pedregosa, F., et al. (2011). 'Scikit-learn: Machine Learning in Python'. Journal of Machine Learning Research.",
+            "Barocas, S., Hardt, M., & Narayanan, A. (2019). 'Fairness and Machine Learning'. fairmlbook.org.",
+            "Tiago, R. (2020). 'FastAPI: Modern Python Web Development'."
+          ]
+        }
+      ]
+    },
+    "quality_score": {
+      "score": 0.88,
+      "feedback": "This is a well-structured syllabus that provides a comprehensive introduction to machine learning with clear progression from foundational concepts to practical deployment. The learning progression is logical, starting with ecosystem setup, moving through core algorithms (regression, classification, trees, SVM, unsupervised learning), and culminating with neural networks and deployment. The objectives are specific and measurable, and topic coverage is appropriate for the target audience. The inclusion of ethics and deployment in the final lesson adds valuable practical applicability.",
+      "issues": [
+        "The syllabus lacks explicit assessment methods or grading criteria.",
+        "No mention of prerequisites beyond 'basic Python knowledge and a foundation in introductory mathematics' - more specificity would help students prepare.",
+        "Lesson 9 introduces neural networks and deep learning which may be ambitious for a beginner-to-intermediate course; this could benefit from being an optional or advanced module.",
+        "No dedicated lesson or topic for handling imbalanced datasets, which is a common practical challenge.",
+        "The course title mentions 'From Foundations to Deployment' but deployment is only covered in one topic in the final lesson; more depth on deployment pipelines might be warranted."
+      ],
+      "iteration": 1
+    },
+    "gap_assessment": {
+      "gaps_found": [
+        "Transition from classical algorithms (SVM, Random Forests) to neural networks needs bridging content",
+        "No explicit connection between unsupervised learning and supervised learning applications",
+        "Missing lesson on practical tools/frameworks before deployment (e.g., introduction to scikit-learn, TensorFlow basics)"
+      ],
+      "missing_prerequisites": [
+        "Basic probability and statistics concepts (distributions, variance, correlation)",
+        "Linear algebra fundamentals (vectors, matrices, basic operations)",
+        "Python programming basics (if hands-on implementation is intended)",
+        "Calculus concepts (gradients, derivatives for understanding optimization)"
+      ],
+      "unclear_concepts": [
+        "Bias-Variance Tradeoff introduced without foundational statistics",
+        "Kernel Methods in SVM might be too abstract without geometric intuition first",
+        "Hyperparameter tuning concepts might be confusing without understanding what hyperparameters are across different algorithms",
+        "Model persistence techniques mentioned without context of where/how models are saved/loaded"
+      ],
+      "recommendations": [
+        "Add prerequisite lessons covering basic math and programming foundations",
+        "Include practical coding examples in each algorithm lesson",
+        "Add a lesson on feature engineering between EDA and modeling lessons",
+        "Include more real-world problem statements with each algorithm",
+        "Add a lesson on common ML libraries (scikit-learn, pandas, numpy) early in the course",
+        "Provide concrete examples of how to diagnose bias vs. variance issues"
+      ],
+      "ready_for_publication": false
+    },
+    "cost_breakdown": {
+      "research_cost": 0.00042471,
+      "syllabus_cost": 0.0040739999999999995,
+      "quality_loop_cost": 0.00037884999999999997,
+      "lesson_generation_cost": 0.0168335,
+      "gap_assessment_cost": 0.00024797999999999997,
+      "total_cost": 0.02195904,
+      "total_tokens": 12732
+    },
+    "research_sources": [
+      "Tutorial research: Introduction to Machine Learning",
+      "Best practices: Introduction to Machine Learning",
+      "Hands-on projects: Introduction to Machine Learning",
+      "Lesson 1: Introduction to the Machine Learning Ecosystem",
+      "Lesson 2: Data Preprocessing and Exploratory Data Analysis (EDA)",
+      "Lesson 3: Linear Regression: Predicting Continuous Values",
+      "Lesson 4: Classification I: Logistic Regression and KNN",
+      "Lesson 5: Model Evaluation and Hyperparameter Tuning",
+      "Lesson 6: Decision Trees and Random Forests",
+      "Lesson 7: Support Vector Machines (SVM) and Kernel Methods",
+      "Lesson 8: Unsupervised Learning: Clustering and PCA",
+      "Lesson 9: Introduction to Neural Networks and Deep Learning",
+      "Lesson 10: ML Ethics, Best Practices, and Deployment"
+    ],
+    "generation_metadata": {
+      "framework": "Google ADK",
+      "patterns_demonstrated": [
+        "ParallelAgent (parallel research)",
+        "LoopAgent (quality refinement)",
+        "AgentTool (gap assessment)",
+        "output_key (state sharing)",
+        "{{template}} substitution"
+      ],
+      "models_used": {
+        "cheap": "deepseek/deepseek-v3.2",
+        "balanced": "google/gemini-3-flash-preview"
+      },
+      "quality_iterations": 1
+    }
+  },
+  "metrics": {
+    "framework": "Google ADK",
+    "start_time": "2026-01-16T10:45:03.435407",
+    "end_time": "2026-01-16T10:46:33.055178",
+    "total_tokens": 12732,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "api_calls": 17,
+    "jina_calls": 13,
+    "errors": [],
+    "duration_seconds": 89.619771
+  }
+}

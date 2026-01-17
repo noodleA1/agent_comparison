@@ -1,0 +1,981 @@
+{
+  "framework": "LangGraph",
+  "success": true,
+  "error": null,
+  "console_output": [
+    "[LangGraph] \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+    "[LangGraph] LANGGRAPH ENHANCED WORKFLOW",
+    "[LangGraph] Demonstrating: Send API, interrupt(), Conditional Edges",
+    "[LangGraph] \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+    "[LangGraph] \n\u250c\u2500 NODE: understand_node",
+    "[LangGraph] \u2502  Extracting topic from prompt...",
+    "[LangGraph] \u2502  \u2192 Topic: Introduction to Machine Learning",
+    "[LangGraph] \u2514\u2500 Cost: $0.0000",
+    "[LangGraph] \n\u250c\u2500 NODE: parallel_research_node (Send API)",
+    "[LangGraph] \u2502  LANGGRAPH PATTERN: Dynamic fan-out via Send API",
+    "[LangGraph] \u2502  Creating 3 parallel Send branches:",
+    "[LangGraph] \u2502    Send(1): 'comprehensive tutorial Introduction to M...'",
+    "[LangGraph] \u2502    Send(2): 'best practices Introduction to Machine L...'",
+    "[LangGraph] \u2502    Send(3): 'hands-on projects examples Introduction ...'",
+    "[LangGraph] \u2502  \u2192 Gathered 0 research results",
+    "[LangGraph] \u2502  \u2192 Total research: 0 chars",
+    "[LangGraph] \u2514\u2500 Cost: $0.0000",
+    "[LangGraph] \n\u250c\u2500 NODE: syllabus_node",
+    "[LangGraph] \u2502  Creating initial syllabus...",
+    "[LangGraph] \u2502  \u2192 Created syllabus with 10 lessons",
+    "[LangGraph] \u2514\u2500 Cost: $0.0037",
+    "[LangGraph] \n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+    "[LangGraph] ENTERING QUALITY LOOP (Conditional Edges)",
+    "[LangGraph] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+    "[LangGraph] \n\u250c\u2500 NODE: quality_check_node (Conditional Edge)",
+    "[LangGraph] \u2502  LANGGRAPH PATTERN: Evaluating for conditional routing",
+    "[LangGraph] \u2502  Iteration: 1",
+    "[LangGraph] \u2502  \u2192 Quality score: 0.78",
+    "[LangGraph] \u2502  \u2192 Feedback: The syllabus provides a well-structured progressio...",
+    "[LangGraph] \u2514\u2500 Cost: $0.0040",
+    "[LangGraph] \u2502  Conditional edge \u2192 refine",
+    "[LangGraph] \n\u250c\u2500 NODE: refine_node",
+    "[LangGraph] \u2502  Improving syllabus based on feedback...",
+    "[LangGraph] \u2502  \u2192 Syllabus refined",
+    "[LangGraph] \u2514\u2500 Cost: $0.0086",
+    "[LangGraph] \n\u250c\u2500 NODE: quality_check_node (Conditional Edge)",
+    "[LangGraph] \u2502  LANGGRAPH PATTERN: Evaluating for conditional routing",
+    "[LangGraph] \u2502  Iteration: 2",
+    "[LangGraph] \u2502  \u2192 Quality score: 0.72",
+    "[LangGraph] \u2502  \u2192 Feedback: This syllabus provides a solid foundation in core ...",
+    "[LangGraph] \u2514\u2500 Cost: $0.0088",
+    "[LangGraph] \u2502  Conditional edge \u2192 refine",
+    "[LangGraph] \n\u250c\u2500 NODE: refine_node",
+    "[LangGraph] \u2502  Improving syllabus based on feedback...",
+    "[LangGraph] \u2502  \u2192 Syllabus refined",
+    "[LangGraph] \u2514\u2500 Cost: $0.0128",
+    "[LangGraph] \n\u250c\u2500 NODE: quality_check_node (Conditional Edge)",
+    "[LangGraph] \u2502  LANGGRAPH PATTERN: Evaluating for conditional routing",
+    "[LangGraph] \u2502  Iteration: 3",
+    "[LangGraph] \u2502  \u2192 Quality score: 0.75",
+    "[LangGraph] \u2502  \u2192 Feedback: This syllabus shows a strong foundation with clear...",
+    "[LangGraph] \u2514\u2500 Cost: $0.0131",
+    "[LangGraph] \u2502  Conditional edge \u2192 approve",
+    "[LangGraph] \n\u250c\u2500 NODE: approval_node (interrupt)",
+    "[LangGraph] \u2502  LANGGRAPH PATTERN: Human-in-the-loop via interrupt()",
+    "[LangGraph] \u2502  Syllabus ready for approval:",
+    "[LangGraph] \u2502    - Title: Introduction to Machine Learning: Foundations and Practical Applications",
+    "[LangGraph] \u2502    - Lessons: 9",
+    "[LangGraph] \u2502    - Quality: 0.75",
+    "[LangGraph] \u2502  [interrupt() would pause here for human review]",
+    "[LangGraph] \u2502  [AUTO-APPROVED for demo]",
+    "[LangGraph] \u2502  \u2192 Checkpoint saved (MemorySaver)",
+    "[LangGraph] \u2514\u2500 Cost: $0.0131",
+    "[LangGraph] \n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+    "[LangGraph] ENTERING LESSON LOOP (Conditional Edge)",
+    "[LangGraph] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+    "[LangGraph] \u2502  [Checkpoint saved: 'pre_lessons' for potential time-travel]",
+    "[LangGraph] \n\u250c\u2500 NODE: research_lesson_node (Lesson 1)",
+    "[LangGraph] \u2502  Researching: Foundations of Machine Learning",
+    "[LangGraph] \u2514\u2500 Research complete",
+    "[LangGraph] \u250c\u2500 NODE: generate_lesson_node (Lesson 1)",
+    "[LangGraph] \u2502  \u2192 Lesson 1 complete",
+    "[LangGraph] \u2514\u2500 Cost: $0.0148",
+    "[LangGraph] \n\u250c\u2500 NODE: research_lesson_node (Lesson 2)",
+    "[LangGraph] \u2502  Researching: Data Preprocessing and Exploratory Data Analysis (EDA)",
+    "[LangGraph] \u2514\u2500 Research complete",
+    "[LangGraph] \u250c\u2500 NODE: generate_lesson_node (Lesson 2)",
+    "[LangGraph] \u2502  \u2192 Lesson 2 complete",
+    "[LangGraph] \u2514\u2500 Cost: $0.0166",
+    "[LangGraph] \n\u250c\u2500 NODE: research_lesson_node (Lesson 3)",
+    "[LangGraph] \u2502  Researching: Linear Regression: Predicting Continuous Values",
+    "[LangGraph] \u2514\u2500 Research complete",
+    "[LangGraph] \u250c\u2500 NODE: generate_lesson_node (Lesson 3)",
+    "[LangGraph] \u2502  \u2192 Lesson 3 complete",
+    "[LangGraph] \u2514\u2500 Cost: $0.0183",
+    "[LangGraph] \n\u250c\u2500 NODE: research_lesson_node (Lesson 4)",
+    "[LangGraph] \u2502  Researching: Logistic Regression and Classification Metrics",
+    "[LangGraph] \u2514\u2500 Research complete",
+    "[LangGraph] \u250c\u2500 NODE: generate_lesson_node (Lesson 4)",
+    "[LangGraph] \u2502  \u2192 Lesson 4 complete",
+    "[LangGraph] \u2514\u2500 Cost: $0.0202",
+    "[LangGraph] \n\u250c\u2500 NODE: research_lesson_node (Lesson 5)",
+    "[LangGraph] \u2502  Researching: Tree-Based Models and Ensemble Learning",
+    "[LangGraph] \u2514\u2500 Research complete",
+    "[LangGraph] \u250c\u2500 NODE: generate_lesson_node (Lesson 5)",
+    "[LangGraph] \u2502  \u2192 Lesson 5 complete",
+    "[LangGraph] \u2514\u2500 Cost: $0.0221",
+    "[LangGraph] \n\u250c\u2500 NODE: research_lesson_node (Lesson 6)",
+    "[LangGraph] \u2502  Researching: Unsupervised Learning: Clustering and Dimensionality Reduction",
+    "[LangGraph] \u2514\u2500 Research complete",
+    "[LangGraph] \u250c\u2500 NODE: generate_lesson_node (Lesson 6)",
+    "[LangGraph] \u2502  \u2192 Lesson 6 complete",
+    "[LangGraph] \u2514\u2500 Cost: $0.0238",
+    "[LangGraph] \n\u250c\u2500 NODE: research_lesson_node (Lesson 7)",
+    "[LangGraph] \u2502  Researching: Introduction to Neural Networks and Deep Learning",
+    "[LangGraph] \u2514\u2500 Research complete",
+    "[LangGraph] \u250c\u2500 NODE: generate_lesson_node (Lesson 7)",
+    "[LangGraph] \u2502  \u2192 Lesson 7 complete",
+    "[LangGraph] \u2514\u2500 Cost: $0.0255",
+    "[LangGraph] \n\u250c\u2500 NODE: research_lesson_node (Lesson 8)",
+    "[LangGraph] \u2502  Researching: Model Deployment and MLOps Foundations",
+    "[LangGraph] \u2514\u2500 Research complete",
+    "[LangGraph] \u250c\u2500 NODE: generate_lesson_node (Lesson 8)",
+    "[LangGraph] \u2502  \u2192 Lesson 8 complete",
+    "[LangGraph] \u2514\u2500 Cost: $0.0269",
+    "[LangGraph] \n\u250c\u2500 NODE: research_lesson_node (Lesson 9)",
+    "[LangGraph] \u2502  Researching: Capstone Project: End-to-End ML Pipeline",
+    "[LangGraph] \u2514\u2500 Research complete",
+    "[LangGraph] \u250c\u2500 NODE: generate_lesson_node (Lesson 9)",
+    "[LangGraph] \u2502  \u2192 Lesson 9 complete",
+    "[LangGraph] \u2514\u2500 Cost: $0.0286",
+    "[LangGraph] Exited lesson loop \u2192 END",
+    "[LangGraph] \n\u250c\u2500 NODE: gap_assessment_node",
+    "[LangGraph] \u2502  Student simulation analyzing course...",
+    "[LangGraph] \u2502  \u2192 Gaps found: 5",
+    "[LangGraph] \u2502  \u2192 Ready: False",
+    "[LangGraph] \u2514\u2500 Cost: $0.0288",
+    "[LangGraph] \n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+    "[LangGraph] GAP-DRIVEN REFINEMENT CONDITIONAL EDGE",
+    "[LangGraph] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+    "[LangGraph] \u2502  Conditional edge \u2192 refine",
+    "[LangGraph] \u2502  Triggering TIME-TRAVEL refinement...",
+    "[LangGraph] \n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+    "[LangGraph] GAP-DRIVEN REFINEMENT (TIME-TRAVEL PATTERN)",
+    "[LangGraph] \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+    "[LangGraph] \u2502  LANGGRAPH DIFFERENTIATOR: Checkpointer rewind + replay",
+    "[LangGraph] \u2502  Refinement iteration: 1",
+    "[LangGraph] \u2502  \u2192 Loaded checkpoint 'pre_lessons' (TIME-TRAVEL)",
+    "[LangGraph] \u2502  \u2192 Injecting gap context into replayed state",
+    "[LangGraph] \u2502  \u2192 Refining 9 lessons with gap insights...",
+    "[LangGraph] \u2502    Lesson 1: refined",
+    "[LangGraph] \u2502    Lesson 2: refined",
+    "[LangGraph] \u2502    Lesson 9: refined",
+    "[LangGraph] \u2502  \u2192 All lessons refined with gap awareness",
+    "[LangGraph] \u2514\u2500 Cost: $0.0538",
+    "[LangGraph] \u2502  Re-assessing gaps after refinement...",
+    "[LangGraph] \n\u250c\u2500 NODE: gap_assessment_node",
+    "[LangGraph] \u2502  Student simulation analyzing course...",
+    "[LangGraph] \u2502  \u2192 Gaps found: 4",
+    "[LangGraph] \u2502  \u2192 Ready: False",
+    "[LangGraph] \u2514\u2500 Cost: $0.0548",
+    "[LangGraph] \n\u250c\u2500 FINAL: Compiling Course Package",
+    "[LangGraph] \u2502",
+    "[LangGraph] \u2502  \u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557",
+    "[LangGraph] \u2502  \u2551  LANGGRAPH WORKFLOW COMPLETE               \u2551",
+    "[LangGraph] \u2502  \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563",
+    "[LangGraph] \u2502  \u2551  Lessons:     9                          \u2551",
+    "[LangGraph] \u2502  \u2551  Duration:    255.3s                        \u2551",
+    "[LangGraph] \u2502  \u2551  Total Cost:  $0.0548                     \u2551",
+    "[LangGraph] \u2502  \u2551  Quality:     0.75                       \u2551",
+    "[LangGraph] \u2502  \u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d",
+    "[LangGraph] \u2514\u2500"
+  ],
+  "course": {
+    "syllabus": {
+      "course_title": "Introduction to Machine Learning: Foundations and Practical Applications",
+      "course_objective": "To provide students with a solid theoretical understanding of machine learning algorithms and the practical skills to implement, evaluate, and deploy predictive models using industry-standard tools through hands-on projects and a final capstone.",
+      "target_audience": "Aspiring data scientists, software engineers, and analytical professionals with basic programming knowledge in Python.",
+      "difficulty_level": "Beginner to Intermediate",
+      "lessons": [
+        {
+          "lesson_number": 1,
+          "title": "Foundations of Machine Learning & Engineering Essentials",
+          "objectives": [
+            "Demonstrate prerequisite proficiency in Python, basic statistics (mean, variance, distributions), and linear algebra (vectors/matrices).",
+            "Distinguish between supervised, unsupervised, and reinforcement learning paradigms.",
+            "Implement feature engineering and preprocessing techniques, including specific outlier handling (Z-score, IQR) and imbalanced data strategies (SMOTE, undersampling).",
+            "Evaluate model performance using comprehensive metrics beyond MSE, including Precision-Recall curves, F1-Score, and ROC-AUC.",
+            "Explain the difference between ensemble methods, specifically Bagging (Parallel) vs. Boosting (Sequential)."
+          ],
+          "content_outline": [
+            "Module 0: Prerequisite Review: Python functions/loops, statistical distributions, and matrix multiplication basics.",
+            "The ML Workflow in Production: From data ingestion to deployment in environments like Web APIs (Flask/FastAPI) and Cloud Services (AWS SageMaker).",
+            "Advanced Preprocessing & Feature Engineering: Handling outliers (Z-score, IQR method), scaling (Standardization vs. Normalization), and creating polynomial features.",
+            "Addressing Data Imbalance: Practical implementation of oversampling (SMOTE), undersampling, and cost-sensitive learning.",
+            "Supervised Learning & Ensemble Logic: Introduction to Bagging (e.g., Random Forest) vs. Boosting (e.g., XGBoost/Gradient Boosting).",
+            "Model Evaluation & Validation: Beyond accuracy\u2014using Confusion Matrices, Precision-Recall, F1-Score, and Cross-Validation techniques.",
+            "Unsupervised & Reinforcement Learning: Clustering (K-Means) and the Agent-Environment loop (Rewards/State/Action)."
+          ],
+          "activities": [
+            "Prerequisite Diagnostic Lab: A Python notebook exercise covering basic statistics and matrix operations using NumPy.",
+            "Hands-on Coding: Preprocessing Pipeline: Students use a 'dirty' dataset to implement IQR outlier removal, handle class imbalance with SMOTE, and apply One-Hot Encoding.",
+            "The Evaluation Challenge: Given a highly imbalanced 'Fraud Detection' dataset, students must argue why Accuracy is misleading and calculate F1-score and AUC-ROC.",
+            "Ensemble Comparison: A simulation comparing the variance reduction of Bagging against the bias reduction of Boosting."
+          ],
+          "resources": [
+            "Python Notebook: 'End-to-End Preprocessing & Evaluation Template'",
+            "Video: 'Bagging vs. Boosting: A Visual Guide'",
+            "Documentation Guide: 'Deploying ML Models as REST APIs'",
+            "Handout: 'Statistical Methods for Outlier Detection and Data Cleaning'"
+          ],
+          "citations": [
+            "He, H., & Ma, Y. (2013). Imbalanced Learning: Foundations, Algorithms, and Applications. Wiley.",
+            "Kuhn, M., & Johnson, K. (2013). Applied Predictive Modeling. Springer.",
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning (2nd ed.). Springer."
+          ]
+        },
+        {
+          "lesson_number": 2,
+          "title": "Data Preprocessing, EDA, and Model Evaluation",
+          "objectives": [
+            "Verify prerequisite knowledge in Python (functions/loops) and Statistics (distributions/variance).",
+            "Implement robust cleaning workflows, specifically Z-score and IQR methods for outlier detection.",
+            "Execute advanced feature engineering including interaction terms, polynomial features, and log transformations.",
+            "Apply sampling techniques (SMOTE, undersampling) to address imbalanced datasets.",
+            "Evaluate models using comprehensive metrics beyond MSE, including Precision-Recall, F1-score, and Cross-Validation.",
+            "Understand the transition of models from notebooks to production environments like Web APIs and Cloud Services."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Basic Statistics (mean, median, variance) and Linear Algebra (vectors, matrices).",
+            "Data Cleaning & Outlier Detection: Detailed implementation of Z-score and Interquartile Range (IQR) methods.",
+            "Feature Engineering: Handling skewed data with Log transforms, creating interaction features, and binning continuous variables.",
+            "Handling Imbalanced Data: Practical implementation of Random Over/Under Sampling and SMOTE (Synthetic Minority Over-sampling Technique).",
+            "Model Evaluation Frameworks: Beyond MSE\u2014understanding MAE, R-squared, Precision, Recall, F1-Score, and ROC-AUC curves.",
+            "Validation Strategies: K-Fold Cross-Validation vs. Hold-out sets to prevent overfitting.",
+            "Ensemble Methods Overview: Introduction to Bagging (Random Forest) vs. Boosting (XGBoost) logic.",
+            "Production Context: Deployment concepts (Flask/FastAPI wrappers and AWS/GCP model hosting)."
+          ],
+          "activities": [
+            "Hands-on Coding Exercise: Building a data pipeline for the 'Credit Card Fraud' dataset to practice handling extreme class imbalance.",
+            "Feature Engineering Workshop: Using the 'Ames Housing' dataset to create derived features (e.g., Total Square Footage, Age at Sale).",
+            "Evaluation Lab: Implementing a Cross-Validation loop from scratch to compare model stability.",
+            "Deployment Simulation: Wrapping a pre-trained model in a basic Python API endpoint."
+          ],
+          "resources": [
+            "Python Libraries: Pandas, NumPy, Scikit-Learn, Imbalanced-learn, Matplotlib, Seaborn.",
+            "Datasets: Kaggle Credit Card Fraud Detection, UCI Ames Housing.",
+            "Tools: Jupyter Notebooks, Google Colab, Postman (for API testing).",
+            "Documentation: Scikit-learn Cross-validation and Imbalanced-learn User Guide."
+          ],
+          "citations": [
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research.",
+            "Chawla, N. V., et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique. Journal of Artificial Intelligence Research.",
+            "Zheng, A., & Casari, A. (2018). Feature Engineering for Machine Learning. O'Reilly Media.",
+            "Burkov, A. (2019). The Hundred-Page Machine Learning Book. (Chapter 5: Evaluation)."
+          ]
+        },
+        {
+          "lesson_number": 3,
+          "title": "Linear Regression & Advanced Evaluation: From Math to Production",
+          "objectives": [
+            "Apply prerequisite knowledge of linear algebra (vectors) and statistics (variance, distributions) to regression problems.",
+            "Implement feature engineering techniques including scaling, encoding, and handling outliers using the IQR and Z-score methods.",
+            "Master advanced model evaluation using Cross-Validation, MAE, MSE, and R-squared.",
+            "Implement strategies for imbalanced datasets and skewed distributions in regression (Log-transformation, SMOTE for Regression).",
+            "Differentiate between Ensemble methods (Bagging vs. Boosting) for improving regression performance.",
+            "Deploy a regression model as a REST API to simulate a production environment."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Linear Algebra (Matrix multiplication) and Statistics (Mean, Variance, Normal Distribution).",
+            "Feature Engineering Deep Dive: Handling outliers (IQR method vs. Z-score), Polynomial features, and scaling (Standard vs. MinMax).",
+            "Optimization & Loss: Gradient Descent vs. Ordinary Least Squares (OLS) and the impact of learning rates.",
+            "Advanced Evaluation: k-Fold Cross-Validation, Mean Absolute Error (MAE) vs. Mean Squared Error (MSE), and Adjusted R-squared.",
+            "Handling Data Challenges: Log-transformations for skewed targets and resampling techniques for imbalanced numerical distributions.",
+            "Introduction to Ensembles: Concept of Bagging (Random Forest) vs. Boosting (Gradient Boosting) for regression.",
+            "Production Readiness: Exporting models with Joblib and an overview of deployment via Web APIs (Flask/FastAPI) or Cloud Services."
+          ],
+          "activities": [
+            "Coding Exercise: Building a data preprocessing pipeline that automates outlier removal and feature scaling.",
+            "Hands-on Lab: 'Predicting House Prices' - Implementing a Multiple Linear Regression model with k-fold cross-validation and residual analysis.",
+            "Ensemble Workshop: Comparing a single Decision Tree Regressor against a Random Forest (Bagging) and XGBoost (Boosting).",
+            "Deployment Simulation: Wrapping the trained model in a simple FastAPI script to serve predictions over HTTP."
+          ],
+          "resources": [
+            "Python Libraries: NumPy, Pandas, Scikit-Learn, Scipy, FastAPI.",
+            "Dataset: Ames Housing Dataset with added synthetic imbalances for practice.",
+            "Jupyter Notebooks: 'Module_0_Prereqs.ipynb' and 'Linear_Regression_Production.ipynb'.",
+            "Documentation: Scikit-learn 'Model Evaluation' and 'Preprocessing' guides."
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning (2nd Ed).",
+            "G\u00e9ron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research."
+          ]
+        },
+        {
+          "lesson_number": 4,
+          "title": "Classification, Feature Engineering, and Model Evaluation",
+          "objectives": [
+            "Prerequisite Check: Apply basic statistics and linear algebra to machine learning models.",
+            "Implement Logistic Regression using the Sigmoid function for binary classification.",
+            "Master advanced feature engineering and outlier detection techniques.",
+            "Evaluate models using cross-validation and comprehensive classification metrics.",
+            "Implement practical strategies for handling imbalanced datasets in production-like environments."
+          ],
+          "content_outline": [
+            "Module 0: Prerequisites Review - Statistical distributions (Normal, Bernoulli), variance/standard deviation, and vector dot products.",
+            "The Logistic Function: Mapping linear combinations of features to probabilities [0, 1].",
+            "Advanced Preprocessing & Feature Engineering: Polynomial features, interaction terms, and scaling (Standardization vs. Min-Max).",
+            "Handling Outliers: Specific techniques including Z-Score filtering, Tukey's Fences (IQR), and Winsorization.",
+            "Model Evaluation & Validation: K-Fold Cross-Validation, Log-Loss, and the bias-variance tradeoff.",
+            "Ensemble Methods Introduction: Differentiating Bagging (parallel/variance reduction) vs. Boosting (sequential/bias reduction).",
+            "Imbalanced Data Implementation: Practical application of SMOTE, Random Under-sampling, and adjusting 'class_weight' parameters.",
+            "Deployment Concepts: Exporting models for Production Environments (Web APIs via Flask/FastAPI, Cloud inference services)."
+          ],
+          "activities": [
+            "Prerequisite Quiz: Short assessment on Python functions, loops, and basic statistics (mean/variance).",
+            "Coding Lab: Engineering new features from the 'Titanic' dataset to improve baseline model performance.",
+            "Outlier Workshop: Implementing a Python function to detect and treat outliers using the Interquartile Range (IQR) method.",
+            "Validation Exercise: Implementing 5-Fold Cross-Validation from scratch vs. Scikit-Learn's cross_val_score.",
+            "Imbalance Strategy: Comparing 'Balanced' Class Weights against SMOTE on a Credit Card Fraud dataset (Kaggle)."
+          ],
+          "resources": [
+            "Python Review: 'A Whirlwind Tour of Python' (Jake VanderPlas).",
+            "Scikit-Learn Guide: 'Preprocessing data' and 'Model evaluation: quantifying the quality of predictions'.",
+            "Jupyter Notebook: 'Feature_Engineering_and_Imbalance_Masterclass.ipynb'.",
+            "Deployment Example: GitHub repository showcasing a Logistic Regression model served via a FastAPI endpoint.",
+            "Dataset: Kaggle Credit Card Fraud Detection (Imbalanced) and UCI Titanic Dataset."
+          ],
+          "citations": [
+            "He, H., & Ma, Y. (2013). Imbalanced Learning: Foundations, Algorithms, and Applications.",
+            "Kuhn, M., & Johnson, K. (2013). Applied Predictive Modeling (Feature Engineering chapters).",
+            "Chawla, N. V., et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique.",
+            "Zheng, A., & Casari, A. (2018). Feature Engineering for Machine Learning."
+          ]
+        },
+        {
+          "lesson_number": 5,
+          "title": "Tree-Based Models, Ensemble Learning, and Model Evaluation",
+          "objectives": [
+            "Understand non-linear decision making via recursive partitioning and impurity measures.",
+            "Differentiate between Bagging (variance reduction) and Boosting (bias reduction) ensemble techniques.",
+            "Implement advanced feature engineering and data balancing techniques for tree-based models.",
+            "Apply comprehensive evaluation metrics and cross-validation to assess model performance in production-like environments."
+          ],
+          "content_outline": [
+            "Prerequisites Review: Python fundamentals (lists/functions), Statistics (variance, distributions), and Linear Algebra (vector representations).",
+            "Decision Tree Logic: Recursive partitioning and splitting criteria (Gini Impurity vs. Information Gain).",
+            "Feature Engineering for Trees: Handling categorical encoding (Label vs. One-Hot), creating interaction features, and handling outliers using Percentile Capping and Winsorization.",
+            "Addressing Class Imbalance: Practical implementation of SMOTE (Synthetic Minority Over-sampling Technique) and class-weight adjustment.",
+            "Ensemble Theory - Bagging: Random Forests, bootstrap sampling, and feature randomness to combat overfitting.",
+            "Ensemble Theory - Boosting: Sequential learning logic; comparing AdaBoost, Gradient Boosting, and high-performance frameworks like XGBoost/LightGBM.",
+            "Model Evaluation Framework: Beyond MSE and Accuracy\u2014Precision-Recall curves, F1-Score, ROC-AUC, and Cohen\u2019s Kappa.",
+            "Validation Strategies: K-Fold Cross-Validation, Stratified Sampling, and Time-Series splitting.",
+            "Deployment Context: Exporting models for Production Environments (REST APIs using Flask/FastAPI and Cloud Inference services)."
+          ],
+          "activities": [
+            "Prerequisite Diagnostic: A short coding quiz on Python loops and basic statistical variance calculations.",
+            "Feature Engineering Lab: Transforming a raw dataset by handling skewed distributions and encoding categorical variables for a Random Forest.",
+            "Imbalanced Data Workshop: Implementing a pipeline that compares 'Vanilla' XGBoost against a version using SMOTE and adjusted scale_pos_weight.",
+            "Evaluation Deep-Dive: A coding exercise calculating Confusion Matrices and ROC-AUC scores for a multi-class classification problem.",
+            "Production Simulation: Wrapping a trained LightGBM model into a basic Python API endpoint to simulate real-time inference."
+          ],
+          "resources": [
+            "Scikit-Learn Guide: 'Model Evaluation: Quantifying the quality of predictions'.",
+            "Imbalanced-learn Library Documentation (SMOTE implementation).",
+            "Jupyter Notebook: 'Advanced_Trees_and_Evaluation_Metrics.ipynb'.",
+            "Dataset: UCI Machine Learning Repository - Credit Card Fraud Detection (Imbalanced Dataset).",
+            "Tutorial: 'Deploying ML Models as Web APIs using FastAPI'."
+          ],
+          "citations": [
+            "Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.",
+            "Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. KDD '16.",
+            "He, H., & Garcia, E. A. (2009). Learning from Imbalanced Data. IEEE Transactions on Knowledge and Data Engineering.",
+            "Chawla, N. V., et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique. Journal of Artificial Intelligence Research."
+          ]
+        },
+        {
+          "lesson_number": 6,
+          "title": "Unsupervised Learning: Clustering and Dimensionality Reduction",
+          "objectives": [
+            "Discover hidden patterns and natural groupings in unlabeled data.",
+            "Reduce feature space complexity while retaining maximum statistical variance.",
+            "Evaluate clustering performance using internal metrics and visual diagnostics.",
+            "Apply dimensionality reduction techniques to visualize high-dimensional datasets."
+          ],
+          "content_outline": [
+            "Introduction to Unsupervised Learning vs. Supervised Learning",
+            "K-Means Clustering: Centroids, assignments, and the K-Means++ initialization",
+            "Model Selection for K-Means: The Elbow Method and Silhouette Analysis",
+            "Hierarchical Clustering: Agglomerative vs. Divisive approaches and Dendrograms",
+            "Dimensionality Reduction: The Curse of Dimensionality",
+            "Principal Component Analysis (PCA): Eigenvectors, eigenvalues, and explained variance ratio",
+            "Real-world Case Study: Customer Segmentation using RFM (Recency, Frequency, Monetary) data"
+          ],
+          "activities": [
+            "Interactive Python Lab: Implementing K-Means on the Iris dataset and plotting the 'Elbow' curve to find optimal clusters.",
+            "Visual Analysis: Interpreting a Dendrogram to determine the natural number of clusters in a small sociological dataset.",
+            "PCA Visualization: Using PCA to project a 10-feature dataset into a 2D scatter plot to identify visible clusters.",
+            "Group Discussion: Brainstorming ethical implications of automated customer profiling and segmentation."
+          ],
+          "resources": [
+            "Jupyter Notebook with Scikit-Learn (KMeans, AgglomerativeClustering, PCA modules)",
+            "Dataset: Mall Customer Segmentation Data (Kaggle)",
+            "Visualization Libraries: Matplotlib and Seaborn",
+            "Online Tool: Visualizing K-Means Clustering (Interactive JavaScript Demo)"
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning with Applications in R/Python.",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research.",
+            "Jolliffe, I. T., & Cadima, J. (2016). Principal component analysis: a review and recent developments. Philosophical Transactions of the Royal Society A."
+          ]
+        },
+        {
+          "lesson_number": 7,
+          "title": "Practical Neural Networks: Architecture, Evaluation, and Implementation",
+          "objectives": [
+            "Apply prerequisite knowledge of linear algebra (matrices) and statistics (distributions) to neural network weights and bias initialization.",
+            "Implement advanced feature engineering and data balancing techniques like SMOTE or class weighting for imbalanced datasets.",
+            "Construct and train a Multi-Layer Perceptron (MLP) while applying comprehensive evaluation metrics beyond MSE and accuracy.",
+            "Deploy a trained model as a REST API to simulate a production environment."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Vector-matrix multiplication in layers and the statistical distribution of initial weights.",
+            "Feature Engineering for Deep Learning: Scaling (MinMax vs. Standard), handling categorical data (One-Hot vs. Embeddings), and creating interaction terms.",
+            "Addressing Imbalanced Data: Practical implementation of oversampling (SMOTE), undersampling, and adjusting class weights in the loss function.",
+            "Ensemble Methods in Deep Learning: Differentiating Bagging (parallel) vs. Boosting (sequential) and their application in model averaging.",
+            "Advanced Model Evaluation: Moving beyond MSE/Accuracy to Precision-Recall curves, F1-Score, ROC-AUC, and Confusion Matrices.",
+            "Validation Strategies: K-Fold Cross-Validation and stratified sampling for robust performance estimation.",
+            "Model Deployment: Introduction to production environments using Flask/FastAPI for web APIs and an overview of cloud services (AWS SageMaker/Google Vertex AI)."
+          ],
+          "activities": [
+            "Prerequisite Diagnostic: A Python-based notebook exercise involving matrix operations and calculating variance on sample datasets.",
+            "Data Preprocessing Lab: Transform a raw, imbalanced CSV dataset using Scikit-Learn pipelines and SMOTE for minority class balancing.",
+            "Comprehensive Evaluation Coding Exercise: Build a Keras MLP and generate a full classification report and ROC curve using Scikit-Learn metrics.",
+            "Production Simulation: Wrap the trained MNIST model in a FastAPI script and test local inference using Postman or CURL requests.",
+            "Ensemble Challenge: Implement a simple 'Voting Classifier' combining three different MLP architectures to improve validation scores."
+          ],
+          "resources": [
+            "Python Statistics & Linear Algebra Refresher (scipy-lectures.org)",
+            "Imbalanced-learn Documentation (imbalanced-learn.org) for SMOTE implementation",
+            "Scikit-Learn Evaluation Metrics Guide",
+            "FastAPI Documentation for model deployment examples",
+            "Google Colab (GPU-accelerated environment)"
+          ],
+          "citations": [
+            "Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.",
+            "Chollet, F. (2021). Deep Learning with Python (2nd ed.). Manning Publications.",
+            "He, H., & Ma, Y. (2013). Imbalanced Learning: Foundations, Algorithms, and Applications. Wiley."
+          ]
+        },
+        {
+          "lesson_number": 8,
+          "title": "Advanced Model Engineering, Evaluation, and Deployment",
+          "objectives": [
+            "Apply advanced feature engineering and imbalanced data handling techniques to improve model robustness.",
+            "Evaluate models using comprehensive metrics beyond MSE, including Precision-Recall curves and F1-score.",
+            "Deploy machine learning models as scalable web APIs within containerized cloud environments.",
+            "Implement MLOps practices for monitoring model drift and maintaining production performance."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Summary of Python functions, linear algebra (vectors/matrices), and statistical distributions (normal, skewed, outliers).",
+            "Feature Engineering & Preprocessing: Polynomial features, interaction terms, and handling outliers using Z-score and IQR methods.",
+            "Imbalanced Datasets: Practical implementation of SMOTE (Oversampling), Undersampling, and Class Weight adjustments.",
+            "Comprehensive Model Evaluation: Moving beyond MSE/Accuracy to ROC-AUC, Confusion Matrices, and Cross-Validation strategies.",
+            "Ensemble Theory: Distinguishing Bagging (Random Forest) vs. Boosting (XGBoost/Gradient Boosting) architectures.",
+            "Model Deployment: Building REST APIs with FastAPI and containerizing applications using Docker for cloud services (AWS/GCP).",
+            "MLOps & Monitoring: Establishing CI/CD pipelines and detecting data drift in production environments."
+          ],
+          "activities": [
+            "Coding Lab - Data Preparation: Use Scikit-Learn to implement RobustScaler for outliers and SMOTE for an imbalanced fraud detection dataset.",
+            "Evaluation Workshop: Calculate and plot Precision-Recall curves and Feature Importance for an ensemble model.",
+            "API Build-along: Construct a FastAPI 'Predict' endpoint that accepts JSON input and returns model predictions with 95% confidence intervals.",
+            "Dockerization Exercise: Write a Dockerfile to package the API, requirements.txt, and serialized model (.joblib) into a portable image.",
+            "Validation Challenge: Perform a 5-fold Cross-Validation on a local dataset to ensure model generalization before deployment."
+          ],
+          "resources": [
+            "FastAPI Documentation (https://fastapi.tiangolo.com/)",
+            "Imbalanced-learn Documentation for SMOTE and Undersampling",
+            "Scikit-Learn Model Evaluation Guide (Metrics and Scoring)",
+            "Docker Curriculum: A comprehensive tutorial for beginners",
+            "Postman for testing API endpoints"
+          ],
+          "citations": [
+            "Kreuzberger, D., et al. (2023). 'Machine Learning Operations (MLOps): Overview, Definition, and Architecture.' IEEE Access.",
+            "Burkov, A. (2020). 'Machine Learning Engineering.' True Positive Inc.",
+            "He, H., & Ma, Y. (2013). 'Imbalanced Learning: Foundations, Algorithms, and Applications.' Wiley-IEEE Press.",
+            "Sculley, D., et al. (2015). 'Hidden Technical Debt in Machine Learning Systems.' NIPS."
+          ]
+        },
+        {
+          "lesson_number": 9,
+          "title": "Capstone Project: End-to-End ML Pipeline",
+          "objectives": [
+            "Synthesize prerequisite knowledge in Python, statistics, and linear algebra to build a production-ready ML system.",
+            "Implement advanced feature engineering and robust model evaluation strategies.",
+            "Address real-world data challenges including class imbalance and outliers using statistical methods.",
+            "Deploy a model as a scalable web API and establish monitoring for model drift."
+          ],
+          "content_outline": [
+            "I. Prerequisite Review: Applying Python functions, matrix operations for features, and statistical distributions to validate data assumptions.",
+            "II. Advanced Preprocessing: Handling outliers (Z-score, IQR, Isolation Forests) and feature engineering (polynomial features, target encoding, interaction terms).",
+            "III. Imbalanced Data Strategies: Practical implementation of SMOTE, ADASYN, and cost-sensitive learning (class_weight).",
+            "IV. Holistic Model Evaluation: Beyond MSE/Accuracy\u2014implementing Precision-Recall curves, F1-Score, ROC-AUC, Log-Loss, and K-fold Cross-Validation.",
+            "V. Ensemble Architectures: Implementing Bagging (Random Forest) vs. Boosting (XGBoost/LightGBM) and understanding their bias-variance trade-offs.",
+            "VI. Production Deployment: Wrapping models in FastAPI, containerizing with Docker, and deploying to cloud services (AWS/GCP/Azure).",
+            "VII. Monitoring & Maintenance: Detecting data and concept drift in production environments using automated triggers."
+          ],
+          "activities": [
+            "Prerequisite Diagnostic & Statistics Refresh: A short coding lab verifying proficiency in NumPy, Pandas, and basic hypothesis testing.",
+            "Feature Engineering & Imbalance Lab: Hands-on exercise using the Credit Card Fraud dataset to practice SMOTE and outlier removal.",
+            "Model Evaluation Workshop: Building a comprehensive evaluation script that generates confusion matrices and lift charts.",
+            "Deployment Sprint: Containerizing the ML model and exposing it via a FastAPI endpoint, tested with Postman.",
+            "Final Capstone Presentation: Demonstrating a live API, explaining the ensemble logic, and defending the chosen evaluation metrics."
+          ],
+          "resources": [
+            "Kaggle/UCI Repositories: Specifically 'Credit Card Fraud' (imbalance) or 'House Prices' (regression/outliers).",
+            "Scikit-Learn Documentation: User guides on 'Imbalanced Learn' and 'Pipeline' modules.",
+            "Docker & FastAPI Docs: For building production-grade web services.",
+            "Cloud Documentation: AWS SageMaker or Google Vertex AI basics.",
+            "Python Statistics Library: Documentation for Scipy.stats and Statsmodels."
+          ],
+          "citations": [
+            "Geron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (2nd ed.). O'Reilly Media.",
+            "He, H., & Ma, Y. (2013). Imbalanced Learning: Foundations, Algorithms, and Applications. Wiley.",
+            "Molnar, C. (2020). Interpretable Machine Learning: A Guide for Making Black Box Models Explainable.",
+            "Zheng, A., & Casari, A. (2018). Feature Engineering for Machine Learning. O'Reilly Media."
+          ]
+        }
+      ]
+    },
+    "research_sources": [],
+    "generation_metadata": {
+      "framework": "LangGraph",
+      "patterns_demonstrated": [
+        "Send API (parallel fan-out)",
+        "interrupt() (human-in-the-loop)",
+        "Conditional edges (quality loop)",
+        "Checkpointer (state persistence)",
+        "TIME-TRAVEL (gap-driven refinement)",
+        "TypedDict state"
+      ],
+      "total_cost": 0.05478008000000001,
+      "total_tokens": 32681,
+      "api_calls": 27,
+      "jina_calls": 9,
+      "quality_iterations": 3,
+      "refinement_iterations": 1
+    }
+  },
+  "enhanced_course": {
+    "syllabus": {
+      "course_title": "Introduction to Machine Learning: Foundations and Practical Applications",
+      "course_objective": "To provide students with a solid theoretical understanding of machine learning algorithms and the practical skills to implement, evaluate, and deploy predictive models using industry-standard tools through hands-on projects and a final capstone.",
+      "target_audience": "Aspiring data scientists, software engineers, and analytical professionals with basic programming knowledge in Python.",
+      "difficulty_level": "Beginner to Intermediate",
+      "lessons": [
+        {
+          "lesson_number": 1,
+          "title": "Foundations of Machine Learning & Engineering Essentials",
+          "objectives": [
+            "Demonstrate prerequisite proficiency in Python, basic statistics (mean, variance, distributions), and linear algebra (vectors/matrices).",
+            "Distinguish between supervised, unsupervised, and reinforcement learning paradigms.",
+            "Implement feature engineering and preprocessing techniques, including specific outlier handling (Z-score, IQR) and imbalanced data strategies (SMOTE, undersampling).",
+            "Evaluate model performance using comprehensive metrics beyond MSE, including Precision-Recall curves, F1-Score, and ROC-AUC.",
+            "Explain the difference between ensemble methods, specifically Bagging (Parallel) vs. Boosting (Sequential)."
+          ],
+          "content_outline": [
+            "Module 0: Prerequisite Review: Python functions/loops, statistical distributions, and matrix multiplication basics.",
+            "The ML Workflow in Production: From data ingestion to deployment in environments like Web APIs (Flask/FastAPI) and Cloud Services (AWS SageMaker).",
+            "Advanced Preprocessing & Feature Engineering: Handling outliers (Z-score, IQR method), scaling (Standardization vs. Normalization), and creating polynomial features.",
+            "Addressing Data Imbalance: Practical implementation of oversampling (SMOTE), undersampling, and cost-sensitive learning.",
+            "Supervised Learning & Ensemble Logic: Introduction to Bagging (e.g., Random Forest) vs. Boosting (e.g., XGBoost/Gradient Boosting).",
+            "Model Evaluation & Validation: Beyond accuracy\u2014using Confusion Matrices, Precision-Recall, F1-Score, and Cross-Validation techniques.",
+            "Unsupervised & Reinforcement Learning: Clustering (K-Means) and the Agent-Environment loop (Rewards/State/Action)."
+          ],
+          "activities": [
+            "Prerequisite Diagnostic Lab: A Python notebook exercise covering basic statistics and matrix operations using NumPy.",
+            "Hands-on Coding: Preprocessing Pipeline: Students use a 'dirty' dataset to implement IQR outlier removal, handle class imbalance with SMOTE, and apply One-Hot Encoding.",
+            "The Evaluation Challenge: Given a highly imbalanced 'Fraud Detection' dataset, students must argue why Accuracy is misleading and calculate F1-score and AUC-ROC.",
+            "Ensemble Comparison: A simulation comparing the variance reduction of Bagging against the bias reduction of Boosting."
+          ],
+          "resources": [
+            "Python Notebook: 'End-to-End Preprocessing & Evaluation Template'",
+            "Video: 'Bagging vs. Boosting: A Visual Guide'",
+            "Documentation Guide: 'Deploying ML Models as REST APIs'",
+            "Handout: 'Statistical Methods for Outlier Detection and Data Cleaning'"
+          ],
+          "citations": [
+            "He, H., & Ma, Y. (2013). Imbalanced Learning: Foundations, Algorithms, and Applications. Wiley.",
+            "Kuhn, M., & Johnson, K. (2013). Applied Predictive Modeling. Springer.",
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning (2nd ed.). Springer."
+          ]
+        },
+        {
+          "lesson_number": 2,
+          "title": "Data Preprocessing, EDA, and Model Evaluation",
+          "objectives": [
+            "Verify prerequisite knowledge in Python (functions/loops) and Statistics (distributions/variance).",
+            "Implement robust cleaning workflows, specifically Z-score and IQR methods for outlier detection.",
+            "Execute advanced feature engineering including interaction terms, polynomial features, and log transformations.",
+            "Apply sampling techniques (SMOTE, undersampling) to address imbalanced datasets.",
+            "Evaluate models using comprehensive metrics beyond MSE, including Precision-Recall, F1-score, and Cross-Validation.",
+            "Understand the transition of models from notebooks to production environments like Web APIs and Cloud Services."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Basic Statistics (mean, median, variance) and Linear Algebra (vectors, matrices).",
+            "Data Cleaning & Outlier Detection: Detailed implementation of Z-score and Interquartile Range (IQR) methods.",
+            "Feature Engineering: Handling skewed data with Log transforms, creating interaction features, and binning continuous variables.",
+            "Handling Imbalanced Data: Practical implementation of Random Over/Under Sampling and SMOTE (Synthetic Minority Over-sampling Technique).",
+            "Model Evaluation Frameworks: Beyond MSE\u2014understanding MAE, R-squared, Precision, Recall, F1-Score, and ROC-AUC curves.",
+            "Validation Strategies: K-Fold Cross-Validation vs. Hold-out sets to prevent overfitting.",
+            "Ensemble Methods Overview: Introduction to Bagging (Random Forest) vs. Boosting (XGBoost) logic.",
+            "Production Context: Deployment concepts (Flask/FastAPI wrappers and AWS/GCP model hosting)."
+          ],
+          "activities": [
+            "Hands-on Coding Exercise: Building a data pipeline for the 'Credit Card Fraud' dataset to practice handling extreme class imbalance.",
+            "Feature Engineering Workshop: Using the 'Ames Housing' dataset to create derived features (e.g., Total Square Footage, Age at Sale).",
+            "Evaluation Lab: Implementing a Cross-Validation loop from scratch to compare model stability.",
+            "Deployment Simulation: Wrapping a pre-trained model in a basic Python API endpoint."
+          ],
+          "resources": [
+            "Python Libraries: Pandas, NumPy, Scikit-Learn, Imbalanced-learn, Matplotlib, Seaborn.",
+            "Datasets: Kaggle Credit Card Fraud Detection, UCI Ames Housing.",
+            "Tools: Jupyter Notebooks, Google Colab, Postman (for API testing).",
+            "Documentation: Scikit-learn Cross-validation and Imbalanced-learn User Guide."
+          ],
+          "citations": [
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research.",
+            "Chawla, N. V., et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique. Journal of Artificial Intelligence Research.",
+            "Zheng, A., & Casari, A. (2018). Feature Engineering for Machine Learning. O'Reilly Media.",
+            "Burkov, A. (2019). The Hundred-Page Machine Learning Book. (Chapter 5: Evaluation)."
+          ]
+        },
+        {
+          "lesson_number": 3,
+          "title": "Linear Regression & Advanced Evaluation: From Math to Production",
+          "objectives": [
+            "Apply prerequisite knowledge of linear algebra (vectors) and statistics (variance, distributions) to regression problems.",
+            "Implement feature engineering techniques including scaling, encoding, and handling outliers using the IQR and Z-score methods.",
+            "Master advanced model evaluation using Cross-Validation, MAE, MSE, and R-squared.",
+            "Implement strategies for imbalanced datasets and skewed distributions in regression (Log-transformation, SMOTE for Regression).",
+            "Differentiate between Ensemble methods (Bagging vs. Boosting) for improving regression performance.",
+            "Deploy a regression model as a REST API to simulate a production environment."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Linear Algebra (Matrix multiplication) and Statistics (Mean, Variance, Normal Distribution).",
+            "Feature Engineering Deep Dive: Handling outliers (IQR method vs. Z-score), Polynomial features, and scaling (Standard vs. MinMax).",
+            "Optimization & Loss: Gradient Descent vs. Ordinary Least Squares (OLS) and the impact of learning rates.",
+            "Advanced Evaluation: k-Fold Cross-Validation, Mean Absolute Error (MAE) vs. Mean Squared Error (MSE), and Adjusted R-squared.",
+            "Handling Data Challenges: Log-transformations for skewed targets and resampling techniques for imbalanced numerical distributions.",
+            "Introduction to Ensembles: Concept of Bagging (Random Forest) vs. Boosting (Gradient Boosting) for regression.",
+            "Production Readiness: Exporting models with Joblib and an overview of deployment via Web APIs (Flask/FastAPI) or Cloud Services."
+          ],
+          "activities": [
+            "Coding Exercise: Building a data preprocessing pipeline that automates outlier removal and feature scaling.",
+            "Hands-on Lab: 'Predicting House Prices' - Implementing a Multiple Linear Regression model with k-fold cross-validation and residual analysis.",
+            "Ensemble Workshop: Comparing a single Decision Tree Regressor against a Random Forest (Bagging) and XGBoost (Boosting).",
+            "Deployment Simulation: Wrapping the trained model in a simple FastAPI script to serve predictions over HTTP."
+          ],
+          "resources": [
+            "Python Libraries: NumPy, Pandas, Scikit-Learn, Scipy, FastAPI.",
+            "Dataset: Ames Housing Dataset with added synthetic imbalances for practice.",
+            "Jupyter Notebooks: 'Module_0_Prereqs.ipynb' and 'Linear_Regression_Production.ipynb'.",
+            "Documentation: Scikit-learn 'Model Evaluation' and 'Preprocessing' guides."
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning (2nd Ed).",
+            "G\u00e9ron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research."
+          ]
+        },
+        {
+          "lesson_number": 4,
+          "title": "Classification, Feature Engineering, and Model Evaluation",
+          "objectives": [
+            "Prerequisite Check: Apply basic statistics and linear algebra to machine learning models.",
+            "Implement Logistic Regression using the Sigmoid function for binary classification.",
+            "Master advanced feature engineering and outlier detection techniques.",
+            "Evaluate models using cross-validation and comprehensive classification metrics.",
+            "Implement practical strategies for handling imbalanced datasets in production-like environments."
+          ],
+          "content_outline": [
+            "Module 0: Prerequisites Review - Statistical distributions (Normal, Bernoulli), variance/standard deviation, and vector dot products.",
+            "The Logistic Function: Mapping linear combinations of features to probabilities [0, 1].",
+            "Advanced Preprocessing & Feature Engineering: Polynomial features, interaction terms, and scaling (Standardization vs. Min-Max).",
+            "Handling Outliers: Specific techniques including Z-Score filtering, Tukey's Fences (IQR), and Winsorization.",
+            "Model Evaluation & Validation: K-Fold Cross-Validation, Log-Loss, and the bias-variance tradeoff.",
+            "Ensemble Methods Introduction: Differentiating Bagging (parallel/variance reduction) vs. Boosting (sequential/bias reduction).",
+            "Imbalanced Data Implementation: Practical application of SMOTE, Random Under-sampling, and adjusting 'class_weight' parameters.",
+            "Deployment Concepts: Exporting models for Production Environments (Web APIs via Flask/FastAPI, Cloud inference services)."
+          ],
+          "activities": [
+            "Prerequisite Quiz: Short assessment on Python functions, loops, and basic statistics (mean/variance).",
+            "Coding Lab: Engineering new features from the 'Titanic' dataset to improve baseline model performance.",
+            "Outlier Workshop: Implementing a Python function to detect and treat outliers using the Interquartile Range (IQR) method.",
+            "Validation Exercise: Implementing 5-Fold Cross-Validation from scratch vs. Scikit-Learn's cross_val_score.",
+            "Imbalance Strategy: Comparing 'Balanced' Class Weights against SMOTE on a Credit Card Fraud dataset (Kaggle)."
+          ],
+          "resources": [
+            "Python Review: 'A Whirlwind Tour of Python' (Jake VanderPlas).",
+            "Scikit-Learn Guide: 'Preprocessing data' and 'Model evaluation: quantifying the quality of predictions'.",
+            "Jupyter Notebook: 'Feature_Engineering_and_Imbalance_Masterclass.ipynb'.",
+            "Deployment Example: GitHub repository showcasing a Logistic Regression model served via a FastAPI endpoint.",
+            "Dataset: Kaggle Credit Card Fraud Detection (Imbalanced) and UCI Titanic Dataset."
+          ],
+          "citations": [
+            "He, H., & Ma, Y. (2013). Imbalanced Learning: Foundations, Algorithms, and Applications.",
+            "Kuhn, M., & Johnson, K. (2013). Applied Predictive Modeling (Feature Engineering chapters).",
+            "Chawla, N. V., et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique.",
+            "Zheng, A., & Casari, A. (2018). Feature Engineering for Machine Learning."
+          ]
+        },
+        {
+          "lesson_number": 5,
+          "title": "Tree-Based Models, Ensemble Learning, and Model Evaluation",
+          "objectives": [
+            "Understand non-linear decision making via recursive partitioning and impurity measures.",
+            "Differentiate between Bagging (variance reduction) and Boosting (bias reduction) ensemble techniques.",
+            "Implement advanced feature engineering and data balancing techniques for tree-based models.",
+            "Apply comprehensive evaluation metrics and cross-validation to assess model performance in production-like environments."
+          ],
+          "content_outline": [
+            "Prerequisites Review: Python fundamentals (lists/functions), Statistics (variance, distributions), and Linear Algebra (vector representations).",
+            "Decision Tree Logic: Recursive partitioning and splitting criteria (Gini Impurity vs. Information Gain).",
+            "Feature Engineering for Trees: Handling categorical encoding (Label vs. One-Hot), creating interaction features, and handling outliers using Percentile Capping and Winsorization.",
+            "Addressing Class Imbalance: Practical implementation of SMOTE (Synthetic Minority Over-sampling Technique) and class-weight adjustment.",
+            "Ensemble Theory - Bagging: Random Forests, bootstrap sampling, and feature randomness to combat overfitting.",
+            "Ensemble Theory - Boosting: Sequential learning logic; comparing AdaBoost, Gradient Boosting, and high-performance frameworks like XGBoost/LightGBM.",
+            "Model Evaluation Framework: Beyond MSE and Accuracy\u2014Precision-Recall curves, F1-Score, ROC-AUC, and Cohen\u2019s Kappa.",
+            "Validation Strategies: K-Fold Cross-Validation, Stratified Sampling, and Time-Series splitting.",
+            "Deployment Context: Exporting models for Production Environments (REST APIs using Flask/FastAPI and Cloud Inference services)."
+          ],
+          "activities": [
+            "Prerequisite Diagnostic: A short coding quiz on Python loops and basic statistical variance calculations.",
+            "Feature Engineering Lab: Transforming a raw dataset by handling skewed distributions and encoding categorical variables for a Random Forest.",
+            "Imbalanced Data Workshop: Implementing a pipeline that compares 'Vanilla' XGBoost against a version using SMOTE and adjusted scale_pos_weight.",
+            "Evaluation Deep-Dive: A coding exercise calculating Confusion Matrices and ROC-AUC scores for a multi-class classification problem.",
+            "Production Simulation: Wrapping a trained LightGBM model into a basic Python API endpoint to simulate real-time inference."
+          ],
+          "resources": [
+            "Scikit-Learn Guide: 'Model Evaluation: Quantifying the quality of predictions'.",
+            "Imbalanced-learn Library Documentation (SMOTE implementation).",
+            "Jupyter Notebook: 'Advanced_Trees_and_Evaluation_Metrics.ipynb'.",
+            "Dataset: UCI Machine Learning Repository - Credit Card Fraud Detection (Imbalanced Dataset).",
+            "Tutorial: 'Deploying ML Models as Web APIs using FastAPI'."
+          ],
+          "citations": [
+            "Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.",
+            "Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. KDD '16.",
+            "He, H., & Garcia, E. A. (2009). Learning from Imbalanced Data. IEEE Transactions on Knowledge and Data Engineering.",
+            "Chawla, N. V., et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique. Journal of Artificial Intelligence Research."
+          ]
+        },
+        {
+          "lesson_number": 6,
+          "title": "Unsupervised Learning: Clustering and Dimensionality Reduction",
+          "objectives": [
+            "Discover hidden patterns and natural groupings in unlabeled data.",
+            "Reduce feature space complexity while retaining maximum statistical variance.",
+            "Evaluate clustering performance using internal metrics and visual diagnostics.",
+            "Apply dimensionality reduction techniques to visualize high-dimensional datasets."
+          ],
+          "content_outline": [
+            "Introduction to Unsupervised Learning vs. Supervised Learning",
+            "K-Means Clustering: Centroids, assignments, and the K-Means++ initialization",
+            "Model Selection for K-Means: The Elbow Method and Silhouette Analysis",
+            "Hierarchical Clustering: Agglomerative vs. Divisive approaches and Dendrograms",
+            "Dimensionality Reduction: The Curse of Dimensionality",
+            "Principal Component Analysis (PCA): Eigenvectors, eigenvalues, and explained variance ratio",
+            "Real-world Case Study: Customer Segmentation using RFM (Recency, Frequency, Monetary) data"
+          ],
+          "activities": [
+            "Interactive Python Lab: Implementing K-Means on the Iris dataset and plotting the 'Elbow' curve to find optimal clusters.",
+            "Visual Analysis: Interpreting a Dendrogram to determine the natural number of clusters in a small sociological dataset.",
+            "PCA Visualization: Using PCA to project a 10-feature dataset into a 2D scatter plot to identify visible clusters.",
+            "Group Discussion: Brainstorming ethical implications of automated customer profiling and segmentation."
+          ],
+          "resources": [
+            "Jupyter Notebook with Scikit-Learn (KMeans, AgglomerativeClustering, PCA modules)",
+            "Dataset: Mall Customer Segmentation Data (Kaggle)",
+            "Visualization Libraries: Matplotlib and Seaborn",
+            "Online Tool: Visualizing K-Means Clustering (Interactive JavaScript Demo)"
+          ],
+          "citations": [
+            "James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning with Applications in R/Python.",
+            "Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research.",
+            "Jolliffe, I. T., & Cadima, J. (2016). Principal component analysis: a review and recent developments. Philosophical Transactions of the Royal Society A."
+          ]
+        },
+        {
+          "lesson_number": 7,
+          "title": "Practical Neural Networks: Architecture, Evaluation, and Implementation",
+          "objectives": [
+            "Apply prerequisite knowledge of linear algebra (matrices) and statistics (distributions) to neural network weights and bias initialization.",
+            "Implement advanced feature engineering and data balancing techniques like SMOTE or class weighting for imbalanced datasets.",
+            "Construct and train a Multi-Layer Perceptron (MLP) while applying comprehensive evaluation metrics beyond MSE and accuracy.",
+            "Deploy a trained model as a REST API to simulate a production environment."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Vector-matrix multiplication in layers and the statistical distribution of initial weights.",
+            "Feature Engineering for Deep Learning: Scaling (MinMax vs. Standard), handling categorical data (One-Hot vs. Embeddings), and creating interaction terms.",
+            "Addressing Imbalanced Data: Practical implementation of oversampling (SMOTE), undersampling, and adjusting class weights in the loss function.",
+            "Ensemble Methods in Deep Learning: Differentiating Bagging (parallel) vs. Boosting (sequential) and their application in model averaging.",
+            "Advanced Model Evaluation: Moving beyond MSE/Accuracy to Precision-Recall curves, F1-Score, ROC-AUC, and Confusion Matrices.",
+            "Validation Strategies: K-Fold Cross-Validation and stratified sampling for robust performance estimation.",
+            "Model Deployment: Introduction to production environments using Flask/FastAPI for web APIs and an overview of cloud services (AWS SageMaker/Google Vertex AI)."
+          ],
+          "activities": [
+            "Prerequisite Diagnostic: A Python-based notebook exercise involving matrix operations and calculating variance on sample datasets.",
+            "Data Preprocessing Lab: Transform a raw, imbalanced CSV dataset using Scikit-Learn pipelines and SMOTE for minority class balancing.",
+            "Comprehensive Evaluation Coding Exercise: Build a Keras MLP and generate a full classification report and ROC curve using Scikit-Learn metrics.",
+            "Production Simulation: Wrap the trained MNIST model in a FastAPI script and test local inference using Postman or CURL requests.",
+            "Ensemble Challenge: Implement a simple 'Voting Classifier' combining three different MLP architectures to improve validation scores."
+          ],
+          "resources": [
+            "Python Statistics & Linear Algebra Refresher (scipy-lectures.org)",
+            "Imbalanced-learn Documentation (imbalanced-learn.org) for SMOTE implementation",
+            "Scikit-Learn Evaluation Metrics Guide",
+            "FastAPI Documentation for model deployment examples",
+            "Google Colab (GPU-accelerated environment)"
+          ],
+          "citations": [
+            "Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.",
+            "Chollet, F. (2021). Deep Learning with Python (2nd ed.). Manning Publications.",
+            "He, H., & Ma, Y. (2013). Imbalanced Learning: Foundations, Algorithms, and Applications. Wiley."
+          ]
+        },
+        {
+          "lesson_number": 8,
+          "title": "Advanced Model Engineering, Evaluation, and Deployment",
+          "objectives": [
+            "Apply advanced feature engineering and imbalanced data handling techniques to improve model robustness.",
+            "Evaluate models using comprehensive metrics beyond MSE, including Precision-Recall curves and F1-score.",
+            "Deploy machine learning models as scalable web APIs within containerized cloud environments.",
+            "Implement MLOps practices for monitoring model drift and maintaining production performance."
+          ],
+          "content_outline": [
+            "Prerequisite Review: Summary of Python functions, linear algebra (vectors/matrices), and statistical distributions (normal, skewed, outliers).",
+            "Feature Engineering & Preprocessing: Polynomial features, interaction terms, and handling outliers using Z-score and IQR methods.",
+            "Imbalanced Datasets: Practical implementation of SMOTE (Oversampling), Undersampling, and Class Weight adjustments.",
+            "Comprehensive Model Evaluation: Moving beyond MSE/Accuracy to ROC-AUC, Confusion Matrices, and Cross-Validation strategies.",
+            "Ensemble Theory: Distinguishing Bagging (Random Forest) vs. Boosting (XGBoost/Gradient Boosting) architectures.",
+            "Model Deployment: Building REST APIs with FastAPI and containerizing applications using Docker for cloud services (AWS/GCP).",
+            "MLOps & Monitoring: Establishing CI/CD pipelines and detecting data drift in production environments."
+          ],
+          "activities": [
+            "Coding Lab - Data Preparation: Use Scikit-Learn to implement RobustScaler for outliers and SMOTE for an imbalanced fraud detection dataset.",
+            "Evaluation Workshop: Calculate and plot Precision-Recall curves and Feature Importance for an ensemble model.",
+            "API Build-along: Construct a FastAPI 'Predict' endpoint that accepts JSON input and returns model predictions with 95% confidence intervals.",
+            "Dockerization Exercise: Write a Dockerfile to package the API, requirements.txt, and serialized model (.joblib) into a portable image.",
+            "Validation Challenge: Perform a 5-fold Cross-Validation on a local dataset to ensure model generalization before deployment."
+          ],
+          "resources": [
+            "FastAPI Documentation (https://fastapi.tiangolo.com/)",
+            "Imbalanced-learn Documentation for SMOTE and Undersampling",
+            "Scikit-Learn Model Evaluation Guide (Metrics and Scoring)",
+            "Docker Curriculum: A comprehensive tutorial for beginners",
+            "Postman for testing API endpoints"
+          ],
+          "citations": [
+            "Kreuzberger, D., et al. (2023). 'Machine Learning Operations (MLOps): Overview, Definition, and Architecture.' IEEE Access.",
+            "Burkov, A. (2020). 'Machine Learning Engineering.' True Positive Inc.",
+            "He, H., & Ma, Y. (2013). 'Imbalanced Learning: Foundations, Algorithms, and Applications.' Wiley-IEEE Press.",
+            "Sculley, D., et al. (2015). 'Hidden Technical Debt in Machine Learning Systems.' NIPS."
+          ]
+        },
+        {
+          "lesson_number": 9,
+          "title": "Capstone Project: End-to-End ML Pipeline",
+          "objectives": [
+            "Synthesize prerequisite knowledge in Python, statistics, and linear algebra to build a production-ready ML system.",
+            "Implement advanced feature engineering and robust model evaluation strategies.",
+            "Address real-world data challenges including class imbalance and outliers using statistical methods.",
+            "Deploy a model as a scalable web API and establish monitoring for model drift."
+          ],
+          "content_outline": [
+            "I. Prerequisite Review: Applying Python functions, matrix operations for features, and statistical distributions to validate data assumptions.",
+            "II. Advanced Preprocessing: Handling outliers (Z-score, IQR, Isolation Forests) and feature engineering (polynomial features, target encoding, interaction terms).",
+            "III. Imbalanced Data Strategies: Practical implementation of SMOTE, ADASYN, and cost-sensitive learning (class_weight).",
+            "IV. Holistic Model Evaluation: Beyond MSE/Accuracy\u2014implementing Precision-Recall curves, F1-Score, ROC-AUC, Log-Loss, and K-fold Cross-Validation.",
+            "V. Ensemble Architectures: Implementing Bagging (Random Forest) vs. Boosting (XGBoost/LightGBM) and understanding their bias-variance trade-offs.",
+            "VI. Production Deployment: Wrapping models in FastAPI, containerizing with Docker, and deploying to cloud services (AWS/GCP/Azure).",
+            "VII. Monitoring & Maintenance: Detecting data and concept drift in production environments using automated triggers."
+          ],
+          "activities": [
+            "Prerequisite Diagnostic & Statistics Refresh: A short coding lab verifying proficiency in NumPy, Pandas, and basic hypothesis testing.",
+            "Feature Engineering & Imbalance Lab: Hands-on exercise using the Credit Card Fraud dataset to practice SMOTE and outlier removal.",
+            "Model Evaluation Workshop: Building a comprehensive evaluation script that generates confusion matrices and lift charts.",
+            "Deployment Sprint: Containerizing the ML model and exposing it via a FastAPI endpoint, tested with Postman.",
+            "Final Capstone Presentation: Demonstrating a live API, explaining the ensemble logic, and defending the chosen evaluation metrics."
+          ],
+          "resources": [
+            "Kaggle/UCI Repositories: Specifically 'Credit Card Fraud' (imbalance) or 'House Prices' (regression/outliers).",
+            "Scikit-Learn Documentation: User guides on 'Imbalanced Learn' and 'Pipeline' modules.",
+            "Docker & FastAPI Docs: For building production-grade web services.",
+            "Cloud Documentation: AWS SageMaker or Google Vertex AI basics.",
+            "Python Statistics Library: Documentation for Scipy.stats and Statsmodels."
+          ],
+          "citations": [
+            "Geron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (2nd ed.). O'Reilly Media.",
+            "He, H., & Ma, Y. (2013). Imbalanced Learning: Foundations, Algorithms, and Applications. Wiley.",
+            "Molnar, C. (2020). Interpretable Machine Learning: A Guide for Making Black Box Models Explainable.",
+            "Zheng, A., & Casari, A. (2018). Feature Engineering for Machine Learning. O'Reilly Media."
+          ]
+        }
+      ]
+    },
+    "quality_score": {
+      "score": 0.75,
+      "feedback": "This syllabus shows a strong foundation with clear learning objectives and a well-structured progression. It effectively covers core ML concepts from basics to practical implementations. The course title and objectives are well-aligned, targeting the right audience. The inclusion of hands-on labs and progression from foundations to more complex topics like ensemble learning is excellent.",
+      "issues": [
+        "Syllabus is incomplete - Lesson 5 ends abruptly with 'Introduc...' and lacks subsequent lessons for a comprehensive ML course.",
+        "Missing important foundational topics: No explicit lessons on model evaluation basics (train/test split, cross-validation), model validation, or regularization techniques.",
+        "No coverage of unsupervised learning (clustering, dimensionality reduction) despite mentioning it in Lesson 1.",
+        "Lack of advanced topics that would be expected for an 'Intermediate' level: neural networks, deep learning, or deployment considerations mentioned in course objective.",
+        "No mention of key tools/frameworks beyond Matplotlib/Seaborn - missing Scikit-learn, TensorFlow/PyTorch, or deployment tools."
+      ],
+      "iteration": 3
+    },
+    "gap_assessment": {
+      "gaps_found": [
+        "Limited coverage of diverse algorithms such as Support Vector Machines (SVM), k-Nearest Neighbors (k-NN), and Naive Bayes, which are common in introductory ML courses.",
+        "No mention of model interpretation or explainability techniques (e.g., SHAP, LIME), which are crucial for understanding model decisions.",
+        "Ethical considerations in machine learning, including bias, fairness, and privacy, are not addressed.",
+        "Deployment aspects are briefly mentioned but lack detailed steps or tools (e.g., using Flask, Docker, cloud services) for practical implementation."
+      ],
+      "missing_prerequisites": [
+        "Assumes proficiency in Python, basic statistics, and linear algebra without providing foundational content or resources, making it inaccessible for true beginners.",
+        "Probability theory concepts (e.g., conditional probability, Bayes' theorem) are not covered but may be needed for understanding distributions and classification models."
+      ],
+      "unclear_concepts": [
+        "Technical terms like 'Z-score', 'IQR methods', 'Sigmoid function', and 'impurity measures' are introduced without clear, beginner-friendly explanations.",
+        "The difference between Bagging (variance reduction) and Boosting (bias reduction) in ensemble learning might be confusing without visual examples or analogies.",
+        "Neural network concepts such as weight initialization, backpropagation, and activation functions are not explicitly detailed, potentially leaving gaps in understanding."
+      ],
+      "recommendations": [
+        "Add a pre-course module or introductory lessons covering Python basics, statistics (mean, variance, distributions), and linear algebra (vectors, matrices) to lower the entry barrier.",
+        "Incorporate more algorithm diversity by including lessons on SVM, k-NN, and other common models, as well as topics like model interpretation and ethics in AI.",
+        "Provide step-by-step tutorials, hands-on exercises, and real-world projects for each lesson to reinforce learning and practical application.",
+        "Ensure each lesson includes clear explanations with examples, visual aids, and assessments to check understanding, especially for complex concepts."
+      ],
+      "ready_for_publication": false
+    },
+    "cost_breakdown": {
+      "research_cost": 7.9e-06,
+      "syllabus_cost": 0.0036615000000000003,
+      "quality_loop_cost": 0.00939379,
+      "lesson_generation_cost": 0.015504500000000001,
+      "gap_assessment_cost": 0.00119039,
+      "gap_refinement_cost": 0.0,
+      "total_cost": 0.05478008000000001,
+      "total_tokens": 32681
+    },
+    "research_sources": [],
+    "generation_metadata": {
+      "framework": "LangGraph",
+      "patterns_demonstrated": [
+        "Send API (parallel fan-out)",
+        "interrupt() (human-in-the-loop)",
+        "Conditional edges (quality loop)",
+        "Checkpointer (state persistence)",
+        "TIME-TRAVEL (gap-driven refinement)",
+        "TypedDict state"
+      ],
+      "models_used": {
+        "cheap": "deepseek/deepseek-v3.2",
+        "balanced": "google/gemini-3-flash-preview"
+      },
+      "quality_iterations": 3,
+      "refinement_iterations": 1
+    }
+  },
+  "metrics": {
+    "framework": "LangGraph",
+    "start_time": "2026-01-16T11:19:31.652930",
+    "end_time": "2026-01-16T11:23:46.982040",
+    "total_tokens": 32681,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "api_calls": 27,
+    "jina_calls": 9,
+    "errors": [],
+    "duration_seconds": 255.32911
+  }
+}

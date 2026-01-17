@@ -1,0 +1,881 @@
+{
+  "framework": "Orchestral AI (Enhanced)",
+  "success": true,
+  "error": null,
+  "console_output": [
+    "[Orchestral] ==================================================",
+    "[Orchestral] Enhanced Orchestral Agent Started",
+    "[Orchestral] Provider: BalancedLLM (balanced)",
+    "[Orchestral] ==================================================",
+    "[Orchestral] Extracting topic...",
+    "[Orchestral]   \u2192 Topic: Git basics",
+    "[Orchestral] Phase 1: Research (with cost tracking)",
+    "[Orchestral]   \u2192 Searching: academic",
+    "[Orchestral]     Cost so far: $0.0000",
+    "[Orchestral]   \u2192 Searching: tutorial",
+    "[Orchestral]     Cost so far: $0.0000",
+    "[Orchestral]   \u2192 Searching: documentation",
+    "[Orchestral]     Cost so far: $0.0000",
+    "[Orchestral]   \u2192 Synthesizing research...",
+    "[Orchestral]   \u2192 Research phase cost: $0.0004",
+    "[Orchestral] Phase 2: Syllabus + Quality Loop",
+    "[Orchestral]   Iteration 1/3",
+    "[Orchestral]     \u2192 Generating syllabus...",
+    "[Orchestral]     \u2192 Checking quality...",
+    "[Orchestral]     \u2192 Score: 0.92, Iteration cost: $0.0044",
+    "[Orchestral]     \u2192 Quality threshold met!",
+    "[Orchestral] Phase 3: Approval Checkpoint (hook system)",
+    "[Orchestral]   \u2192 Approved (auto-approved for demo)",
+    "[Orchestral] Phase 4: Lesson Generation",
+    "[Orchestral]   Lesson 1/10: Introduction to Version Control and Git Architecture",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0017",
+    "[Orchestral]   Lesson 2/10: Setting Up and Initializing Repositories",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0014",
+    "[Orchestral]   Lesson 3/10: The Basic Git Workflow",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0014",
+    "[Orchestral]   Lesson 4/10: Managing Changes and Undoing Mistakes",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0014",
+    "[Orchestral]   Lesson 5/10: Branching Fundamentals",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0014",
+    "[Orchestral]   Lesson 6/10: Advanced Merging and Conflict Resolution",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0016",
+    "[Orchestral]   Lesson 7/10: Remote Collaboration: Pushing and Pulling",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0015",
+    "[Orchestral]   Lesson 8/10: The Power of Rebasing and Rewriting History",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0015",
+    "[Orchestral]   Lesson 9/10: Stashing, Tagging, and Searching",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0014",
+    "[Orchestral]   Lesson 10/10: Collaborative Workflows and Pull Requests",
+    "[Orchestral]     \u2192 Researching...",
+    "[Orchestral]     \u2192 Generating...",
+    "[Orchestral]     \u2192 Cost: $0.0016",
+    "[Orchestral] Phase 5: Gap Assessment (subagent)",
+    "[Orchestral]   \u2192 Running student subagent...",
+    "[Orchestral]   \u2192 Found 3 gaps",
+    "[Orchestral]   \u2192 Subagent cost: $0.0003",
+    "[Orchestral] Compiling enhanced course package...",
+    "[Orchestral] ==================================================",
+    "[Orchestral] Complete: 10 lessons in 178.9s",
+    "[Orchestral] Quality: 0.92, Gaps: 3",
+    "[Orchestral] Total cost: $0.0200",
+    "[Orchestral] Cost breakdown:",
+    "[Orchestral]   research: $0.0004",
+    "[Orchestral]   syllabus: $0.0037",
+    "[Orchestral]   quality_loop: $0.0007",
+    "[Orchestral]   lessons: $0.0149",
+    "[Orchestral]   gap_assessment: $0.0003",
+    "[Orchestral] =================================================="
+  ],
+  "course": {
+    "syllabus": {
+      "course_title": "Mastering Git: From First Commit to Collaborative Workflows",
+      "course_objective": "To provide learners with a comprehensive understanding of version control principles, practical command-line proficiency, and the ability to manage complex collaborative software projects using Git.",
+      "target_audience": "General learners",
+      "difficulty_level": "Intermediate",
+      "lessons": [
+        {
+          "lesson_number": 1,
+          "title": "Introduction to Version Control and Git Architecture",
+          "objectives": [
+            "Explain the fundamental differences between Centralized Version Control Systems (CVCS) and Distributed Version Control Systems (DVCS).",
+            "Identify and describe the three main states of Git: the working directory, the staging area (index), and the git directory (repository).",
+            "Conceptualize the data flow between local and remote environments."
+          ],
+          "content_outline": [
+            "Evolution of Version Control: From local file copying to Centralized systems (e.g., SVN, Perforce).",
+            "The DVCS Revolution: Highlighting Git's design by Linus Torvalds for the Linux kernel development.",
+            "Git's Philosophy: Snapshot-based tracking vs. Delta-based tracking.",
+            "The Three Stages: Working Directory (untracked/modified), Staging Area (prepared for commit), and Repository (committed snapshots).",
+            "The Lifecycle of a File: Untracked, Unmodified, Modified, and Staged states.",
+            "Local vs. Remote: Understanding that every developer has a full copy of the history and how 'push/pull' bridge the gap."
+          ],
+          "activities": [
+            "Comparative Analysis: A group discussion mapping the failure points of a single central server vs. a distributed network.",
+            "Diagram Mapping: Sketching the 'Git Trinity' and labeling the commands (add, commit, checkout) that move files between stages.",
+            "Terminal Observation: Running 'git init' and 'git status' to observe how Git perceives a brand new file in a local environment."
+          ],
+          "resources": [
+            "Pro Git Book (Chacon & Straub) - Chapters 1.1 to 1.3",
+            "Git Documentation: 'Getting Started - About Version Control'",
+            "Visualizing Git (Interactive Web Tool)",
+            "Command Line Interface (Linux, macOS, or Git Bash for Windows)"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "Spinellis, D. (2012). Version Control Systems. IEEE Software, 29(5), 100-101.",
+            "Torvalds, L. (2005). Git: A distributed version control system. Software management principles."
+          ]
+        },
+        {
+          "lesson_number": 2,
+          "title": "Setting Up and Initializing Repositories",
+          "objectives": [
+            "Configure global user identity (name and email) for Git commits.",
+            "Create new local repositories from scratch using initialization commands.",
+            "Clone existing remote repositories to a local machine.",
+            "Identify and understand the purpose of the hidden .git directory."
+          ],
+          "content_outline": [
+            "Introduction to Git Configuration: Scope levels (system, global, local).",
+            "Identity Setup: Using 'git config' to set user.name and user.email.",
+            "Project Initialization: Converting a standard directory into a Git repository with 'git init'.",
+            "Anatomy of a Repository: Exploring the hidden .git folder and its role in version tracking.",
+            "Remote Collaboration: Fetching projects using 'git clone' and understanding the relationship between local and remote copies."
+          ],
+          "activities": [
+            "Terminal Setup: Run 'git config --global' commands and verify settings using 'git config --list'.",
+            "Local Creation: Create a folder named 'my-first-repo', initialize it, and use 'ls -a' to reveal the .git directory.",
+            "Cloning Lab: Clone a public repository from GitHub (e.g., a simple 'hello-world' project) to observe automatic remote linking."
+          ],
+          "resources": [
+            "Command line interface (Terminal or Git Bash)",
+            "Official Git Documentation (git-scm.com/docs)",
+            "Pro Git Book, Chapter 1.6: First-Time Git Setup",
+            "GitHub public repository URL for cloning practice"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Git project contributors. (2023). Git Reference Manual: git-config, git-init, git-clone documentation."
+          ]
+        },
+        {
+          "lesson_number": 3,
+          "title": "The Basic Git Workflow",
+          "objectives": [
+            "Track file changes through the staging lifecycle",
+            "Write effective commit messages",
+            "Navigate file status and history within a local repository"
+          ],
+          "content_outline": [
+            "Introduction to the Three States: Working Directory, Staging Area, and Git Directory",
+            "Inspecting the repository state with 'git status'",
+            "The Staging Process: Moving changes from working directory to index using 'git add'",
+            "Snapshotting Changes: Using 'git commit' to record staged updates",
+            "History Visualization: Reviewing the project timeline with 'git log'",
+            "Best practices for atomic commits and the anatomy of a good commit message"
+          ],
+          "activities": [
+            "Interactive Demo: Creating a new text file and tracking its lifecycle from untracked to committed",
+            "Code Lab: Staging specific files vs. all files (git add <file> vs git add .)",
+            "Peer Review: Writing and critiquing commit messages based on the 'Imperative Mood' standard",
+            "Log Exploration: Using flags like --oneline and --graph to visualize branching history"
+          ],
+          "resources": [
+            "Git Documentation: 2.2 Git Basics - Recording Changes to the Repository",
+            "Terminal/Command Line interface",
+            "Visual Studio Code or preferred Text Editor",
+            "Pro Git Book by Scott Chacon and Ben Straub"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Atlassian Bitbucket. (n.d.). Git Workflow: Staging Area and Commits.",
+            "The Git Project. (2023). Reference Guide: git-status, git-add, git-commit."
+          ]
+        },
+        {
+          "lesson_number": 4,
+          "title": "Managing Changes and Undoing Mistakes",
+          "objectives": [
+            "Compare different versions of files using inspection commands",
+            "Differentiate between soft, mixed, and hard resets",
+            "Recover from errors by safely reverting commits or undoing local changes"
+          ],
+          "content_outline": [
+            "Introduction to Inspection: Using git diff to see unstaged vs. staged changes",
+            "Comparing commits: Using git diff with commit hashes and HEAD",
+            "Undoing local work: Using git checkout and git restore to discard changes in the working directory",
+            "The 3 Flavors of git reset: Soft (keep changes staged), Mixed (keep changes unstaged), and Hard (discard all changes)",
+            "Public Correction: Creating 'inverse' commits with git revert to maintain project history",
+            "Safety first: When to use reset vs. revert in collaborative environments"
+          ],
+          "activities": [
+            "Difference Discovery: Modify a file and use git diff to identify specific line changes before staging",
+            "The Great Undo: Stage a file, then use git reset to unstage it without losing the work",
+            "Time Travel Lab: Perform a git hard reset to a previous commit, then use the reflog to recover a 'lost' state",
+            "Collaborative Fix: Simulate a shared history error and use git revert to fix it without burning the commit history"
+          ],
+          "resources": [
+            "Visual Git Reference: Reset vs Revert diagrams",
+            "Git Documentation: Reference for git-reset and git-revert",
+            "Interactive Terminal: Git Bash or VS Code Integrated Terminal"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Atlassian Bitbucket Tutorials: Undoing Changes.",
+            "Git SCM Manual. (n.d.). git-reset Documentation."
+          ]
+        },
+        {
+          "lesson_number": 5,
+          "title": "Branching Fundamentals",
+          "objectives": [
+            "Create and navigate branches for feature development",
+            "Understand the role of the HEAD pointer in Git",
+            "Implement a basic feature-branching workflow",
+            "Execute a fundamental fast-forward merge"
+          ],
+          "content_outline": [
+            "Definition of a branch as a pointer to a commit",
+            "The role of HEAD as the 'active' pointer",
+            "Creating branches with 'git branch <name>'",
+            "Switching contexts using 'git switch' (and the legacy 'git checkout')",
+            "The 'Feature Branch' strategy: isolating development from 'main'",
+            "Introduction to merging: Integrating changes back into the primary line",
+            "Visualizing the commit graph during branching operations"
+          ],
+          "activities": [
+            "Interactive visualization: Mapping out HEAD movement on a whiteboard or digital tool",
+            "CLI Lab: Create a branch called 'feature-login', make a commit, and observe the divergence from 'main'",
+            "The 'Context Switch' challenge: Modify a file in one branch, switch to another, and observe the file system changes",
+            "Manual Merge: Perform a fast-forward merge from 'feature-login' into 'main' and delete the obsolete branch"
+          ],
+          "resources": [
+            "Git Documentation: 3.1 Git Branching - Branches in a Nutshell",
+            "Visualizing Git (online interactive tool)",
+            "Local terminal/bash environment",
+            "Sample text repository for modification"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "Atlassian Bitbucket. (n.d.). Git Branching Tutorial.",
+            "Official Git Documentation (git-scm.com/docs)."
+          ]
+        },
+        {
+          "lesson_number": 6,
+          "title": "Advanced Merging and Conflict Resolution",
+          "objectives": [
+            "Distinguish between fast-forward and three-way (recursive) merge strategies",
+            "Interpret and resolve manual merge conflict markers within source code",
+            "Utilize safety commands like git merge --abort to manage failed merges",
+            "Identify best practices for maintaining a clean and linear project history"
+          ],
+          "content_outline": [
+            "Understanding Merge Strategies: The Fast-Forward Merge vs. The Merge Commit (Three-way merge)",
+            "Anatomy of a Conflict: Why they happen and how Git flags them",
+            "The Resolution Workflow: Identifying markers (<<<<, ====, >>>>), editing files, and staging results",
+            "Emergency Procedures: Using git merge --abort to reset state",
+            "Tooling: Overview of visual merge tools (mergetool) vs. manual text editing",
+            "Workflow Hygiene: Frequent pulling, small commits, and communication"
+          ],
+          "activities": [
+            "Simulation: Create a 'Feature' branch and a 'Main' branch, edit the same line in both, and trigger a merge conflict locally",
+            "Conflict Scavenger Hunt: Manually edit a file containing conflict markers to keep specific changes from both branches",
+            "Strategy Comparison: Execute a fast-forward merge and then use the --no-ff flag to see the difference in the git log graph",
+            "Command Line Rescue: Initiate a messy merge and successfully use the abort command to return to a clean working directory"
+          ],
+          "resources": [
+            "Git SCM Documentation: Basic Merging and Branching",
+            "Visualizing Git: Interactive D3-based branching simulator",
+            "VS Code Integrated Source Control Guide for Merge Conflicts"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "Atlassian Bitbucket Tutorials: Git Merge Conflicts (https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)",
+            "Git Documentation: git-merge (https://git-scm.com/docs/git-merge)"
+          ]
+        },
+        {
+          "lesson_number": 7,
+          "title": "Remote Collaboration: Pushing and Pulling",
+          "objectives": [
+            "Synchronize local work with remote servers like GitHub/GitLab",
+            "Manage remote tracking branches",
+            "Differentiate between git fetch and git pull operations",
+            "Configure upstream tracking for seamless synchronization"
+          ],
+          "content_outline": [
+            "Introduction to Remote Repositories: Connecting local git to the cloud",
+            "Managing Remotes: Adding, renaming, and removing remote nicknames (origin)",
+            "Uploading Changes: Using git push to send local commits to a server",
+            "Downloading Changes: The two-step process of git fetch and git merge",
+            "Automated Updates: Using git pull as a combined command",
+            "Upstream Tracking: Setting -u or --set-upstream to link local and remote branches",
+            "Conflicts in Remote Sync: Introduction to common push/pull rejection scenarios"
+          ],
+          "activities": [
+            "Remote Setup: Create a repository on GitHub/GitLab and link it to a local folder using 'git remote add origin'",
+            "The First Push: Push the 'main' branch to the remote server using the '-u' flag",
+            "Simulated Collaboration: Use the web interface to edit a file, then perform a 'git pull' locally to synchronize",
+            "Fetch vs. Pull Lab: Execute 'git fetch' and inspect 'origin/main' before manually merging into the local branch"
+          ],
+          "resources": [
+            "Git Documentation: Working with Remotes (git-scm.com)",
+            "GitHub Guides: Getting Started with Remote Repositories",
+            "Interactive Terminal: Git Bash or Visual Studio Code Integrated Terminal"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "GitHub Docs. (2023). Managing remote repositories.",
+            "Atlassian Bitbucket Tutorials. (2023). Syncing repositories: git fetch, pull, and push."
+          ]
+        },
+        {
+          "lesson_number": 8,
+          "title": "The Power of Rebasing and Rewriting History",
+          "objectives": [
+            "Differentiate between merging and rebasing workflows",
+            "Use standard rebase to maintain a linear project history",
+            "Execute an interactive rebase to squash, reword, and drop commits",
+            "Identify when it is unsafe to rebase based on the Golden Rule of Rebasing"
+          ],
+          "content_outline": [
+            "Introduction to git rebase: Moving the base of a branch",
+            "Rebase vs. Merge: Linear history vs. preservation of context",
+            "The Golden Rule of Rebasing: Never rebase public branches",
+            "Interactive Rebase (git rebase -i): Understanding the todo list",
+            "Rewriting history commands: pick, reword, edit, squash, fixup, and drop",
+            "Resolving conflicts during a rebase process",
+            "Force pushing (git push --force-with-lease) after rewriting history"
+          ],
+          "activities": [
+            "Standard Rebase Exercise: Rebase a feature branch onto an updated main branch to eliminate merge commits",
+            "Interactive Workshop: Take a branch with 'messy' commits (e.g., 'work in progress', 'typo fix') and squash them into a single clean feature commit",
+            "Conflict Resolution Lab: Deliberately trigger and resolve a conflict during a rebase to practice using --continue and --abort",
+            "Group Discussion: Evaluate scenarios to determine if rebasing or merging is the appropriate strategy"
+          ],
+          "resources": [
+            "Git Documentation: Rewriting History (git-scm.com)",
+            "Visualizing Git: Interactive online rebase simulator",
+            "Terminal/CLI with a sample 'dirty' repository for practice",
+            "Cheat sheet: Interactive Rebase commands overview"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Atlassian Bitbucket Tutorials: Merging vs. Rebasing.",
+            "Git-SCM Reference: git-rebase documentation."
+          ]
+        },
+        {
+          "lesson_number": 9,
+          "title": "Stashing, Tagging, and Searching",
+          "objectives": [
+            "Temporarily store uncommitted work without committing to the branch",
+            "Mark specific release points or milestones in the project history",
+            "Utilize built-in search tools to locate specific code or metadata"
+          ],
+          "content_outline": [
+            "Introduction to Git Stash: Handling context switches and cleaning a dirty working directory",
+            "Managing the Stash Stack: push, pop, apply, list, and clear",
+            "Identifying Milestones: The difference between Lightweight and Annotated tags",
+            "Tag Management: Creating, listing, and pushing tags to remote repositories",
+            "Effective Searching: Using 'git grep' for content and 'git show' for object inspection"
+          ],
+          "activities": [
+            "Context Switch Simulation: Create changes, stash them to pull an urgent update, then restore the stash",
+            "Release Labeling: Create an annotated tag 'v1.0' with a message and push it to a mock remote",
+            "Code Audit: Use 'git grep' to find all occurrences of a specific function name across the codebase",
+            "Inspection Exercise: Use 'git show' to examine the metadata of a specific tag and commit"
+          ],
+          "resources": [
+            "Official Git Documentation (git-scm.com/docs)",
+            "Pro Git Book: Chapter 7.3 Stashing and Cleaning",
+            "Pro Git Book: Chapter 2.6 Tagging",
+            "Terminal/CLI with Git installed"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Git Documentation Team. (2023). Git-stash Documentation.",
+            "Git Documentation Team. (2023). Git-tag Documentation."
+          ]
+        },
+        {
+          "lesson_number": 10,
+          "title": "Collaborative Workflows and Pull Requests",
+          "objectives": [
+            "Execute a full Gitflow or GitHub flow lifecycle including feature branching and merging",
+            "Participate in constructive code reviews via Pull Requests (PRs)",
+            "Configure project-specific .gitignore files to manage environment-sensitive data",
+            "Demonstrate collaborative proficiency through a final integrated project build"
+          ],
+          "content_outline": [
+            "Introduction to Workflow Patterns: Forking (Open Source) vs. Shared Repository Branching (Internal Teams)",
+            "Deep Dive into GitHub Flow: Feature branches, PR creation, and the 'Ship/Show/Ask' philosophy",
+            "Principles of Pull Request Etiquette: Writing meaningful descriptions and responding to feedback",
+            "Advanced .gitignore Management: Global vs. Local templates, untracking previously tracked files, and securing API keys",
+            "Code Review Ethics: Identifying logic errors, maintaining style consistency, and fostering a positive developer culture",
+            "Conflict Resolution in the PR UI: Using the web-based editor to resolve simple merge conflicts"
+          ],
+          "activities": [
+            "The 'PR Ping-Pong': Students pair up, fork each other's repositories, propose a change, and perform a formal code review with at least two requested revisions",
+            "Global Gitignore Setup: Configuring a system-wide .gitignore to exclude .DS_Store or IDE-specific folders across all future projects",
+            "Final Project Sprint: A time-boxed group activity where 3-4 students contribute small components to a centralized repository using strict branching conventions"
+          ],
+          "resources": [
+            "GitHub Guides: 'Understanding the GitHub Flow'",
+            "Git-SCM Documentation: 'Distributed Workflows'",
+            "gitignore.io (Toptal tool) for automated ignore file generation",
+            "Sample 'Code Review Checklist' PDF"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "GitHub, Inc. (2023). 'About pull requests.' GitHub Docs.",
+            "Atlassian. (2023). 'Gitflow Workflow.' Bitbucket Tutorials."
+          ]
+        }
+      ]
+    },
+    "research_sources": [
+      "Research: Git basics"
+    ],
+    "generation_metadata": {
+      "framework": "Orchestral AI (Enhanced)",
+      "pattern": "Provider-agnostic + CheapLLM + Subagents + Hooks",
+      "providers_used": {
+        "cheap": "CheapLLM (Haiku)",
+        "quality": "Claude Sonnet"
+      },
+      "iteration_costs": [
+        {
+          "iteration": 1,
+          "cost": 0.00441625
+        }
+      ]
+    }
+  },
+  "enhanced_course": {
+    "syllabus": {
+      "course_title": "Mastering Git: From First Commit to Collaborative Workflows",
+      "course_objective": "To provide learners with a comprehensive understanding of version control principles, practical command-line proficiency, and the ability to manage complex collaborative software projects using Git.",
+      "target_audience": "General learners",
+      "difficulty_level": "Intermediate",
+      "lessons": [
+        {
+          "lesson_number": 1,
+          "title": "Introduction to Version Control and Git Architecture",
+          "objectives": [
+            "Explain the fundamental differences between Centralized Version Control Systems (CVCS) and Distributed Version Control Systems (DVCS).",
+            "Identify and describe the three main states of Git: the working directory, the staging area (index), and the git directory (repository).",
+            "Conceptualize the data flow between local and remote environments."
+          ],
+          "content_outline": [
+            "Evolution of Version Control: From local file copying to Centralized systems (e.g., SVN, Perforce).",
+            "The DVCS Revolution: Highlighting Git's design by Linus Torvalds for the Linux kernel development.",
+            "Git's Philosophy: Snapshot-based tracking vs. Delta-based tracking.",
+            "The Three Stages: Working Directory (untracked/modified), Staging Area (prepared for commit), and Repository (committed snapshots).",
+            "The Lifecycle of a File: Untracked, Unmodified, Modified, and Staged states.",
+            "Local vs. Remote: Understanding that every developer has a full copy of the history and how 'push/pull' bridge the gap."
+          ],
+          "activities": [
+            "Comparative Analysis: A group discussion mapping the failure points of a single central server vs. a distributed network.",
+            "Diagram Mapping: Sketching the 'Git Trinity' and labeling the commands (add, commit, checkout) that move files between stages.",
+            "Terminal Observation: Running 'git init' and 'git status' to observe how Git perceives a brand new file in a local environment."
+          ],
+          "resources": [
+            "Pro Git Book (Chacon & Straub) - Chapters 1.1 to 1.3",
+            "Git Documentation: 'Getting Started - About Version Control'",
+            "Visualizing Git (Interactive Web Tool)",
+            "Command Line Interface (Linux, macOS, or Git Bash for Windows)"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "Spinellis, D. (2012). Version Control Systems. IEEE Software, 29(5), 100-101.",
+            "Torvalds, L. (2005). Git: A distributed version control system. Software management principles."
+          ]
+        },
+        {
+          "lesson_number": 2,
+          "title": "Setting Up and Initializing Repositories",
+          "objectives": [
+            "Configure global user identity (name and email) for Git commits.",
+            "Create new local repositories from scratch using initialization commands.",
+            "Clone existing remote repositories to a local machine.",
+            "Identify and understand the purpose of the hidden .git directory."
+          ],
+          "content_outline": [
+            "Introduction to Git Configuration: Scope levels (system, global, local).",
+            "Identity Setup: Using 'git config' to set user.name and user.email.",
+            "Project Initialization: Converting a standard directory into a Git repository with 'git init'.",
+            "Anatomy of a Repository: Exploring the hidden .git folder and its role in version tracking.",
+            "Remote Collaboration: Fetching projects using 'git clone' and understanding the relationship between local and remote copies."
+          ],
+          "activities": [
+            "Terminal Setup: Run 'git config --global' commands and verify settings using 'git config --list'.",
+            "Local Creation: Create a folder named 'my-first-repo', initialize it, and use 'ls -a' to reveal the .git directory.",
+            "Cloning Lab: Clone a public repository from GitHub (e.g., a simple 'hello-world' project) to observe automatic remote linking."
+          ],
+          "resources": [
+            "Command line interface (Terminal or Git Bash)",
+            "Official Git Documentation (git-scm.com/docs)",
+            "Pro Git Book, Chapter 1.6: First-Time Git Setup",
+            "GitHub public repository URL for cloning practice"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Git project contributors. (2023). Git Reference Manual: git-config, git-init, git-clone documentation."
+          ]
+        },
+        {
+          "lesson_number": 3,
+          "title": "The Basic Git Workflow",
+          "objectives": [
+            "Track file changes through the staging lifecycle",
+            "Write effective commit messages",
+            "Navigate file status and history within a local repository"
+          ],
+          "content_outline": [
+            "Introduction to the Three States: Working Directory, Staging Area, and Git Directory",
+            "Inspecting the repository state with 'git status'",
+            "The Staging Process: Moving changes from working directory to index using 'git add'",
+            "Snapshotting Changes: Using 'git commit' to record staged updates",
+            "History Visualization: Reviewing the project timeline with 'git log'",
+            "Best practices for atomic commits and the anatomy of a good commit message"
+          ],
+          "activities": [
+            "Interactive Demo: Creating a new text file and tracking its lifecycle from untracked to committed",
+            "Code Lab: Staging specific files vs. all files (git add <file> vs git add .)",
+            "Peer Review: Writing and critiquing commit messages based on the 'Imperative Mood' standard",
+            "Log Exploration: Using flags like --oneline and --graph to visualize branching history"
+          ],
+          "resources": [
+            "Git Documentation: 2.2 Git Basics - Recording Changes to the Repository",
+            "Terminal/Command Line interface",
+            "Visual Studio Code or preferred Text Editor",
+            "Pro Git Book by Scott Chacon and Ben Straub"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Atlassian Bitbucket. (n.d.). Git Workflow: Staging Area and Commits.",
+            "The Git Project. (2023). Reference Guide: git-status, git-add, git-commit."
+          ]
+        },
+        {
+          "lesson_number": 4,
+          "title": "Managing Changes and Undoing Mistakes",
+          "objectives": [
+            "Compare different versions of files using inspection commands",
+            "Differentiate between soft, mixed, and hard resets",
+            "Recover from errors by safely reverting commits or undoing local changes"
+          ],
+          "content_outline": [
+            "Introduction to Inspection: Using git diff to see unstaged vs. staged changes",
+            "Comparing commits: Using git diff with commit hashes and HEAD",
+            "Undoing local work: Using git checkout and git restore to discard changes in the working directory",
+            "The 3 Flavors of git reset: Soft (keep changes staged), Mixed (keep changes unstaged), and Hard (discard all changes)",
+            "Public Correction: Creating 'inverse' commits with git revert to maintain project history",
+            "Safety first: When to use reset vs. revert in collaborative environments"
+          ],
+          "activities": [
+            "Difference Discovery: Modify a file and use git diff to identify specific line changes before staging",
+            "The Great Undo: Stage a file, then use git reset to unstage it without losing the work",
+            "Time Travel Lab: Perform a git hard reset to a previous commit, then use the reflog to recover a 'lost' state",
+            "Collaborative Fix: Simulate a shared history error and use git revert to fix it without burning the commit history"
+          ],
+          "resources": [
+            "Visual Git Reference: Reset vs Revert diagrams",
+            "Git Documentation: Reference for git-reset and git-revert",
+            "Interactive Terminal: Git Bash or VS Code Integrated Terminal"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Atlassian Bitbucket Tutorials: Undoing Changes.",
+            "Git SCM Manual. (n.d.). git-reset Documentation."
+          ]
+        },
+        {
+          "lesson_number": 5,
+          "title": "Branching Fundamentals",
+          "objectives": [
+            "Create and navigate branches for feature development",
+            "Understand the role of the HEAD pointer in Git",
+            "Implement a basic feature-branching workflow",
+            "Execute a fundamental fast-forward merge"
+          ],
+          "content_outline": [
+            "Definition of a branch as a pointer to a commit",
+            "The role of HEAD as the 'active' pointer",
+            "Creating branches with 'git branch <name>'",
+            "Switching contexts using 'git switch' (and the legacy 'git checkout')",
+            "The 'Feature Branch' strategy: isolating development from 'main'",
+            "Introduction to merging: Integrating changes back into the primary line",
+            "Visualizing the commit graph during branching operations"
+          ],
+          "activities": [
+            "Interactive visualization: Mapping out HEAD movement on a whiteboard or digital tool",
+            "CLI Lab: Create a branch called 'feature-login', make a commit, and observe the divergence from 'main'",
+            "The 'Context Switch' challenge: Modify a file in one branch, switch to another, and observe the file system changes",
+            "Manual Merge: Perform a fast-forward merge from 'feature-login' into 'main' and delete the obsolete branch"
+          ],
+          "resources": [
+            "Git Documentation: 3.1 Git Branching - Branches in a Nutshell",
+            "Visualizing Git (online interactive tool)",
+            "Local terminal/bash environment",
+            "Sample text repository for modification"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "Atlassian Bitbucket. (n.d.). Git Branching Tutorial.",
+            "Official Git Documentation (git-scm.com/docs)."
+          ]
+        },
+        {
+          "lesson_number": 6,
+          "title": "Advanced Merging and Conflict Resolution",
+          "objectives": [
+            "Distinguish between fast-forward and three-way (recursive) merge strategies",
+            "Interpret and resolve manual merge conflict markers within source code",
+            "Utilize safety commands like git merge --abort to manage failed merges",
+            "Identify best practices for maintaining a clean and linear project history"
+          ],
+          "content_outline": [
+            "Understanding Merge Strategies: The Fast-Forward Merge vs. The Merge Commit (Three-way merge)",
+            "Anatomy of a Conflict: Why they happen and how Git flags them",
+            "The Resolution Workflow: Identifying markers (<<<<, ====, >>>>), editing files, and staging results",
+            "Emergency Procedures: Using git merge --abort to reset state",
+            "Tooling: Overview of visual merge tools (mergetool) vs. manual text editing",
+            "Workflow Hygiene: Frequent pulling, small commits, and communication"
+          ],
+          "activities": [
+            "Simulation: Create a 'Feature' branch and a 'Main' branch, edit the same line in both, and trigger a merge conflict locally",
+            "Conflict Scavenger Hunt: Manually edit a file containing conflict markers to keep specific changes from both branches",
+            "Strategy Comparison: Execute a fast-forward merge and then use the --no-ff flag to see the difference in the git log graph",
+            "Command Line Rescue: Initiate a messy merge and successfully use the abort command to return to a clean working directory"
+          ],
+          "resources": [
+            "Git SCM Documentation: Basic Merging and Branching",
+            "Visualizing Git: Interactive D3-based branching simulator",
+            "VS Code Integrated Source Control Guide for Merge Conflicts"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "Atlassian Bitbucket Tutorials: Git Merge Conflicts (https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)",
+            "Git Documentation: git-merge (https://git-scm.com/docs/git-merge)"
+          ]
+        },
+        {
+          "lesson_number": 7,
+          "title": "Remote Collaboration: Pushing and Pulling",
+          "objectives": [
+            "Synchronize local work with remote servers like GitHub/GitLab",
+            "Manage remote tracking branches",
+            "Differentiate between git fetch and git pull operations",
+            "Configure upstream tracking for seamless synchronization"
+          ],
+          "content_outline": [
+            "Introduction to Remote Repositories: Connecting local git to the cloud",
+            "Managing Remotes: Adding, renaming, and removing remote nicknames (origin)",
+            "Uploading Changes: Using git push to send local commits to a server",
+            "Downloading Changes: The two-step process of git fetch and git merge",
+            "Automated Updates: Using git pull as a combined command",
+            "Upstream Tracking: Setting -u or --set-upstream to link local and remote branches",
+            "Conflicts in Remote Sync: Introduction to common push/pull rejection scenarios"
+          ],
+          "activities": [
+            "Remote Setup: Create a repository on GitHub/GitLab and link it to a local folder using 'git remote add origin'",
+            "The First Push: Push the 'main' branch to the remote server using the '-u' flag",
+            "Simulated Collaboration: Use the web interface to edit a file, then perform a 'git pull' locally to synchronize",
+            "Fetch vs. Pull Lab: Execute 'git fetch' and inspect 'origin/main' before manually merging into the local branch"
+          ],
+          "resources": [
+            "Git Documentation: Working with Remotes (git-scm.com)",
+            "GitHub Guides: Getting Started with Remote Repositories",
+            "Interactive Terminal: Git Bash or Visual Studio Code Integrated Terminal"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "GitHub Docs. (2023). Managing remote repositories.",
+            "Atlassian Bitbucket Tutorials. (2023). Syncing repositories: git fetch, pull, and push."
+          ]
+        },
+        {
+          "lesson_number": 8,
+          "title": "The Power of Rebasing and Rewriting History",
+          "objectives": [
+            "Differentiate between merging and rebasing workflows",
+            "Use standard rebase to maintain a linear project history",
+            "Execute an interactive rebase to squash, reword, and drop commits",
+            "Identify when it is unsafe to rebase based on the Golden Rule of Rebasing"
+          ],
+          "content_outline": [
+            "Introduction to git rebase: Moving the base of a branch",
+            "Rebase vs. Merge: Linear history vs. preservation of context",
+            "The Golden Rule of Rebasing: Never rebase public branches",
+            "Interactive Rebase (git rebase -i): Understanding the todo list",
+            "Rewriting history commands: pick, reword, edit, squash, fixup, and drop",
+            "Resolving conflicts during a rebase process",
+            "Force pushing (git push --force-with-lease) after rewriting history"
+          ],
+          "activities": [
+            "Standard Rebase Exercise: Rebase a feature branch onto an updated main branch to eliminate merge commits",
+            "Interactive Workshop: Take a branch with 'messy' commits (e.g., 'work in progress', 'typo fix') and squash them into a single clean feature commit",
+            "Conflict Resolution Lab: Deliberately trigger and resolve a conflict during a rebase to practice using --continue and --abort",
+            "Group Discussion: Evaluate scenarios to determine if rebasing or merging is the appropriate strategy"
+          ],
+          "resources": [
+            "Git Documentation: Rewriting History (git-scm.com)",
+            "Visualizing Git: Interactive online rebase simulator",
+            "Terminal/CLI with a sample 'dirty' repository for practice",
+            "Cheat sheet: Interactive Rebase commands overview"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Atlassian Bitbucket Tutorials: Merging vs. Rebasing.",
+            "Git-SCM Reference: git-rebase documentation."
+          ]
+        },
+        {
+          "lesson_number": 9,
+          "title": "Stashing, Tagging, and Searching",
+          "objectives": [
+            "Temporarily store uncommitted work without committing to the branch",
+            "Mark specific release points or milestones in the project history",
+            "Utilize built-in search tools to locate specific code or metadata"
+          ],
+          "content_outline": [
+            "Introduction to Git Stash: Handling context switches and cleaning a dirty working directory",
+            "Managing the Stash Stack: push, pop, apply, list, and clear",
+            "Identifying Milestones: The difference between Lightweight and Annotated tags",
+            "Tag Management: Creating, listing, and pushing tags to remote repositories",
+            "Effective Searching: Using 'git grep' for content and 'git show' for object inspection"
+          ],
+          "activities": [
+            "Context Switch Simulation: Create changes, stash them to pull an urgent update, then restore the stash",
+            "Release Labeling: Create an annotated tag 'v1.0' with a message and push it to a mock remote",
+            "Code Audit: Use 'git grep' to find all occurrences of a specific function name across the codebase",
+            "Inspection Exercise: Use 'git show' to examine the metadata of a specific tag and commit"
+          ],
+          "resources": [
+            "Official Git Documentation (git-scm.com/docs)",
+            "Pro Git Book: Chapter 7.3 Stashing and Cleaning",
+            "Pro Git Book: Chapter 2.6 Tagging",
+            "Terminal/CLI with Git installed"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git. Apress.",
+            "Git Documentation Team. (2023). Git-stash Documentation.",
+            "Git Documentation Team. (2023). Git-tag Documentation."
+          ]
+        },
+        {
+          "lesson_number": 10,
+          "title": "Collaborative Workflows and Pull Requests",
+          "objectives": [
+            "Execute a full Gitflow or GitHub flow lifecycle including feature branching and merging",
+            "Participate in constructive code reviews via Pull Requests (PRs)",
+            "Configure project-specific .gitignore files to manage environment-sensitive data",
+            "Demonstrate collaborative proficiency through a final integrated project build"
+          ],
+          "content_outline": [
+            "Introduction to Workflow Patterns: Forking (Open Source) vs. Shared Repository Branching (Internal Teams)",
+            "Deep Dive into GitHub Flow: Feature branches, PR creation, and the 'Ship/Show/Ask' philosophy",
+            "Principles of Pull Request Etiquette: Writing meaningful descriptions and responding to feedback",
+            "Advanced .gitignore Management: Global vs. Local templates, untracking previously tracked files, and securing API keys",
+            "Code Review Ethics: Identifying logic errors, maintaining style consistency, and fostering a positive developer culture",
+            "Conflict Resolution in the PR UI: Using the web-based editor to resolve simple merge conflicts"
+          ],
+          "activities": [
+            "The 'PR Ping-Pong': Students pair up, fork each other's repositories, propose a change, and perform a formal code review with at least two requested revisions",
+            "Global Gitignore Setup: Configuring a system-wide .gitignore to exclude .DS_Store or IDE-specific folders across all future projects",
+            "Final Project Sprint: A time-boxed group activity where 3-4 students contribute small components to a centralized repository using strict branching conventions"
+          ],
+          "resources": [
+            "GitHub Guides: 'Understanding the GitHub Flow'",
+            "Git-SCM Documentation: 'Distributed Workflows'",
+            "gitignore.io (Toptal tool) for automated ignore file generation",
+            "Sample 'Code Review Checklist' PDF"
+          ],
+          "citations": [
+            "Chacon, S., & Straub, B. (2014). Pro Git (2nd ed.). Apress.",
+            "GitHub, Inc. (2023). 'About pull requests.' GitHub Docs.",
+            "Atlassian. (2023). 'Gitflow Workflow.' Bitbucket Tutorials."
+          ]
+        }
+      ]
+    },
+    "quality_score": {
+      "score": 0.92,
+      "feedback": "The syllabus is highly effective, with a clear course objective that aligns well with the lessons. It progresses logically from foundational concepts to advanced collaborative workflows, covering essential Git commands and principles comprehensively. The lessons are well-structured with specific objectives and relevant topics, making it suitable for learners aiming to master Git. Minor enhancements could further improve clarity and completeness.",
+      "issues": [
+        "The 'Final Project: Collaborative build' in Lesson 10 is listed as a topic but might be better presented as a separate capstone project or assessment module to distinguish it from instructional content.",
+        "Consider adding a brief mention or topic on Git hooks or advanced customization (e.g., aliases, configuration) to cover more advanced features, enhancing the 'mastering' aspect."
+      ],
+      "iteration": 1
+    },
+    "gap_assessment": {
+      "gaps_found": [
+        "Lesson 8 on 'Rebasing and Rewriting History' appears before basic collaboration concepts like stashing/tagging (Lesson 9) and collaborative workflows (Lesson 10). This risky topic might be better positioned after students are comfortable with safer collaboration patterns.",
+        "No clear progression from individual to team workflows - seems to jump between concepts without establishing foundational workflows first.",
+        "No dedicated lesson on using Git with GUI tools or IDEs for beginners who might struggle with command-line only."
+      ],
+      "missing_prerequisites": [
+        "Basic command-line/terminal navigation knowledge for students unfamiliar with shell commands",
+        "Simple file system concepts (directories, files, paths) for repository initialization context",
+        "Basic understanding of what a 'project' or 'codebase' means in software development",
+        "Why version control is necessary - concrete examples of problems it solves"
+      ],
+      "unclear_concepts": [
+        "What 'Git Architecture' means in Lesson 1 - too abstract for beginners",
+        "The difference between 'undoing mistakes' (Lesson 4) and 'rewriting history' (Lesson 8) isn't clear from titles",
+        "What 'stashing' actually is and when to use it (Lesson 9)",
+        "What a 'pull request' is (Lesson 10) - assumes GitHub/GitLab knowledge",
+        "Confusion between 'remote collaboration' (Lesson 7) and 'collaborative workflows' (Lesson 10) - seems redundant"
+      ],
+      "recommendations": [
+        "Add a prerequisite lesson on basic terminal commands and file management",
+        "Include concrete examples/scenarios showing why Git is needed before diving into architecture",
+        "Reorder lessons: move rebasing (Lesson 8) to after collaborative workflows (Lesson 10) or make it optional/advanced",
+        "Add a lesson on using Git with popular IDEs (VSCode, IntelliJ) for visual learners",
+        "Include practice exercises or projects that build throughout the course",
+        "Clarify the distinction between Git commands and platform features (GitHub/GitLab)",
+        "Add a glossary or concept map showing how topics relate to each other"
+      ],
+      "ready_for_publication": false
+    },
+    "cost_breakdown": {
+      "research_cost": 0.00042790000000000005,
+      "syllabus_cost": 0.0036855,
+      "quality_loop_cost": 0.0007307500000000001,
+      "lesson_generation_cost": 0.014861,
+      "gap_assessment_cost": 0.00028315,
+      "total_cost": 0.019988299999999997,
+      "total_tokens": 12516
+    },
+    "research_sources": [
+      "Research: Git basics"
+    ],
+    "generation_metadata": {
+      "framework": "Orchestral AI (Enhanced)",
+      "pattern": "Provider-agnostic + CheapLLM + Subagents + Hooks",
+      "providers_used": {
+        "cheap": "CheapLLM (Haiku)",
+        "quality": "Claude Sonnet"
+      },
+      "iteration_costs": [
+        {
+          "iteration": 1,
+          "cost": 0.00441625
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "framework": "Orchestral AI (Enhanced)",
+    "start_time": "2026-01-16T10:33:58.214152",
+    "end_time": "2026-01-16T10:36:57.126184",
+    "total_tokens": 12516,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "api_calls": 15,
+    "jina_calls": 13,
+    "errors": [],
+    "duration_seconds": 178.912032
+  }
+}
